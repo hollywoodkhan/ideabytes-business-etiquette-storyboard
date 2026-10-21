@@ -1,0 +1,1909 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Everyday Professionalism: Client Review Storyboard (16 Scenes) | Ideabytes Inc.</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #0b0f19;
+      color: #f3f4f6;
+    }
+    .mono { font-family: 'JetBrains Mono', monospace; }
+    .glass-nav {
+      background: rgba(11, 15, 25, 0.90);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .glass-card {
+      background: rgba(17, 24, 39, 0.75);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      transition: all 0.25s ease;
+    }
+    .glass-card:hover {
+      border-color: rgba(56, 189, 248, 0.35);
+      box-shadow: 0 12px 35px -10px rgba(14, 165, 233, 0.15);
+    }
+    .btn-glow {
+      background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+      box-shadow: 0 4px 15px rgba(2, 132, 199, 0.3);
+    }
+    .btn-glow:hover {
+      box-shadow: 0 6px 22px rgba(2, 132, 199, 0.45);
+    }
+    @media print {
+      body { background-color: #fff !important; color: #111 !important; }
+      .no-print { display: none !important; }
+      .glass-card { break-inside: avoid; border: 1px solid #ccc !important; background: #fff !important; color: #111 !important; box-shadow: none !important; margin-bottom: 2rem !important; }
+      .glass-nav { position: static; background: #fff !important; border-bottom: 2px solid #0284c7 !important; }
+      h1, h2, h3, p, span { color: #111 !important; }
+      .bg-gray-900 { background: #f9f9f9 !important; border: 1px solid #ddd !important; }
+    }
+  </style>
+</head>
+<body class="min-h-screen antialiased selection:bg-sky-500 selection:text-white">
+
+  <!-- TOP HEADER -->
+  <header class="glass-nav sticky top-0 z-40 px-6 py-4">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+      <div>
+        <div class="flex items-center gap-3">
+          <span class="px-2.5 py-1 rounded-md text-xs font-bold uppercase tracking-wider bg-sky-500/20 text-sky-400 border border-sky-500/30">Client Review Edition</span>
+          <span class="text-xs text-gray-400 font-medium">Ideabytes Corporate L&D Production</span>
+        </div>
+        <h1 class="text-xl md:text-2xl font-extrabold tracking-tight text-white mt-1">
+          Everyday Professionalism: <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-cyan-300 to-indigo-400">How We Work With People Matters</span>
+        </h1>
+      </div>
+
+      <div class="flex flex-wrap items-center gap-3 no-print">
+        <button onclick="window.print()" class="px-4 py-2 rounded-lg bg-gray-800 hover:bg-gray-700 text-gray-200 text-xs font-semibold border border-gray-700 transition flex items-center gap-2">
+          <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
+          Export / Print PDF
+        </button>
+
+        <button onclick="copyFeedbackSummary()" class="btn-glow px-4 py-2 rounded-lg text-white text-xs font-bold transition flex items-center gap-2">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
+          Copy Feedback Summary
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- STATS OVERVIEW -->
+  <section class="max-w-7xl mx-auto px-6 pt-6 pb-2">
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+      <div class="glass-card rounded-xl p-4 border border-gray-800">
+        <p class="text-xs text-gray-400 font-medium uppercase tracking-wide">Total Scenes</p>
+        <p class="text-2xl font-black text-white mt-1">16 Scenes</p>
+        <p class="text-[11px] text-sky-400 mt-0.5">100% Rendered & Finalized</p>
+      </div>
+      <div class="glass-card rounded-xl p-4 border border-gray-800">
+        <p class="text-xs text-gray-400 font-medium uppercase tracking-wide">Total Runtime</p>
+        <p class="text-2xl font-black text-white mt-1">06m 48s</p>
+        <p class="text-[11px] text-gray-400 mt-0.5">408.26s audio-matched</p>
+      </div>
+      <div class="glass-card rounded-xl p-4 border border-gray-800">
+        <p class="text-xs text-gray-400 font-medium uppercase tracking-wide">Video Format</p>
+        <p class="text-2xl font-black text-white mt-1">1080p FHD</p>
+        <p class="text-[11px] text-emerald-400 mt-0.5">30 fps • H.264 • Rec.709</p>
+      </div>
+      <div class="glass-card rounded-xl p-4 border border-gray-800">
+        <p class="text-xs text-gray-400 font-medium uppercase tracking-wide">Client Approval</p>
+        <p class="text-2xl font-black text-emerald-400 mt-1" id="stat-approved-count">0 / 16</p>
+        <p class="text-[11px] text-gray-400 mt-0.5" id="stat-pending-label">Click approve on each card</p>
+      </div>
+    </div>
+
+    <!-- QUICK JUMP PILLS -->
+    <div class="flex items-center gap-1.5 overflow-x-auto py-4 no-print">
+      <span class="text-xs text-gray-400 font-semibold uppercase mr-2 whitespace-nowrap">Jump To:</span>
+      <a href="#scene-01" class="px-2.5 py-1 rounded bg-gray-800/80 hover:bg-sky-600 hover:text-white text-gray-300 text-xs font-mono font-medium transition whitespace-nowrap border border-gray-700/60">
+        Sc 01
+      </a>
+      <a href="#scene-02" class="px-2.5 py-1 rounded bg-gray-800/80 hover:bg-sky-600 hover:text-white text-gray-300 text-xs font-mono font-medium transition whitespace-nowrap border border-gray-700/60">
+        Sc 02
+      </a>
+      <a href="#scene-03" class="px-2.5 py-1 rounded bg-gray-800/80 hover:bg-sky-600 hover:text-white text-gray-300 text-xs font-mono font-medium transition whitespace-nowrap border border-gray-700/60">
+        Sc 03
+      </a>
+      <a href="#scene-04" class="px-2.5 py-1 rounded bg-gray-800/80 hover:bg-sky-600 hover:text-white text-gray-300 text-xs font-mono font-medium transition whitespace-nowrap border border-gray-700/60">
+        Sc 04
+      </a>
+      <a href="#scene-05" class="px-2.5 py-1 rounded bg-gray-800/80 hover:bg-sky-600 hover:text-white text-gray-300 text-xs font-mono font-medium transition whitespace-nowrap border border-gray-700/60">
+        Sc 05
+      </a>
+      <a href="#scene-06" class="px-2.5 py-1 rounded bg-gray-800/80 hover:bg-sky-600 hover:text-white text-gray-300 text-xs font-mono font-medium transition whitespace-nowrap border border-gray-700/60">
+        Sc 06
+      </a>
+      <a href="#scene-07" class="px-2.5 py-1 rounded bg-gray-800/80 hover:bg-sky-600 hover:text-white text-gray-300 text-xs font-mono font-medium transition whitespace-nowrap border border-gray-700/60">
+        Sc 07
+      </a>
+      <a href="#scene-08" class="px-2.5 py-1 rounded bg-gray-800/80 hover:bg-sky-600 hover:text-white text-gray-300 text-xs font-mono font-medium transition whitespace-nowrap border border-gray-700/60">
+        Sc 08
+      </a>
+      <a href="#scene-09" class="px-2.5 py-1 rounded bg-gray-800/80 hover:bg-sky-600 hover:text-white text-gray-300 text-xs font-mono font-medium transition whitespace-nowrap border border-gray-700/60">
+        Sc 09
+      </a>
+      <a href="#scene-10" class="px-2.5 py-1 rounded bg-gray-800/80 hover:bg-sky-600 hover:text-white text-gray-300 text-xs font-mono font-medium transition whitespace-nowrap border border-gray-700/60">
+        Sc 10
+      </a>
+      <a href="#scene-11" class="px-2.5 py-1 rounded bg-gray-800/80 hover:bg-sky-600 hover:text-white text-gray-300 text-xs font-mono font-medium transition whitespace-nowrap border border-gray-700/60">
+        Sc 11
+      </a>
+      <a href="#scene-12" class="px-2.5 py-1 rounded bg-gray-800/80 hover:bg-sky-600 hover:text-white text-gray-300 text-xs font-mono font-medium transition whitespace-nowrap border border-gray-700/60">
+        Sc 12
+      </a>
+      <a href="#scene-13" class="px-2.5 py-1 rounded bg-gray-800/80 hover:bg-sky-600 hover:text-white text-gray-300 text-xs font-mono font-medium transition whitespace-nowrap border border-gray-700/60">
+        Sc 13
+      </a>
+      <a href="#scene-14" class="px-2.5 py-1 rounded bg-gray-800/80 hover:bg-sky-600 hover:text-white text-gray-300 text-xs font-mono font-medium transition whitespace-nowrap border border-gray-700/60">
+        Sc 14
+      </a>
+      <a href="#scene-15" class="px-2.5 py-1 rounded bg-gray-800/80 hover:bg-sky-600 hover:text-white text-gray-300 text-xs font-mono font-medium transition whitespace-nowrap border border-gray-700/60">
+        Sc 15
+      </a>
+      <a href="#scene-16" class="px-2.5 py-1 rounded bg-gray-800/80 hover:bg-sky-600 hover:text-white text-gray-300 text-xs font-mono font-medium transition whitespace-nowrap border border-gray-700/60">
+        Sc 16
+      </a>
+    </div>
+  </section>
+
+  <!-- SCENE CARDS LIST -->
+  <main class="max-w-7xl mx-auto px-6 py-4 space-y-8">
+
+    <!-- SCENE 01 -->
+    <article id="scene-01" class="glass-card rounded-2xl overflow-hidden border border-gray-800 transition shadow-xl" data-scene="1">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
+        
+        <!-- VISUAL POSTER COLUMN (5 cols) -->
+        <div class="lg:col-span-5 relative bg-black/60 flex flex-col justify-between p-4 border-b lg:border-b-0 lg:border-r border-gray-800">
+          <div class="relative group rounded-xl overflow-hidden shadow-lg border border-gray-800 bg-gray-900 aspect-video">
+            <img src="storyboard_thumbs/sc01_poster.jpg" alt="Scene 01 Poster" class="w-full h-full object-cover transition duration-300 group-hover:scale-105" loading="lazy">
+            
+            <!-- OVERLAY PLAY BUTTON -->
+            <button onclick="playSceneVideo('for approval/Scene01_Everyday_Professionalism_HumanMotion.mp4', 'Scene 01: Everyday Professionalism (Course Orientation)')" class="absolute inset-0 bg-black/40 group-hover:bg-black/20 flex items-center justify-center transition no-print">
+              <span class="w-14 h-14 rounded-full bg-sky-500/90 text-white flex items-center justify-center shadow-lg transform group-hover:scale-110 transition">
+                <svg class="w-6 h-6 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </span>
+            </button>
+
+            <!-- DURATION BADGE -->
+            <div class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded bg-black/80 backdrop-blur-md text-white text-[11px] font-mono font-semibold">
+              05.87s
+            </div>
+
+            <!-- CUT COUNT BADGE -->
+            <div class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded bg-sky-950/80 border border-sky-500/40 text-sky-300 text-[11px] font-semibold">
+              1 Cut
+            </div>
+          </div>
+
+          <div class="mt-3 flex items-center justify-between no-print">
+            <button onclick="playSceneVideo('for approval/Scene01_Everyday_Professionalism_HumanMotion.mp4', 'Scene 01: Everyday Professionalism (Course Orientation)')" class="text-xs text-sky-400 hover:text-sky-300 font-semibold flex items-center gap-1.5 transition">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"/></svg>
+              Watch Video Clip
+            </button>
+            <span class="text-[11px] text-gray-500 font-mono">1080p @ 30fps</span>
+          </div>
+        </div>
+
+        <!-- STORYBOARD & SCRIPT COLUMN (7 cols) -->
+        <div class="lg:col-span-7 p-6 flex flex-col justify-between">
+          <div>
+            <!-- HEADER -->
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-gray-800">
+              <div class="flex items-center gap-2">
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-bold font-mono bg-sky-500/20 text-sky-400 border border-sky-500/30">
+                  SCENE 01
+                </span>
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-300 border border-indigo-500/20">
+                  Foundation & Premise
+                </span>
+              </div>
+
+              <!-- CLIENT APPROVAL TOGGLE -->
+              <div class="no-print flex items-center gap-2">
+                <label class="cursor-pointer flex items-center gap-2 text-xs font-medium text-gray-300 hover:text-white select-none">
+                  <input type="checkbox" id="chk-1" onchange="toggleApproval(1)" class="w-4 h-4 rounded text-emerald-500 bg-gray-800 border-gray-700 focus:ring-emerald-400">
+                  <span id="label-chk-1" class="text-gray-400">Approve Scene</span>
+                </label>
+              </div>
+            </div>
+
+            <h2 class="text-lg font-bold text-white mt-3">Everyday Professionalism (Course Orientation)</h2>
+
+            <!-- VOICEOVER TRANSCRIPT -->
+            <div class="mt-4 p-3.5 rounded-xl bg-gray-900/90 border border-gray-800">
+              <div class="flex items-center gap-1.5 text-xs text-sky-400 font-semibold uppercase tracking-wider mb-1.5">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"></path></svg>
+                Spoken Voiceover & Dialogue:
+              </div>
+              <p class="text-sm text-gray-200 leading-relaxed italic">
+                "Everyday Professionalism. How we work with people matters."
+              </p>
+            </div>
+
+            <!-- VISUAL CHOREOGRAPHY & CAMERA ACTION -->
+            <div class="mt-4 space-y-1.5">
+              <p class="text-xs text-gray-400 font-semibold uppercase tracking-wider">Visual Action & Camera Coverage:</p>
+              <p class="text-xs text-gray-300 leading-relaxed">
+                Wide master establishing shot of a modern, bright corporate technology office in Bengaluru. Diverse team gathered productively around a workstation in dynamic collaboration.
+              </p>
+            </div>
+
+            <!-- ON-SCREEN GRAPHICS -->
+            <div class="mt-3.5 flex items-start gap-2 text-xs text-gray-400">
+              <span class="font-semibold text-gray-300 whitespace-nowrap">On-Screen Overlay:</span>
+              <span class="mono text-gray-300 bg-black/40 px-2 py-0.5 rounded border border-gray-800">EVERYDAY PROFESSIONALISM | How We Work with People Matters</span>
+            </div>
+          </div>
+
+          <!-- CLIENT COMMENT BOX -->
+          <div class="mt-5 pt-4 border-t border-gray-800/80 no-print">
+            <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wide mb-1">
+              Client Feedback / Notes for Scene 01:
+            </label>
+            <input type="text" id="note-1" oninput="saveNote(1)" placeholder="e.g., Approved as is, or specify any revision..." class="w-full text-xs px-3 py-2 rounded-lg bg-gray-900/80 border border-gray-700/80 text-gray-200 placeholder-gray-500 focus:outline-none focus:border-sky-500 transition">
+          </div>
+
+        </div>
+      </div>
+    </article>
+
+    <!-- SCENE 02 -->
+    <article id="scene-02" class="glass-card rounded-2xl overflow-hidden border border-gray-800 transition shadow-xl" data-scene="2">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
+        
+        <!-- VISUAL POSTER COLUMN (5 cols) -->
+        <div class="lg:col-span-5 relative bg-black/60 flex flex-col justify-between p-4 border-b lg:border-b-0 lg:border-r border-gray-800">
+          <div class="relative group rounded-xl overflow-hidden shadow-lg border border-gray-800 bg-gray-900 aspect-video">
+            <img src="storyboard_thumbs/sc02_poster.jpg" alt="Scene 02 Poster" class="w-full h-full object-cover transition duration-300 group-hover:scale-105" loading="lazy">
+            
+            <!-- OVERLAY PLAY BUTTON -->
+            <button onclick="playSceneVideo('for approval/Scene02_Meet_Maya_HumanMotion.mp4', 'Scene 02: Meet Maya: The Workday Journey')" class="absolute inset-0 bg-black/40 group-hover:bg-black/20 flex items-center justify-center transition no-print">
+              <span class="w-14 h-14 rounded-full bg-sky-500/90 text-white flex items-center justify-center shadow-lg transform group-hover:scale-110 transition">
+                <svg class="w-6 h-6 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </span>
+            </button>
+
+            <!-- DURATION BADGE -->
+            <div class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded bg-black/80 backdrop-blur-md text-white text-[11px] font-mono font-semibold">
+              17.67s
+            </div>
+
+            <!-- CUT COUNT BADGE -->
+            <div class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded bg-sky-950/80 border border-sky-500/40 text-sky-300 text-[11px] font-semibold">
+              3 Cuts
+            </div>
+          </div>
+
+          <div class="mt-3 flex items-center justify-between no-print">
+            <button onclick="playSceneVideo('for approval/Scene02_Meet_Maya_HumanMotion.mp4', 'Scene 02: Meet Maya: The Workday Journey')" class="text-xs text-sky-400 hover:text-sky-300 font-semibold flex items-center gap-1.5 transition">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"/></svg>
+              Watch Video Clip
+            </button>
+            <span class="text-[11px] text-gray-500 font-mono">1080p @ 30fps</span>
+          </div>
+        </div>
+
+        <!-- STORYBOARD & SCRIPT COLUMN (7 cols) -->
+        <div class="lg:col-span-7 p-6 flex flex-col justify-between">
+          <div>
+            <!-- HEADER -->
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-gray-800">
+              <div class="flex items-center gap-2">
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-bold font-mono bg-sky-500/20 text-sky-400 border border-sky-500/30">
+                  SCENE 02
+                </span>
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-300 border border-indigo-500/20">
+                  Context & Workday Journey
+                </span>
+              </div>
+
+              <!-- CLIENT APPROVAL TOGGLE -->
+              <div class="no-print flex items-center gap-2">
+                <label class="cursor-pointer flex items-center gap-2 text-xs font-medium text-gray-300 hover:text-white select-none">
+                  <input type="checkbox" id="chk-2" onchange="toggleApproval(2)" class="w-4 h-4 rounded text-emerald-500 bg-gray-800 border-gray-700 focus:ring-emerald-400">
+                  <span id="label-chk-2" class="text-gray-400">Approve Scene</span>
+                </label>
+              </div>
+            </div>
+
+            <h2 class="text-lg font-bold text-white mt-3">Meet Maya: The Workday Journey</h2>
+
+            <!-- VOICEOVER TRANSCRIPT -->
+            <div class="mt-4 p-3.5 rounded-xl bg-gray-900/90 border border-gray-800">
+              <div class="flex items-center gap-1.5 text-xs text-sky-400 font-semibold uppercase tracking-wider mb-1.5">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"></path></svg>
+                Spoken Voiceover & Dialogue:
+              </div>
+              <p class="text-sm text-gray-200 leading-relaxed italic">
+                "A typical workday is full of interactions—with colleagues, teammates, and clients. How we handle these everyday moments shapes the way people experience working with us. Let's follow Maya through her workday and see how small actions make a difference."
+              </p>
+            </div>
+
+            <!-- VISUAL CHOREOGRAPHY & CAMERA ACTION -->
+            <div class="mt-4 space-y-1.5">
+              <p class="text-xs text-gray-400 font-semibold uppercase tracking-wider">Visual Action & Camera Coverage:</p>
+              <p class="text-xs text-gray-300 leading-relaxed">
+                Cut 1: Establishing B-roll of modern corporate open-plan tech hub. Cut 2: Maya arrives at her workstation, opening her laptop with organized confidence. Cut 3: Colleagues collaborating across glass partitions.
+              </p>
+            </div>
+
+            <!-- ON-SCREEN GRAPHICS -->
+            <div class="mt-3.5 flex items-start gap-2 text-xs text-gray-400">
+              <span class="font-semibold text-gray-300 whitespace-nowrap">On-Screen Overlay:</span>
+              <span class="mono text-gray-300 bg-black/40 px-2 py-0.5 rounded border border-gray-800">MEET MAYA | Everyday Micro-Interactions Shape Workplace Trust</span>
+            </div>
+          </div>
+
+          <!-- CLIENT COMMENT BOX -->
+          <div class="mt-5 pt-4 border-t border-gray-800/80 no-print">
+            <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wide mb-1">
+              Client Feedback / Notes for Scene 02:
+            </label>
+            <input type="text" id="note-2" oninput="saveNote(2)" placeholder="e.g., Approved as is, or specify any revision..." class="w-full text-xs px-3 py-2 rounded-lg bg-gray-900/80 border border-gray-700/80 text-gray-200 placeholder-gray-500 focus:outline-none focus:border-sky-500 transition">
+          </div>
+
+        </div>
+      </div>
+    </article>
+
+    <!-- SCENE 03 -->
+    <article id="scene-03" class="glass-card rounded-2xl overflow-hidden border border-gray-800 transition shadow-xl" data-scene="3">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
+        
+        <!-- VISUAL POSTER COLUMN (5 cols) -->
+        <div class="lg:col-span-5 relative bg-black/60 flex flex-col justify-between p-4 border-b lg:border-b-0 lg:border-r border-gray-800">
+          <div class="relative group rounded-xl overflow-hidden shadow-lg border border-gray-800 bg-gray-900 aspect-video">
+            <img src="storyboard_thumbs/sc03_poster.jpg" alt="Scene 03 Poster" class="w-full h-full object-cover transition duration-300 group-hover:scale-105" loading="lazy">
+            
+            <!-- OVERLAY PLAY BUTTON -->
+            <button onclick="playSceneVideo('for approval/Scene03_Small_Actions_Lasting_Impressions_HumanMotion.mp4', 'Scene 03: Small Actions, Lasting Impressions')" class="absolute inset-0 bg-black/40 group-hover:bg-black/20 flex items-center justify-center transition no-print">
+              <span class="w-14 h-14 rounded-full bg-sky-500/90 text-white flex items-center justify-center shadow-lg transform group-hover:scale-110 transition">
+                <svg class="w-6 h-6 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </span>
+            </button>
+
+            <!-- DURATION BADGE -->
+            <div class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded bg-black/80 backdrop-blur-md text-white text-[11px] font-mono font-semibold">
+              24.90s
+            </div>
+
+            <!-- CUT COUNT BADGE -->
+            <div class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded bg-sky-950/80 border border-sky-500/40 text-sky-300 text-[11px] font-semibold">
+              4 Cuts
+            </div>
+          </div>
+
+          <div class="mt-3 flex items-center justify-between no-print">
+            <button onclick="playSceneVideo('for approval/Scene03_Small_Actions_Lasting_Impressions_HumanMotion.mp4', 'Scene 03: Small Actions, Lasting Impressions')" class="text-xs text-sky-400 hover:text-sky-300 font-semibold flex items-center gap-1.5 transition">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"/></svg>
+              Watch Video Clip
+            </button>
+            <span class="text-[11px] text-gray-500 font-mono">1080p @ 30fps</span>
+          </div>
+        </div>
+
+        <!-- STORYBOARD & SCRIPT COLUMN (7 cols) -->
+        <div class="lg:col-span-7 p-6 flex flex-col justify-between">
+          <div>
+            <!-- HEADER -->
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-gray-800">
+              <div class="flex items-center gap-2">
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-bold font-mono bg-sky-500/20 text-sky-400 border border-sky-500/30">
+                  SCENE 03
+                </span>
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-300 border border-indigo-500/20">
+                  First Impressions & Presence
+                </span>
+              </div>
+
+              <!-- CLIENT APPROVAL TOGGLE -->
+              <div class="no-print flex items-center gap-2">
+                <label class="cursor-pointer flex items-center gap-2 text-xs font-medium text-gray-300 hover:text-white select-none">
+                  <input type="checkbox" id="chk-3" onchange="toggleApproval(3)" class="w-4 h-4 rounded text-emerald-500 bg-gray-800 border-gray-700 focus:ring-emerald-400">
+                  <span id="label-chk-3" class="text-gray-400">Approve Scene</span>
+                </label>
+              </div>
+            </div>
+
+            <h2 class="text-lg font-bold text-white mt-3">Small Actions, Lasting Impressions</h2>
+
+            <!-- VOICEOVER TRANSCRIPT -->
+            <div class="mt-4 p-3.5 rounded-xl bg-gray-900/90 border border-gray-800">
+              <div class="flex items-center gap-1.5 text-xs text-sky-400 font-semibold uppercase tracking-wider mb-1.5">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"></path></svg>
+                Spoken Voiceover & Dialogue:
+              </div>
+              <p class="text-sm text-gray-200 leading-relaxed italic">
+                "Every workday is made up of small moments. A greeting. A conversation. A meeting. A promise. Individually, they may seem insignificant. Together, they shape how people experience working with us—and how they see us as professionals."
+              </p>
+            </div>
+
+            <!-- VISUAL CHOREOGRAPHY & CAMERA ACTION -->
+            <div class="mt-4 space-y-1.5">
+              <p class="text-xs text-gray-400 font-semibold uppercase tracking-wider">Visual Action & Camera Coverage:</p>
+              <p class="text-xs text-gray-300 leading-relaxed">
+                Cut 1: Maya enters office corridor looking down at smartphone. Cut 2: Colleague Arun smiles and greets 'Hi Maya, good morning!'. Cut 3: Maya walks past absorbed in her screen. Cut 4: Arun's subtle, disappointed reaction.
+              </p>
+            </div>
+
+            <!-- ON-SCREEN GRAPHICS -->
+            <div class="mt-3.5 flex items-start gap-2 text-xs text-gray-400">
+              <span class="font-semibold text-gray-300 whitespace-nowrap">On-Screen Overlay:</span>
+              <span class="mono text-gray-300 bg-black/40 px-2 py-0.5 rounded border border-gray-800">SMALL ACTIONS, LASTING IMPRESSIONS | The Impressions We Leave</span>
+            </div>
+          </div>
+
+          <!-- CLIENT COMMENT BOX -->
+          <div class="mt-5 pt-4 border-t border-gray-800/80 no-print">
+            <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wide mb-1">
+              Client Feedback / Notes for Scene 03:
+            </label>
+            <input type="text" id="note-3" oninput="saveNote(3)" placeholder="e.g., Approved as is, or specify any revision..." class="w-full text-xs px-3 py-2 rounded-lg bg-gray-900/80 border border-gray-700/80 text-gray-200 placeholder-gray-500 focus:outline-none focus:border-sky-500 transition">
+          </div>
+
+        </div>
+      </div>
+    </article>
+
+    <!-- SCENE 04 -->
+    <article id="scene-04" class="glass-card rounded-2xl overflow-hidden border border-gray-800 transition shadow-xl" data-scene="4">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
+        
+        <!-- VISUAL POSTER COLUMN (5 cols) -->
+        <div class="lg:col-span-5 relative bg-black/60 flex flex-col justify-between p-4 border-b lg:border-b-0 lg:border-r border-gray-800">
+          <div class="relative group rounded-xl overflow-hidden shadow-lg border border-gray-800 bg-gray-900 aspect-video">
+            <img src="storyboard_thumbs/sc04_poster.jpg" alt="Scene 04 Poster" class="w-full h-full object-cover transition duration-300 group-hover:scale-105" loading="lazy">
+            
+            <!-- OVERLAY PLAY BUTTON -->
+            <button onclick="playSceneVideo('for approval/Scene04_Start_With_Respect_HumanMotion.mp4', 'Scene 04: Start With Respect')" class="absolute inset-0 bg-black/40 group-hover:bg-black/20 flex items-center justify-center transition no-print">
+              <span class="w-14 h-14 rounded-full bg-sky-500/90 text-white flex items-center justify-center shadow-lg transform group-hover:scale-110 transition">
+                <svg class="w-6 h-6 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </span>
+            </button>
+
+            <!-- DURATION BADGE -->
+            <div class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded bg-black/80 backdrop-blur-md text-white text-[11px] font-mono font-semibold">
+              24.23s
+            </div>
+
+            <!-- CUT COUNT BADGE -->
+            <div class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded bg-sky-950/80 border border-sky-500/40 text-sky-300 text-[11px] font-semibold">
+              4 Cuts
+            </div>
+          </div>
+
+          <div class="mt-3 flex items-center justify-between no-print">
+            <button onclick="playSceneVideo('for approval/Scene04_Start_With_Respect_HumanMotion.mp4', 'Scene 04: Start With Respect')" class="text-xs text-sky-400 hover:text-sky-300 font-semibold flex items-center gap-1.5 transition">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"/></svg>
+              Watch Video Clip
+            </button>
+            <span class="text-[11px] text-gray-500 font-mono">1080p @ 30fps</span>
+          </div>
+        </div>
+
+        <!-- STORYBOARD & SCRIPT COLUMN (7 cols) -->
+        <div class="lg:col-span-7 p-6 flex flex-col justify-between">
+          <div>
+            <!-- HEADER -->
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-gray-800">
+              <div class="flex items-center gap-2">
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-bold font-mono bg-sky-500/20 text-sky-400 border border-sky-500/30">
+                  SCENE 04
+                </span>
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-300 border border-indigo-500/20">
+                  Acknowledgment & Boundaries
+                </span>
+              </div>
+
+              <!-- CLIENT APPROVAL TOGGLE -->
+              <div class="no-print flex items-center gap-2">
+                <label class="cursor-pointer flex items-center gap-2 text-xs font-medium text-gray-300 hover:text-white select-none">
+                  <input type="checkbox" id="chk-4" onchange="toggleApproval(4)" class="w-4 h-4 rounded text-emerald-500 bg-gray-800 border-gray-700 focus:ring-emerald-400">
+                  <span id="label-chk-4" class="text-gray-400">Approve Scene</span>
+                </label>
+              </div>
+            </div>
+
+            <h2 class="text-lg font-bold text-white mt-3">Start With Respect</h2>
+
+            <!-- VOICEOVER TRANSCRIPT -->
+            <div class="mt-4 p-3.5 rounded-xl bg-gray-900/90 border border-gray-800">
+              <div class="flex items-center gap-1.5 text-xs text-sky-400 font-semibold uppercase tracking-wider mb-1.5">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"></path></svg>
+                Spoken Voiceover & Dialogue:
+              </div>
+              <p class="text-sm text-gray-200 leading-relaxed italic">
+                "Maya decides to start differently. She puts her phone away, greets her colleagues and acknowledges the people around her. When a colleague is busy, she asks whether it is a good time to speak. Professional courtesy is not about being overly formal. It is about helping people feel respected while maintaining appropriate boundaries."
+              </p>
+            </div>
+
+            <!-- VISUAL CHOREOGRAPHY & CAMERA ACTION -->
+            <div class="mt-4 space-y-1.5">
+              <p class="text-xs text-gray-400 font-semibold uppercase tracking-wider">Visual Action & Camera Coverage:</p>
+              <p class="text-xs text-gray-300 leading-relaxed">
+                Cut 1: Maya intentionally puts her phone away into bag. Cut 2: Greets colleagues with eye contact and a warm smile. Cut 3: Observes colleague deep in focus at desk. Cut 4: Gently asks 'Is this a good time to speak?'.
+              </p>
+            </div>
+
+            <!-- ON-SCREEN GRAPHICS -->
+            <div class="mt-3.5 flex items-start gap-2 text-xs text-gray-400">
+              <span class="font-semibold text-gray-300 whitespace-nowrap">On-Screen Overlay:</span>
+              <span class="mono text-gray-300 bg-black/40 px-2 py-0.5 rounded border border-gray-800">START WITH RESPECT | Acknowledge • Greet • Respect Boundaries</span>
+            </div>
+          </div>
+
+          <!-- CLIENT COMMENT BOX -->
+          <div class="mt-5 pt-4 border-t border-gray-800/80 no-print">
+            <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wide mb-1">
+              Client Feedback / Notes for Scene 04:
+            </label>
+            <input type="text" id="note-4" oninput="saveNote(4)" placeholder="e.g., Approved as is, or specify any revision..." class="w-full text-xs px-3 py-2 rounded-lg bg-gray-900/80 border border-gray-700/80 text-gray-200 placeholder-gray-500 focus:outline-none focus:border-sky-500 transition">
+          </div>
+
+        </div>
+      </div>
+    </article>
+
+    <!-- SCENE 05 -->
+    <article id="scene-05" class="glass-card rounded-2xl overflow-hidden border border-gray-800 transition shadow-xl" data-scene="5">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
+        
+        <!-- VISUAL POSTER COLUMN (5 cols) -->
+        <div class="lg:col-span-5 relative bg-black/60 flex flex-col justify-between p-4 border-b lg:border-b-0 lg:border-r border-gray-800">
+          <div class="relative group rounded-xl overflow-hidden shadow-lg border border-gray-800 bg-gray-900 aspect-video">
+            <img src="storyboard_thumbs/sc05_poster.jpg" alt="Scene 05 Poster" class="w-full h-full object-cover transition duration-300 group-hover:scale-105" loading="lazy">
+            
+            <!-- OVERLAY PLAY BUTTON -->
+            <button onclick="playSceneVideo('for approval/Scene05_Active_Listening_HumanMotion.mp4', 'Scene 05: Listen to Understand')" class="absolute inset-0 bg-black/40 group-hover:bg-black/20 flex items-center justify-center transition no-print">
+              <span class="w-14 h-14 rounded-full bg-sky-500/90 text-white flex items-center justify-center shadow-lg transform group-hover:scale-110 transition">
+                <svg class="w-6 h-6 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </span>
+            </button>
+
+            <!-- DURATION BADGE -->
+            <div class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded bg-black/80 backdrop-blur-md text-white text-[11px] font-mono font-semibold">
+              30.93s
+            </div>
+
+            <!-- CUT COUNT BADGE -->
+            <div class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded bg-sky-950/80 border border-sky-500/40 text-sky-300 text-[11px] font-semibold">
+              5 Cuts
+            </div>
+          </div>
+
+          <div class="mt-3 flex items-center justify-between no-print">
+            <button onclick="playSceneVideo('for approval/Scene05_Active_Listening_HumanMotion.mp4', 'Scene 05: Listen to Understand')" class="text-xs text-sky-400 hover:text-sky-300 font-semibold flex items-center gap-1.5 transition">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"/></svg>
+              Watch Video Clip
+            </button>
+            <span class="text-[11px] text-gray-500 font-mono">1080p @ 30fps</span>
+          </div>
+        </div>
+
+        <!-- STORYBOARD & SCRIPT COLUMN (7 cols) -->
+        <div class="lg:col-span-7 p-6 flex flex-col justify-between">
+          <div>
+            <!-- HEADER -->
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-gray-800">
+              <div class="flex items-center gap-2">
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-bold font-mono bg-sky-500/20 text-sky-400 border border-sky-500/30">
+                  SCENE 05
+                </span>
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-300 border border-indigo-500/20">
+                  Active Listening & Empathy
+                </span>
+              </div>
+
+              <!-- CLIENT APPROVAL TOGGLE -->
+              <div class="no-print flex items-center gap-2">
+                <label class="cursor-pointer flex items-center gap-2 text-xs font-medium text-gray-300 hover:text-white select-none">
+                  <input type="checkbox" id="chk-5" onchange="toggleApproval(5)" class="w-4 h-4 rounded text-emerald-500 bg-gray-800 border-gray-700 focus:ring-emerald-400">
+                  <span id="label-chk-5" class="text-gray-400">Approve Scene</span>
+                </label>
+              </div>
+            </div>
+
+            <h2 class="text-lg font-bold text-white mt-3">Listen to Understand</h2>
+
+            <!-- VOICEOVER TRANSCRIPT -->
+            <div class="mt-4 p-3.5 rounded-xl bg-gray-900/90 border border-gray-800">
+              <div class="flex items-center gap-1.5 text-xs text-sky-400 font-semibold uppercase tracking-wider mb-1.5">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"></path></svg>
+                Spoken Voiceover & Dialogue:
+              </div>
+              <p class="text-sm text-gray-200 leading-relaxed italic">
+                "Soon, a teammate approaches Maya with a concern about their project. The teammate explains why a task is delayed. Instead of interrupting or assuming the worst, Maya listens, maintains attentive body language and asks a clarifying question. Respectful communication is not only about the words we use. Our tone, expressions and willingness to listen can determine whether a conversation builds trust or creates friction."
+              </p>
+            </div>
+
+            <!-- VISUAL CHOREOGRAPHY & CAMERA ACTION -->
+            <div class="mt-4 space-y-1.5">
+              <p class="text-xs text-gray-400 font-semibold uppercase tracking-wider">Visual Action & Camera Coverage:</p>
+              <p class="text-xs text-gray-300 leading-relaxed">
+                Cut 1: Teammate Pooja approaches Maya's desk with a project concern. Cut 2: Maya turns away from laptop to give full attention. Cut 3: Pooja explains delayed milestone. Cut 4: Maya nods attentively and asks a clarifying question. Cut 5: Pooja relaxes as they review notes together.
+              </p>
+            </div>
+
+            <!-- ON-SCREEN GRAPHICS -->
+            <div class="mt-3.5 flex items-start gap-2 text-xs text-gray-400">
+              <span class="font-semibold text-gray-300 whitespace-nowrap">On-Screen Overlay:</span>
+              <span class="mono text-gray-300 bg-black/40 px-2 py-0.5 rounded border border-gray-800">LISTEN TO UNDERSTAND | Listen First • Respond Thoughtfully</span>
+            </div>
+          </div>
+
+          <!-- CLIENT COMMENT BOX -->
+          <div class="mt-5 pt-4 border-t border-gray-800/80 no-print">
+            <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wide mb-1">
+              Client Feedback / Notes for Scene 05:
+            </label>
+            <input type="text" id="note-5" oninput="saveNote(5)" placeholder="e.g., Approved as is, or specify any revision..." class="w-full text-xs px-3 py-2 rounded-lg bg-gray-900/80 border border-gray-700/80 text-gray-200 placeholder-gray-500 focus:outline-none focus:border-sky-500 transition">
+          </div>
+
+        </div>
+      </div>
+    </article>
+
+    <!-- SCENE 06 -->
+    <article id="scene-06" class="glass-card rounded-2xl overflow-hidden border border-gray-800 transition shadow-xl" data-scene="6">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
+        
+        <!-- VISUAL POSTER COLUMN (5 cols) -->
+        <div class="lg:col-span-5 relative bg-black/60 flex flex-col justify-between p-4 border-b lg:border-b-0 lg:border-r border-gray-800">
+          <div class="relative group rounded-xl overflow-hidden shadow-lg border border-gray-800 bg-gray-900 aspect-video">
+            <img src="storyboard_thumbs/sc06_poster.jpg" alt="Scene 06 Poster" class="w-full h-full object-cover transition duration-300 group-hover:scale-105" loading="lazy">
+            
+            <!-- OVERLAY PLAY BUTTON -->
+            <button onclick="playSceneVideo('for approval/Scene06_Preparation_Punctuality_HumanMotion.mp4', 'Scene 06: The Meeting Starts Before the Meeting')" class="absolute inset-0 bg-black/40 group-hover:bg-black/20 flex items-center justify-center transition no-print">
+              <span class="w-14 h-14 rounded-full bg-sky-500/90 text-white flex items-center justify-center shadow-lg transform group-hover:scale-110 transition">
+                <svg class="w-6 h-6 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </span>
+            </button>
+
+            <!-- DURATION BADGE -->
+            <div class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded bg-black/80 backdrop-blur-md text-white text-[11px] font-mono font-semibold">
+              30.89s
+            </div>
+
+            <!-- CUT COUNT BADGE -->
+            <div class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded bg-sky-950/80 border border-sky-500/40 text-sky-300 text-[11px] font-semibold">
+              5 Cuts
+            </div>
+          </div>
+
+          <div class="mt-3 flex items-center justify-between no-print">
+            <button onclick="playSceneVideo('for approval/Scene06_Preparation_Punctuality_HumanMotion.mp4', 'Scene 06: The Meeting Starts Before the Meeting')" class="text-xs text-sky-400 hover:text-sky-300 font-semibold flex items-center gap-1.5 transition">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"/></svg>
+              Watch Video Clip
+            </button>
+            <span class="text-[11px] text-gray-500 font-mono">1080p @ 30fps</span>
+          </div>
+        </div>
+
+        <!-- STORYBOARD & SCRIPT COLUMN (7 cols) -->
+        <div class="lg:col-span-7 p-6 flex flex-col justify-between">
+          <div>
+            <!-- HEADER -->
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-gray-800">
+              <div class="flex items-center gap-2">
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-bold font-mono bg-sky-500/20 text-sky-400 border border-sky-500/30">
+                  SCENE 06
+                </span>
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-300 border border-indigo-500/20">
+                  Preparation & Punctuality
+                </span>
+              </div>
+
+              <!-- CLIENT APPROVAL TOGGLE -->
+              <div class="no-print flex items-center gap-2">
+                <label class="cursor-pointer flex items-center gap-2 text-xs font-medium text-gray-300 hover:text-white select-none">
+                  <input type="checkbox" id="chk-6" onchange="toggleApproval(6)" class="w-4 h-4 rounded text-emerald-500 bg-gray-800 border-gray-700 focus:ring-emerald-400">
+                  <span id="label-chk-6" class="text-gray-400">Approve Scene</span>
+                </label>
+              </div>
+            </div>
+
+            <h2 class="text-lg font-bold text-white mt-3">The Meeting Starts Before the Meeting</h2>
+
+            <!-- VOICEOVER TRANSCRIPT -->
+            <div class="mt-4 p-3.5 rounded-xl bg-gray-900/90 border border-gray-800">
+              <div class="flex items-center gap-1.5 text-xs text-sky-400 font-semibold uppercase tracking-wider mb-1.5">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"></path></svg>
+                Spoken Voiceover & Dialogue:
+              </div>
+              <p class="text-sm text-gray-200 leading-relaxed italic">
+                "Later that morning, Maya has to join the team's project meeting. Before the team meeting, Maya checks the agenda, reviews her notes and joins a few minutes early. She is ready to contribute rather than asking everyone to repeat what she missed. During the discussion, she stays attentive, avoids multitasking and allows others to finish speaking. Respecting a meeting means respecting everyone's time and contribution."
+              </p>
+            </div>
+
+            <!-- VISUAL CHOREOGRAPHY & CAMERA ACTION -->
+            <div class="mt-4 space-y-1.5">
+              <p class="text-xs text-gray-400 font-semibold uppercase tracking-wider">Visual Action & Camera Coverage:</p>
+              <p class="text-xs text-gray-300 leading-relaxed">
+                Cut 1: Maya preparing notebook and agenda at desk. Cut 2: Enters conference room early with open notes. Cut 3: Actively contributing project update from notes. Cut 4: Attentive listening with smartphone placed face-down. Cut 5: Meeting wraps up on time with mutual appreciation.
+              </p>
+            </div>
+
+            <!-- ON-SCREEN GRAPHICS -->
+            <div class="mt-3.5 flex items-start gap-2 text-xs text-gray-400">
+              <span class="font-semibold text-gray-300 whitespace-nowrap">On-Screen Overlay:</span>
+              <span class="mono text-gray-300 bg-black/40 px-2 py-0.5 rounded border border-gray-800">PREPARATION & PUNCTUALITY | Be On Time • Be Prepared • Be Present</span>
+            </div>
+          </div>
+
+          <!-- CLIENT COMMENT BOX -->
+          <div class="mt-5 pt-4 border-t border-gray-800/80 no-print">
+            <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wide mb-1">
+              Client Feedback / Notes for Scene 06:
+            </label>
+            <input type="text" id="note-6" oninput="saveNote(6)" placeholder="e.g., Approved as is, or specify any revision..." class="w-full text-xs px-3 py-2 rounded-lg bg-gray-900/80 border border-gray-700/80 text-gray-200 placeholder-gray-500 focus:outline-none focus:border-sky-500 transition">
+          </div>
+
+        </div>
+      </div>
+    </article>
+
+    <!-- SCENE 07 -->
+    <article id="scene-07" class="glass-card rounded-2xl overflow-hidden border border-gray-800 transition shadow-xl" data-scene="7">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
+        
+        <!-- VISUAL POSTER COLUMN (5 cols) -->
+        <div class="lg:col-span-5 relative bg-black/60 flex flex-col justify-between p-4 border-b lg:border-b-0 lg:border-r border-gray-800">
+          <div class="relative group rounded-xl overflow-hidden shadow-lg border border-gray-800 bg-gray-900 aspect-video">
+            <img src="storyboard_thumbs/sc07_poster.jpg" alt="Scene 07 Poster" class="w-full h-full object-cover transition duration-300 group-hover:scale-105" loading="lazy">
+            
+            <!-- OVERLAY PLAY BUTTON -->
+            <button onclick="playSceneVideo('for approval/Scene07_Constructive_Disagreement_HumanMotion.mp4', 'Scene 07: Disagree Without Disrespect')" class="absolute inset-0 bg-black/40 group-hover:bg-black/20 flex items-center justify-center transition no-print">
+              <span class="w-14 h-14 rounded-full bg-sky-500/90 text-white flex items-center justify-center shadow-lg transform group-hover:scale-110 transition">
+                <svg class="w-6 h-6 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </span>
+            </button>
+
+            <!-- DURATION BADGE -->
+            <div class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded bg-black/80 backdrop-blur-md text-white text-[11px] font-mono font-semibold">
+              31.39s
+            </div>
+
+            <!-- CUT COUNT BADGE -->
+            <div class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded bg-sky-950/80 border border-sky-500/40 text-sky-300 text-[11px] font-semibold">
+              6 Cuts
+            </div>
+          </div>
+
+          <div class="mt-3 flex items-center justify-between no-print">
+            <button onclick="playSceneVideo('for approval/Scene07_Constructive_Disagreement_HumanMotion.mp4', 'Scene 07: Disagree Without Disrespect')" class="text-xs text-sky-400 hover:text-sky-300 font-semibold flex items-center gap-1.5 transition">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"/></svg>
+              Watch Video Clip
+            </button>
+            <span class="text-[11px] text-gray-500 font-mono">1080p @ 30fps</span>
+          </div>
+        </div>
+
+        <!-- STORYBOARD & SCRIPT COLUMN (7 cols) -->
+        <div class="lg:col-span-7 p-6 flex flex-col justify-between">
+          <div>
+            <!-- HEADER -->
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-gray-800">
+              <div class="flex items-center gap-2">
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-bold font-mono bg-sky-500/20 text-sky-400 border border-sky-500/30">
+                  SCENE 07
+                </span>
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-300 border border-indigo-500/20">
+                  Constructive Conflict & Candor
+                </span>
+              </div>
+
+              <!-- CLIENT APPROVAL TOGGLE -->
+              <div class="no-print flex items-center gap-2">
+                <label class="cursor-pointer flex items-center gap-2 text-xs font-medium text-gray-300 hover:text-white select-none">
+                  <input type="checkbox" id="chk-7" onchange="toggleApproval(7)" class="w-4 h-4 rounded text-emerald-500 bg-gray-800 border-gray-700 focus:ring-emerald-400">
+                  <span id="label-chk-7" class="text-gray-400">Approve Scene</span>
+                </label>
+              </div>
+            </div>
+
+            <h2 class="text-lg font-bold text-white mt-3">Disagree Without Disrespect</h2>
+
+            <!-- VOICEOVER TRANSCRIPT -->
+            <div class="mt-4 p-3.5 rounded-xl bg-gray-900/90 border border-gray-800">
+              <div class="flex items-center gap-1.5 text-xs text-sky-400 font-semibold uppercase tracking-wider mb-1.5">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"></path></svg>
+                Spoken Voiceover & Dialogue:
+              </div>
+              <p class="text-sm text-gray-200 leading-relaxed italic">
+                "During the discussion, Maya sees a different way to approach the problem. She disagrees with a proposed solution. She could dismiss it or interrupt. Instead, she lets her colleague finish and explains her concern with evidence. Maya: 'I see the reasoning. Could we also consider another approach?' Disagreement is part of good teamwork. Personal criticism, dismissive language and interruptions do not need to be."
+              </p>
+            </div>
+
+            <!-- VISUAL CHOREOGRAPHY & CAMERA ACTION -->
+            <div class="mt-4 space-y-1.5">
+              <p class="text-xs text-gray-400 font-semibold uppercase tracking-wider">Visual Action & Camera Coverage:</p>
+              <p class="text-xs text-gray-300 leading-relaxed">
+                Cut 1: Colleague proposes roadmap on whiteboard. Cut 2: Maya listens patiently without interrupting. Cut 3: Maya speaks with calm, open hand gestures: 'I see the reasoning...'. Cut 4: Macro insert of alternative timeline data. Cut 5: Colleague nods thoughtfully in constructive dialogue. Cut 6: Team aligns on optimized plan.
+              </p>
+            </div>
+
+            <!-- ON-SCREEN GRAPHICS -->
+            <div class="mt-3.5 flex items-start gap-2 text-xs text-gray-400">
+              <span class="font-semibold text-gray-300 whitespace-nowrap">On-Screen Overlay:</span>
+              <span class="mono text-gray-300 bg-black/40 px-2 py-0.5 rounded border border-gray-800">DISAGREE WITHOUT DISRESPECT | Challenge the Idea • Respect the Person</span>
+            </div>
+          </div>
+
+          <!-- CLIENT COMMENT BOX -->
+          <div class="mt-5 pt-4 border-t border-gray-800/80 no-print">
+            <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wide mb-1">
+              Client Feedback / Notes for Scene 07:
+            </label>
+            <input type="text" id="note-7" oninput="saveNote(7)" placeholder="e.g., Approved as is, or specify any revision..." class="w-full text-xs px-3 py-2 rounded-lg bg-gray-900/80 border border-gray-700/80 text-gray-200 placeholder-gray-500 focus:outline-none focus:border-sky-500 transition">
+          </div>
+
+        </div>
+      </div>
+    </article>
+
+    <!-- SCENE 08 -->
+    <article id="scene-08" class="glass-card rounded-2xl overflow-hidden border border-gray-800 transition shadow-xl" data-scene="8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
+        
+        <!-- VISUAL POSTER COLUMN (5 cols) -->
+        <div class="lg:col-span-5 relative bg-black/60 flex flex-col justify-between p-4 border-b lg:border-b-0 lg:border-r border-gray-800">
+          <div class="relative group rounded-xl overflow-hidden shadow-lg border border-gray-800 bg-gray-900 aspect-video">
+            <img src="storyboard_thumbs/sc08_poster.jpg" alt="Scene 08 Poster" class="w-full h-full object-cover transition duration-300 group-hover:scale-105" loading="lazy">
+            
+            <!-- OVERLAY PLAY BUTTON -->
+            <button onclick="playSceneVideo('for approval/Scene08_Shared_Spaces_Cleanliness_HumanMotion.mp4', 'Scene 08: Shared Spaces, Shared Responsibility')" class="absolute inset-0 bg-black/40 group-hover:bg-black/20 flex items-center justify-center transition no-print">
+              <span class="w-14 h-14 rounded-full bg-sky-500/90 text-white flex items-center justify-center shadow-lg transform group-hover:scale-110 transition">
+                <svg class="w-6 h-6 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </span>
+            </button>
+
+            <!-- DURATION BADGE -->
+            <div class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded bg-black/80 backdrop-blur-md text-white text-[11px] font-mono font-semibold">
+              23.83s
+            </div>
+
+            <!-- CUT COUNT BADGE -->
+            <div class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded bg-sky-950/80 border border-sky-500/40 text-sky-300 text-[11px] font-semibold">
+              5 Cuts
+            </div>
+          </div>
+
+          <div class="mt-3 flex items-center justify-between no-print">
+            <button onclick="playSceneVideo('for approval/Scene08_Shared_Spaces_Cleanliness_HumanMotion.mp4', 'Scene 08: Shared Spaces, Shared Responsibility')" class="text-xs text-sky-400 hover:text-sky-300 font-semibold flex items-center gap-1.5 transition">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"/></svg>
+              Watch Video Clip
+            </button>
+            <span class="text-[11px] text-gray-500 font-mono">1080p @ 30fps</span>
+          </div>
+        </div>
+
+        <!-- STORYBOARD & SCRIPT COLUMN (7 cols) -->
+        <div class="lg:col-span-7 p-6 flex flex-col justify-between">
+          <div>
+            <!-- HEADER -->
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-gray-800">
+              <div class="flex items-center gap-2">
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-bold font-mono bg-sky-500/20 text-sky-400 border border-sky-500/30">
+                  SCENE 08
+                </span>
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-300 border border-indigo-500/20">
+                  Common Area Courtesy
+                </span>
+              </div>
+
+              <!-- CLIENT APPROVAL TOGGLE -->
+              <div class="no-print flex items-center gap-2">
+                <label class="cursor-pointer flex items-center gap-2 text-xs font-medium text-gray-300 hover:text-white select-none">
+                  <input type="checkbox" id="chk-8" onchange="toggleApproval(8)" class="w-4 h-4 rounded text-emerald-500 bg-gray-800 border-gray-700 focus:ring-emerald-400">
+                  <span id="label-chk-8" class="text-gray-400">Approve Scene</span>
+                </label>
+              </div>
+            </div>
+
+            <h2 class="text-lg font-bold text-white mt-3">Shared Spaces, Shared Responsibility</h2>
+
+            <!-- VOICEOVER TRANSCRIPT -->
+            <div class="mt-4 p-3.5 rounded-xl bg-gray-900/90 border border-gray-800">
+              <div class="flex items-center gap-1.5 text-xs text-sky-400 font-semibold uppercase tracking-wider mb-1.5">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"></path></svg>
+                Spoken Voiceover & Dialogue:
+              </div>
+              <p class="text-sm text-gray-200 leading-relaxed italic">
+                "Respect also extends to the spaces we share. After a meeting, Maya clears her notes and pushes in her chair. In common areas, she leaves things ready for the next person. When we treat shared spaces with care, we show consideration for the people who will use them next."
+              </p>
+            </div>
+
+            <!-- VISUAL CHOREOGRAPHY & CAMERA ACTION -->
+            <div class="mt-4 space-y-1.5">
+              <p class="text-xs text-gray-400 font-semibold uppercase tracking-wider">Visual Action & Camera Coverage:</p>
+              <p class="text-xs text-gray-300 leading-relaxed">
+                Cut 1: Meeting concludes; attendees gather belongings. Cut 2: Maya clearing whiteboard markers and pushing in conference chair. Cut 3: Maya depositing coffee cup into stainless steel recycling bin. Cut 4: Spotless, clean common kitchenette and breakout zone. Cut 5: Next colleague enters conference room comfortably.
+              </p>
+            </div>
+
+            <!-- ON-SCREEN GRAPHICS -->
+            <div class="mt-3.5 flex items-start gap-2 text-xs text-gray-400">
+              <span class="font-semibold text-gray-300 whitespace-nowrap">On-Screen Overlay:</span>
+              <span class="mono text-gray-300 bg-black/40 px-2 py-0.5 rounded border border-gray-800">SHARED SPACES, SHARED RESPONSIBILITY | Leave Spaces Ready for the Next Person</span>
+            </div>
+          </div>
+
+          <!-- CLIENT COMMENT BOX -->
+          <div class="mt-5 pt-4 border-t border-gray-800/80 no-print">
+            <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wide mb-1">
+              Client Feedback / Notes for Scene 08:
+            </label>
+            <input type="text" id="note-8" oninput="saveNote(8)" placeholder="e.g., Approved as is, or specify any revision..." class="w-full text-xs px-3 py-2 rounded-lg bg-gray-900/80 border border-gray-700/80 text-gray-200 placeholder-gray-500 focus:outline-none focus:border-sky-500 transition">
+          </div>
+
+        </div>
+      </div>
+    </article>
+
+    <!-- SCENE 09 -->
+    <article id="scene-09" class="glass-card rounded-2xl overflow-hidden border border-gray-800 transition shadow-xl" data-scene="9">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
+        
+        <!-- VISUAL POSTER COLUMN (5 cols) -->
+        <div class="lg:col-span-5 relative bg-black/60 flex flex-col justify-between p-4 border-b lg:border-b-0 lg:border-r border-gray-800">
+          <div class="relative group rounded-xl overflow-hidden shadow-lg border border-gray-800 bg-gray-900 aspect-video">
+            <img src="storyboard_thumbs/sc09_poster.jpg" alt="Scene 09 Poster" class="w-full h-full object-cover transition duration-300 group-hover:scale-105" loading="lazy">
+            
+            <!-- OVERLAY PLAY BUTTON -->
+            <button onclick="playSceneVideo('for approval/Scene09_Accountability_Deadlines_HumanMotion.mp4', 'Scene 09: Collaboration Means Following Through')" class="absolute inset-0 bg-black/40 group-hover:bg-black/20 flex items-center justify-center transition no-print">
+              <span class="w-14 h-14 rounded-full bg-sky-500/90 text-white flex items-center justify-center shadow-lg transform group-hover:scale-110 transition">
+                <svg class="w-6 h-6 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </span>
+            </button>
+
+            <!-- DURATION BADGE -->
+            <div class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded bg-black/80 backdrop-blur-md text-white text-[11px] font-mono font-semibold">
+              37.76s
+            </div>
+
+            <!-- CUT COUNT BADGE -->
+            <div class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded bg-sky-950/80 border border-sky-500/40 text-sky-300 text-[11px] font-semibold">
+              5 Cuts
+            </div>
+          </div>
+
+          <div class="mt-3 flex items-center justify-between no-print">
+            <button onclick="playSceneVideo('for approval/Scene09_Accountability_Deadlines_HumanMotion.mp4', 'Scene 09: Collaboration Means Following Through')" class="text-xs text-sky-400 hover:text-sky-300 font-semibold flex items-center gap-1.5 transition">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"/></svg>
+              Watch Video Clip
+            </button>
+            <span class="text-[11px] text-gray-500 font-mono">1080p @ 30fps</span>
+          </div>
+        </div>
+
+        <!-- STORYBOARD & SCRIPT COLUMN (7 cols) -->
+        <div class="lg:col-span-7 p-6 flex flex-col justify-between">
+          <div>
+            <!-- HEADER -->
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-gray-800">
+              <div class="flex items-center gap-2">
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-bold font-mono bg-sky-500/20 text-sky-400 border border-sky-500/30">
+                  SCENE 09
+                </span>
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-300 border border-indigo-500/20">
+                  Accountability & Deadlines
+                </span>
+              </div>
+
+              <!-- CLIENT APPROVAL TOGGLE -->
+              <div class="no-print flex items-center gap-2">
+                <label class="cursor-pointer flex items-center gap-2 text-xs font-medium text-gray-300 hover:text-white select-none">
+                  <input type="checkbox" id="chk-9" onchange="toggleApproval(9)" class="w-4 h-4 rounded text-emerald-500 bg-gray-800 border-gray-700 focus:ring-emerald-400">
+                  <span id="label-chk-9" class="text-gray-400">Approve Scene</span>
+                </label>
+              </div>
+            </div>
+
+            <h2 class="text-lg font-bold text-white mt-3">Collaboration Means Following Through</h2>
+
+            <!-- VOICEOVER TRANSCRIPT -->
+            <div class="mt-4 p-3.5 rounded-xl bg-gray-900/90 border border-gray-800">
+              <div class="flex items-center gap-1.5 text-xs text-sky-400 font-semibold uppercase tracking-wider mb-1.5">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"></path></svg>
+                Spoken Voiceover & Dialogue:
+              </div>
+              <p class="text-sm text-gray-200 leading-relaxed italic">
+                "Good etiquette is more than politeness. It is also about accountability. When Maya promises to send a project update by 3 PM, she follows through. If an unexpected blocker arises, she communicates early rather than letting a deadline pass quietly. Reliability builds trust faster than good intentions alone."
+              </p>
+            </div>
+
+            <!-- VISUAL CHOREOGRAPHY & CAMERA ACTION -->
+            <div class="mt-4 space-y-1.5">
+              <p class="text-xs text-gray-400 font-semibold uppercase tracking-wider">Visual Action & Camera Coverage:</p>
+              <p class="text-xs text-gray-300 leading-relaxed">
+                Cut 1: Maya at desk typing project update with calendar clock indicating 2:45 PM. Cut 2: Macro insert on finalized email draft and milestone checklist. Cut 3: Maya sends email on time before 3:00 PM. Cut 4: Colleague receiving update with visible satisfaction. Cut 5: Open-office collaboration thriving on predictable execution.
+              </p>
+            </div>
+
+            <!-- ON-SCREEN GRAPHICS -->
+            <div class="mt-3.5 flex items-start gap-2 text-xs text-gray-400">
+              <span class="font-semibold text-gray-300 whitespace-nowrap">On-Screen Overlay:</span>
+              <span class="mono text-gray-300 bg-black/40 px-2 py-0.5 rounded border border-gray-800">FOLLOW THROUGH | Communicate Early • Protect Team Trust</span>
+            </div>
+          </div>
+
+          <!-- CLIENT COMMENT BOX -->
+          <div class="mt-5 pt-4 border-t border-gray-800/80 no-print">
+            <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wide mb-1">
+              Client Feedback / Notes for Scene 09:
+            </label>
+            <input type="text" id="note-9" oninput="saveNote(9)" placeholder="e.g., Approved as is, or specify any revision..." class="w-full text-xs px-3 py-2 rounded-lg bg-gray-900/80 border border-gray-700/80 text-gray-200 placeholder-gray-500 focus:outline-none focus:border-sky-500 transition">
+          </div>
+
+        </div>
+      </div>
+    </article>
+
+    <!-- SCENE 10 -->
+    <article id="scene-10" class="glass-card rounded-2xl overflow-hidden border border-gray-800 transition shadow-xl" data-scene="10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
+        
+        <!-- VISUAL POSTER COLUMN (5 cols) -->
+        <div class="lg:col-span-5 relative bg-black/60 flex flex-col justify-between p-4 border-b lg:border-b-0 lg:border-r border-gray-800">
+          <div class="relative group rounded-xl overflow-hidden shadow-lg border border-gray-800 bg-gray-900 aspect-video">
+            <img src="storyboard_thumbs/sc10_poster.jpg" alt="Scene 10 Poster" class="w-full h-full object-cover transition duration-300 group-hover:scale-105" loading="lazy">
+            
+            <!-- OVERLAY PLAY BUTTON -->
+            <button onclick="playSceneVideo('for approval/Scene10_Owning_Mistakes_Correction_HumanMotion.mp4', 'Scene 10: Own the Mistake, Learn from Feedback')" class="absolute inset-0 bg-black/40 group-hover:bg-black/20 flex items-center justify-center transition no-print">
+              <span class="w-14 h-14 rounded-full bg-sky-500/90 text-white flex items-center justify-center shadow-lg transform group-hover:scale-110 transition">
+                <svg class="w-6 h-6 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </span>
+            </button>
+
+            <!-- DURATION BADGE -->
+            <div class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded bg-black/80 backdrop-blur-md text-white text-[11px] font-mono font-semibold">
+              27.36s
+            </div>
+
+            <!-- CUT COUNT BADGE -->
+            <div class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded bg-sky-950/80 border border-sky-500/40 text-sky-300 text-[11px] font-semibold">
+              5 Cuts
+            </div>
+          </div>
+
+          <div class="mt-3 flex items-center justify-between no-print">
+            <button onclick="playSceneVideo('for approval/Scene10_Owning_Mistakes_Correction_HumanMotion.mp4', 'Scene 10: Own the Mistake, Learn from Feedback')" class="text-xs text-sky-400 hover:text-sky-300 font-semibold flex items-center gap-1.5 transition">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"/></svg>
+              Watch Video Clip
+            </button>
+            <span class="text-[11px] text-gray-500 font-mono">1080p @ 30fps</span>
+          </div>
+        </div>
+
+        <!-- STORYBOARD & SCRIPT COLUMN (7 cols) -->
+        <div class="lg:col-span-7 p-6 flex flex-col justify-between">
+          <div>
+            <!-- HEADER -->
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-gray-800">
+              <div class="flex items-center gap-2">
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-bold font-mono bg-sky-500/20 text-sky-400 border border-sky-500/30">
+                  SCENE 10
+                </span>
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-300 border border-indigo-500/20">
+                  Growth Mindset & Ownership
+                </span>
+              </div>
+
+              <!-- CLIENT APPROVAL TOGGLE -->
+              <div class="no-print flex items-center gap-2">
+                <label class="cursor-pointer flex items-center gap-2 text-xs font-medium text-gray-300 hover:text-white select-none">
+                  <input type="checkbox" id="chk-10" onchange="toggleApproval(10)" class="w-4 h-4 rounded text-emerald-500 bg-gray-800 border-gray-700 focus:ring-emerald-400">
+                  <span id="label-chk-10" class="text-gray-400">Approve Scene</span>
+                </label>
+              </div>
+            </div>
+
+            <h2 class="text-lg font-bold text-white mt-3">Own the Mistake, Learn from Feedback</h2>
+
+            <!-- VOICEOVER TRANSCRIPT -->
+            <div class="mt-4 p-3.5 rounded-xl bg-gray-900/90 border border-gray-800">
+              <div class="flex items-center gap-1.5 text-xs text-sky-400 font-semibold uppercase tracking-wider mb-1.5">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"></path></svg>
+                Spoken Voiceover & Dialogue:
+              </div>
+              <p class="text-sm text-gray-200 leading-relaxed italic">
+                "Mistakes happen in every workplace. When an error is spotted in a report, Maya doesn't make excuses or shift blame. She acknowledges it, fixes it quickly, and thanks the colleague who pointed it out. Handling feedback constructively turns potential friction into professional growth."
+              </p>
+            </div>
+
+            <!-- VISUAL CHOREOGRAPHY & CAMERA ACTION -->
+            <div class="mt-4 space-y-1.5">
+              <p class="text-xs text-gray-400 font-semibold uppercase tracking-wider">Visual Action & Camera Coverage:</p>
+              <p class="text-xs text-gray-300 leading-relaxed">
+                Cut 1: Colleague discreetly pointing out a discrepancy in a report. Cut 2: Maya reviewing the figure with calm composure. Cut 3: Maya acknowledging: 'Good catch, thank you. I will update it right away.' Cut 4: Maya making the swift correction on dual-monitor setup. Cut 5: Mutual nod of professional respect and collaboration.
+              </p>
+            </div>
+
+            <!-- ON-SCREEN GRAPHICS -->
+            <div class="mt-3.5 flex items-start gap-2 text-xs text-gray-400">
+              <span class="font-semibold text-gray-300 whitespace-nowrap">On-Screen Overlay:</span>
+              <span class="mono text-gray-300 bg-black/40 px-2 py-0.5 rounded border border-gray-800">OWN THE MISTAKE | Acknowledge Quickly • Fix Thoroughly • Thank Colleague</span>
+            </div>
+          </div>
+
+          <!-- CLIENT COMMENT BOX -->
+          <div class="mt-5 pt-4 border-t border-gray-800/80 no-print">
+            <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wide mb-1">
+              Client Feedback / Notes for Scene 10:
+            </label>
+            <input type="text" id="note-10" oninput="saveNote(10)" placeholder="e.g., Approved as is, or specify any revision..." class="w-full text-xs px-3 py-2 rounded-lg bg-gray-900/80 border border-gray-700/80 text-gray-200 placeholder-gray-500 focus:outline-none focus:border-sky-500 transition">
+          </div>
+
+        </div>
+      </div>
+    </article>
+
+    <!-- SCENE 11 -->
+    <article id="scene-11" class="glass-card rounded-2xl overflow-hidden border border-gray-800 transition shadow-xl" data-scene="11">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
+        
+        <!-- VISUAL POSTER COLUMN (5 cols) -->
+        <div class="lg:col-span-5 relative bg-black/60 flex flex-col justify-between p-4 border-b lg:border-b-0 lg:border-r border-gray-800">
+          <div class="relative group rounded-xl overflow-hidden shadow-lg border border-gray-800 bg-gray-900 aspect-video">
+            <img src="storyboard_thumbs/sc11_poster.jpg" alt="Scene 11 Poster" class="w-full h-full object-cover transition duration-300 group-hover:scale-105" loading="lazy">
+            
+            <!-- OVERLAY PLAY BUTTON -->
+            <button onclick="playSceneVideo('for approval/Scene11_Client_Calls_Commitments_HumanMotion.mp4', 'Scene 11: Every Interaction Represents Us')" class="absolute inset-0 bg-black/40 group-hover:bg-black/20 flex items-center justify-center transition no-print">
+              <span class="w-14 h-14 rounded-full bg-sky-500/90 text-white flex items-center justify-center shadow-lg transform group-hover:scale-110 transition">
+                <svg class="w-6 h-6 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </span>
+            </button>
+
+            <!-- DURATION BADGE -->
+            <div class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded bg-black/80 backdrop-blur-md text-white text-[11px] font-mono font-semibold">
+              36.80s
+            </div>
+
+            <!-- CUT COUNT BADGE -->
+            <div class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded bg-sky-950/80 border border-sky-500/40 text-sky-300 text-[11px] font-semibold">
+              5 Cuts
+            </div>
+          </div>
+
+          <div class="mt-3 flex items-center justify-between no-print">
+            <button onclick="playSceneVideo('for approval/Scene11_Client_Calls_Commitments_HumanMotion.mp4', 'Scene 11: Every Interaction Represents Us')" class="text-xs text-sky-400 hover:text-sky-300 font-semibold flex items-center gap-1.5 transition">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"/></svg>
+              Watch Video Clip
+            </button>
+            <span class="text-[11px] text-gray-500 font-mono">1080p @ 30fps</span>
+          </div>
+        </div>
+
+        <!-- STORYBOARD & SCRIPT COLUMN (7 cols) -->
+        <div class="lg:col-span-7 p-6 flex flex-col justify-between">
+          <div>
+            <!-- HEADER -->
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-gray-800">
+              <div class="flex items-center gap-2">
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-bold font-mono bg-sky-500/20 text-sky-400 border border-sky-500/30">
+                  SCENE 11
+                </span>
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-300 border border-indigo-500/20">
+                  External Client Representation
+                </span>
+              </div>
+
+              <!-- CLIENT APPROVAL TOGGLE -->
+              <div class="no-print flex items-center gap-2">
+                <label class="cursor-pointer flex items-center gap-2 text-xs font-medium text-gray-300 hover:text-white select-none">
+                  <input type="checkbox" id="chk-11" onchange="toggleApproval(11)" class="w-4 h-4 rounded text-emerald-500 bg-gray-800 border-gray-700 focus:ring-emerald-400">
+                  <span id="label-chk-11" class="text-gray-400">Approve Scene</span>
+                </label>
+              </div>
+            </div>
+
+            <h2 class="text-lg font-bold text-white mt-3">Every Interaction Represents Us</h2>
+
+            <!-- VOICEOVER TRANSCRIPT -->
+            <div class="mt-4 p-3.5 rounded-xl bg-gray-900/90 border border-gray-800">
+              <div class="flex items-center gap-1.5 text-xs text-sky-400 font-semibold uppercase tracking-wider mb-1.5">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"></path></svg>
+                Spoken Voiceover & Dialogue:
+              </div>
+              <p class="text-sm text-gray-200 leading-relaxed italic">
+                "When speaking with clients, partners, or vendors, our tone and professionalism reflect on the entire organization. Maya prepares thoroughly, speaks clearly, and follows up promptly with written minutes. Professionalism is not a performance for special occasions—it is a daily standard."
+              </p>
+            </div>
+
+            <!-- VISUAL CHOREOGRAPHY & CAMERA ACTION -->
+            <div class="mt-4 space-y-1.5">
+              <p class="text-xs text-gray-400 font-semibold uppercase tracking-wider">Visual Action & Camera Coverage:</p>
+              <p class="text-xs text-gray-300 leading-relaxed">
+                Cut 1: Maya in video conference with external client; professional posture and clean background. Cut 2: Client smiling and nodding on screen during presentation. Cut 3: Maya summarizing agreed deliverables clearly. Cut 4: Maya drafting concise written meeting minutes immediately after call. Cut 5: Client reviewing email with confidence in Ideabytes partnership.
+              </p>
+            </div>
+
+            <!-- ON-SCREEN GRAPHICS -->
+            <div class="mt-3.5 flex items-start gap-2 text-xs text-gray-400">
+              <span class="font-semibold text-gray-300 whitespace-nowrap">On-Screen Overlay:</span>
+              <span class="mono text-gray-300 bg-black/40 px-2 py-0.5 rounded border border-gray-800">REPRESENTING THE BRAND | Daily Standards of Excellence & Follow-Through</span>
+            </div>
+          </div>
+
+          <!-- CLIENT COMMENT BOX -->
+          <div class="mt-5 pt-4 border-t border-gray-800/80 no-print">
+            <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wide mb-1">
+              Client Feedback / Notes for Scene 11:
+            </label>
+            <input type="text" id="note-11" oninput="saveNote(11)" placeholder="e.g., Approved as is, or specify any revision..." class="w-full text-xs px-3 py-2 rounded-lg bg-gray-900/80 border border-gray-700/80 text-gray-200 placeholder-gray-500 focus:outline-none focus:border-sky-500 transition">
+          </div>
+
+        </div>
+      </div>
+    </article>
+
+    <!-- SCENE 12 -->
+    <article id="scene-12" class="glass-card rounded-2xl overflow-hidden border border-gray-800 transition shadow-xl" data-scene="12">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
+        
+        <!-- VISUAL POSTER COLUMN (5 cols) -->
+        <div class="lg:col-span-5 relative bg-black/60 flex flex-col justify-between p-4 border-b lg:border-b-0 lg:border-r border-gray-800">
+          <div class="relative group rounded-xl overflow-hidden shadow-lg border border-gray-800 bg-gray-900 aspect-video">
+            <img src="storyboard_thumbs/sc12_poster.jpg" alt="Scene 12 Poster" class="w-full h-full object-cover transition duration-300 group-hover:scale-105" loading="lazy">
+            
+            <!-- OVERLAY PLAY BUTTON -->
+            <button onclick="playSceneVideo('for approval/Scene12_Discretion_Screen_Sharing_HumanMotion.mp4', 'Scene 12: Pause Before You Share')" class="absolute inset-0 bg-black/40 group-hover:bg-black/20 flex items-center justify-center transition no-print">
+              <span class="w-14 h-14 rounded-full bg-sky-500/90 text-white flex items-center justify-center shadow-lg transform group-hover:scale-110 transition">
+                <svg class="w-6 h-6 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </span>
+            </button>
+
+            <!-- DURATION BADGE -->
+            <div class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded bg-black/80 backdrop-blur-md text-white text-[11px] font-mono font-semibold">
+              27.38s
+            </div>
+
+            <!-- CUT COUNT BADGE -->
+            <div class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded bg-sky-950/80 border border-sky-500/40 text-sky-300 text-[11px] font-semibold">
+              6 Cuts
+            </div>
+          </div>
+
+          <div class="mt-3 flex items-center justify-between no-print">
+            <button onclick="playSceneVideo('for approval/Scene12_Discretion_Screen_Sharing_HumanMotion.mp4', 'Scene 12: Pause Before You Share')" class="text-xs text-sky-400 hover:text-sky-300 font-semibold flex items-center gap-1.5 transition">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"/></svg>
+              Watch Video Clip
+            </button>
+            <span class="text-[11px] text-gray-500 font-mono">1080p @ 30fps</span>
+          </div>
+        </div>
+
+        <!-- STORYBOARD & SCRIPT COLUMN (7 cols) -->
+        <div class="lg:col-span-7 p-6 flex flex-col justify-between">
+          <div>
+            <!-- HEADER -->
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-gray-800">
+              <div class="flex items-center gap-2">
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-bold font-mono bg-sky-500/20 text-sky-400 border border-sky-500/30">
+                  SCENE 12
+                </span>
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-300 border border-indigo-500/20">
+                  Discretion & Digital Privacy
+                </span>
+              </div>
+
+              <!-- CLIENT APPROVAL TOGGLE -->
+              <div class="no-print flex items-center gap-2">
+                <label class="cursor-pointer flex items-center gap-2 text-xs font-medium text-gray-300 hover:text-white select-none">
+                  <input type="checkbox" id="chk-12" onchange="toggleApproval(12)" class="w-4 h-4 rounded text-emerald-500 bg-gray-800 border-gray-700 focus:ring-emerald-400">
+                  <span id="label-chk-12" class="text-gray-400">Approve Scene</span>
+                </label>
+              </div>
+            </div>
+
+            <h2 class="text-lg font-bold text-white mt-3">Pause Before You Share</h2>
+
+            <!-- VOICEOVER TRANSCRIPT -->
+            <div class="mt-4 p-3.5 rounded-xl bg-gray-900/90 border border-gray-800">
+              <div class="flex items-center gap-1.5 text-xs text-sky-400 font-semibold uppercase tracking-wider mb-1.5">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"></path></svg>
+                Spoken Voiceover & Dialogue:
+              </div>
+              <p class="text-sm text-gray-200 leading-relaxed italic">
+                "Before sharing her screen, Maya checks what is visible. She closes unrelated files and shares only what the meeting requires. She avoids discussing confidential information in public spaces and treats colleagues' personal information with discretion. Professional judgment means recognising not just what we can say or share, but what we should—and who genuinely needs to know."
+              </p>
+            </div>
+
+            <!-- VISUAL CHOREOGRAPHY & CAMERA ACTION -->
+            <div class="mt-4 space-y-1.5">
+              <p class="text-xs text-gray-400 font-semibold uppercase tracking-wider">Visual Action & Camera Coverage:</p>
+              <p class="text-xs text-gray-300 leading-relaxed">
+                Cut 1: Maya preparing to share screen in virtual meeting. Cut 2: Close-up of laptop desktop; closing personal chat tabs and unrelated docs. Cut 3: Maya selecting single application window to share instead of entire desktop. Cut 4: Meeting participants viewing only clean, relevant presentation. Cut 5: Maya speaking discreetly in quiet phone booth. Cut 6: Professional confidentiality maintained.
+              </p>
+            </div>
+
+            <!-- ON-SCREEN GRAPHICS -->
+            <div class="mt-3.5 flex items-start gap-2 text-xs text-gray-400">
+              <span class="font-semibold text-gray-300 whitespace-nowrap">On-Screen Overlay:</span>
+              <span class="mono text-gray-300 bg-black/40 px-2 py-0.5 rounded border border-gray-800">PAUSE BEFORE YOU SHARE | Discretion • Data Privacy • Clean Screens</span>
+            </div>
+          </div>
+
+          <!-- CLIENT COMMENT BOX -->
+          <div class="mt-5 pt-4 border-t border-gray-800/80 no-print">
+            <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wide mb-1">
+              Client Feedback / Notes for Scene 12:
+            </label>
+            <input type="text" id="note-12" oninput="saveNote(12)" placeholder="e.g., Approved as is, or specify any revision..." class="w-full text-xs px-3 py-2 rounded-lg bg-gray-900/80 border border-gray-700/80 text-gray-200 placeholder-gray-500 focus:outline-none focus:border-sky-500 transition">
+          </div>
+
+        </div>
+      </div>
+    </article>
+
+    <!-- SCENE 13 -->
+    <article id="scene-13" class="glass-card rounded-2xl overflow-hidden border border-gray-800 transition shadow-xl" data-scene="13">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
+        
+        <!-- VISUAL POSTER COLUMN (5 cols) -->
+        <div class="lg:col-span-5 relative bg-black/60 flex flex-col justify-between p-4 border-b lg:border-b-0 lg:border-r border-gray-800">
+          <div class="relative group rounded-xl overflow-hidden shadow-lg border border-gray-800 bg-gray-900 aspect-video">
+            <img src="storyboard_thumbs/sc13_poster.jpg" alt="Scene 13 Poster" class="w-full h-full object-cover transition duration-300 group-hover:scale-105" loading="lazy">
+            
+            <!-- OVERLAY PLAY BUTTON -->
+            <button onclick="playSceneVideo('for approval/Scene13_Adapting_Working_Styles_HumanMotion.mp4', 'Scene 13: Adapt to the Situation')" class="absolute inset-0 bg-black/40 group-hover:bg-black/20 flex items-center justify-center transition no-print">
+              <span class="w-14 h-14 rounded-full bg-sky-500/90 text-white flex items-center justify-center shadow-lg transform group-hover:scale-110 transition">
+                <svg class="w-6 h-6 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </span>
+            </button>
+
+            <!-- DURATION BADGE -->
+            <div class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded bg-black/80 backdrop-blur-md text-white text-[11px] font-mono font-semibold">
+              42.57s
+            </div>
+
+            <!-- CUT COUNT BADGE -->
+            <div class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded bg-sky-950/80 border border-sky-500/40 text-sky-300 text-[11px] font-semibold">
+              9 Cuts
+            </div>
+          </div>
+
+          <div class="mt-3 flex items-center justify-between no-print">
+            <button onclick="playSceneVideo('for approval/Scene13_Adapting_Working_Styles_HumanMotion.mp4', 'Scene 13: Adapt to the Situation')" class="text-xs text-sky-400 hover:text-sky-300 font-semibold flex items-center gap-1.5 transition">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"/></svg>
+              Watch Video Clip
+            </button>
+            <span class="text-[11px] text-gray-500 font-mono">1080p @ 30fps</span>
+          </div>
+        </div>
+
+        <!-- STORYBOARD & SCRIPT COLUMN (7 cols) -->
+        <div class="lg:col-span-7 p-6 flex flex-col justify-between">
+          <div>
+            <!-- HEADER -->
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-gray-800">
+              <div class="flex items-center gap-2">
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-bold font-mono bg-sky-500/20 text-sky-400 border border-sky-500/30">
+                  SCENE 13
+                </span>
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-300 border border-indigo-500/20">
+                  Working Styles & Cognitive Diversity
+                </span>
+              </div>
+
+              <!-- CLIENT APPROVAL TOGGLE -->
+              <div class="no-print flex items-center gap-2">
+                <label class="cursor-pointer flex items-center gap-2 text-xs font-medium text-gray-300 hover:text-white select-none">
+                  <input type="checkbox" id="chk-13" onchange="toggleApproval(13)" class="w-4 h-4 rounded text-emerald-500 bg-gray-800 border-gray-700 focus:ring-emerald-400">
+                  <span id="label-chk-13" class="text-gray-400">Approve Scene</span>
+                </label>
+              </div>
+            </div>
+
+            <h2 class="text-lg font-bold text-white mt-3">Adapt to the Situation</h2>
+
+            <!-- VOICEOVER TRANSCRIPT -->
+            <div class="mt-4 p-3.5 rounded-xl bg-gray-900/90 border border-gray-800">
+              <div class="flex items-center gap-1.5 text-xs text-sky-400 font-semibold uppercase tracking-wider mb-1.5">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"></path></svg>
+                Spoken Voiceover & Dialogue:
+              </div>
+              <p class="text-sm text-gray-200 leading-relaxed italic">
+                "As Maya continues working with her team, she notices that people have different working styles. Maya: 'Based on the client feedback, I think we should move this milestone to next week. What do you think? Would you prefer a little time to review this before sharing your thoughts?' Rohan: 'Yes, that would help. I can review the details and send you my suggestions.' Maya: 'Perfect. Let's do that.' People don't always communicate or work in the same way. Maya doesn't assume her teammate's silence means a lack of interest. She asks a question and adapts her approach. Respecting differences means staying curious, avoiding assumptions and finding ways to work effectively together."
+              </p>
+            </div>
+
+            <!-- VISUAL CHOREOGRAPHY & CAMERA ACTION -->
+            <div class="mt-4 space-y-1.5">
+              <p class="text-xs text-gray-400 font-semibold uppercase tracking-wider">Visual Action & Camera Coverage:</p>
+              <p class="text-xs text-gray-300 leading-relaxed">
+                Cut 1: Maya reviewing milestone schedule with Rohan (Indian software engineer in navy shirt). Cut 2: Macro insert on Gantt chart schedule. Cut 3: Maya offering patient reflection time. Cut 4: Rohan lip-synced reply with expressive smile. Cut 5: Mutual agreement and notes. Cut 6: Modern office workplace diversity. Cut 7: Rohan at desk with clean brushed aluminum laptop lid analyzing details. Cut 8: Maya attentive active listening. Cut 9: Collaborative harmony.
+              </p>
+            </div>
+
+            <!-- ON-SCREEN GRAPHICS -->
+            <div class="mt-3.5 flex items-start gap-2 text-xs text-gray-400">
+              <span class="font-semibold text-gray-300 whitespace-nowrap">On-Screen Overlay:</span>
+              <span class="mono text-gray-300 bg-black/40 px-2 py-0.5 rounded border border-gray-800">DIFFERENT PERSPECTIVES, EQUAL RESPECT | Adapt Your Approach • Stay Curious</span>
+            </div>
+          </div>
+
+          <!-- CLIENT COMMENT BOX -->
+          <div class="mt-5 pt-4 border-t border-gray-800/80 no-print">
+            <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wide mb-1">
+              Client Feedback / Notes for Scene 13:
+            </label>
+            <input type="text" id="note-13" oninput="saveNote(13)" placeholder="e.g., Approved as is, or specify any revision..." class="w-full text-xs px-3 py-2 rounded-lg bg-gray-900/80 border border-gray-700/80 text-gray-200 placeholder-gray-500 focus:outline-none focus:border-sky-500 transition">
+          </div>
+
+        </div>
+      </div>
+    </article>
+
+    <!-- SCENE 14 -->
+    <article id="scene-14" class="glass-card rounded-2xl overflow-hidden border border-gray-800 transition shadow-xl" data-scene="14">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
+        
+        <!-- VISUAL POSTER COLUMN (5 cols) -->
+        <div class="lg:col-span-5 relative bg-black/60 flex flex-col justify-between p-4 border-b lg:border-b-0 lg:border-r border-gray-800">
+          <div class="relative group rounded-xl overflow-hidden shadow-lg border border-gray-800 bg-gray-900 aspect-video">
+            <img src="storyboard_thumbs/sc14_poster.jpg" alt="Scene 14 Poster" class="w-full h-full object-cover transition duration-300 group-hover:scale-105" loading="lazy">
+            
+            <!-- OVERLAY PLAY BUTTON -->
+            <button onclick="playSceneVideo('for approval/Scene14_Six_Pillars_Summary_HumanMotion.mp4', 'Scene 14: The Choice is in the Small Moments')" class="absolute inset-0 bg-black/40 group-hover:bg-black/20 flex items-center justify-center transition no-print">
+              <span class="w-14 h-14 rounded-full bg-sky-500/90 text-white flex items-center justify-center shadow-lg transform group-hover:scale-110 transition">
+                <svg class="w-6 h-6 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </span>
+            </button>
+
+            <!-- DURATION BADGE -->
+            <div class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded bg-black/80 backdrop-blur-md text-white text-[11px] font-mono font-semibold">
+              25.56s
+            </div>
+
+            <!-- CUT COUNT BADGE -->
+            <div class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded bg-sky-950/80 border border-sky-500/40 text-sky-300 text-[11px] font-semibold">
+              5 Cuts
+            </div>
+          </div>
+
+          <div class="mt-3 flex items-center justify-between no-print">
+            <button onclick="playSceneVideo('for approval/Scene14_Six_Pillars_Summary_HumanMotion.mp4', 'Scene 14: The Choice is in the Small Moments')" class="text-xs text-sky-400 hover:text-sky-300 font-semibold flex items-center gap-1.5 transition">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"/></svg>
+              Watch Video Clip
+            </button>
+            <span class="text-[11px] text-gray-500 font-mono">1080p @ 30fps</span>
+          </div>
+        </div>
+
+        <!-- STORYBOARD & SCRIPT COLUMN (7 cols) -->
+        <div class="lg:col-span-7 p-6 flex flex-col justify-between">
+          <div>
+            <!-- HEADER -->
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-gray-800">
+              <div class="flex items-center gap-2">
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-bold font-mono bg-sky-500/20 text-sky-400 border border-sky-500/30">
+                  SCENE 14
+                </span>
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-300 border border-indigo-500/20">
+                  The Six Pillars Summary
+                </span>
+              </div>
+
+              <!-- CLIENT APPROVAL TOGGLE -->
+              <div class="no-print flex items-center gap-2">
+                <label class="cursor-pointer flex items-center gap-2 text-xs font-medium text-gray-300 hover:text-white select-none">
+                  <input type="checkbox" id="chk-14" onchange="toggleApproval(14)" class="w-4 h-4 rounded text-emerald-500 bg-gray-800 border-gray-700 focus:ring-emerald-400">
+                  <span id="label-chk-14" class="text-gray-400">Approve Scene</span>
+                </label>
+              </div>
+            </div>
+
+            <h2 class="text-lg font-bold text-white mt-3">The Choice is in the Small Moments</h2>
+
+            <!-- VOICEOVER TRANSCRIPT -->
+            <div class="mt-4 p-3.5 rounded-xl bg-gray-900/90 border border-gray-800">
+              <div class="flex items-center gap-1.5 text-xs text-sky-400 font-semibold uppercase tracking-wider mb-1.5">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"></path></svg>
+                Spoken Voiceover & Dialogue:
+              </div>
+              <p class="text-sm text-gray-200 leading-relaxed italic">
+                "By the end of the day, Maya has not followed a complicated rulebook. She has made a series of thoughtful choices: acknowledge people, listen before responding, respect shared time and space, keep commitments, own mistakes and use good judgment. These small actions make collaboration easier and help build a workplace where people can trust one another."
+              </p>
+            </div>
+
+            <!-- VISUAL CHOREOGRAPHY & CAMERA ACTION -->
+            <div class="mt-4 space-y-1.5">
+              <p class="text-xs text-gray-400 font-semibold uppercase tracking-wider">Visual Action & Camera Coverage:</p>
+              <p class="text-xs text-gray-300 leading-relaxed">
+                Cut 1: Fast-paced recap callback: greeting colleague in corridor. Cut 2: Listening attentively in team meeting. Cut 3: Clean desk and pushed-in chairs in conference room. Cut 4: Timely delivery of commitment. Cut 5: Confident, collaborative team standing together.
+              </p>
+            </div>
+
+            <!-- ON-SCREEN GRAPHICS -->
+            <div class="mt-3.5 flex items-start gap-2 text-xs text-gray-400">
+              <span class="font-semibold text-gray-300 whitespace-nowrap">On-Screen Overlay:</span>
+              <span class="mono text-gray-300 bg-black/40 px-2 py-0.5 rounded border border-gray-800">THE SIX PILLARS OF ETIQUETTE | Everyday Choices that Build Trust</span>
+            </div>
+          </div>
+
+          <!-- CLIENT COMMENT BOX -->
+          <div class="mt-5 pt-4 border-t border-gray-800/80 no-print">
+            <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wide mb-1">
+              Client Feedback / Notes for Scene 14:
+            </label>
+            <input type="text" id="note-14" oninput="saveNote(14)" placeholder="e.g., Approved as is, or specify any revision..." class="w-full text-xs px-3 py-2 rounded-lg bg-gray-900/80 border border-gray-700/80 text-gray-200 placeholder-gray-500 focus:outline-none focus:border-sky-500 transition">
+          </div>
+
+        </div>
+      </div>
+    </article>
+
+    <!-- SCENE 15 -->
+    <article id="scene-15" class="glass-card rounded-2xl overflow-hidden border border-gray-800 transition shadow-xl" data-scene="15">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
+        
+        <!-- VISUAL POSTER COLUMN (5 cols) -->
+        <div class="lg:col-span-5 relative bg-black/60 flex flex-col justify-between p-4 border-b lg:border-b-0 lg:border-r border-gray-800">
+          <div class="relative group rounded-xl overflow-hidden shadow-lg border border-gray-800 bg-gray-900 aspect-video">
+            <img src="storyboard_thumbs/sc15_poster.jpg" alt="Scene 15 Poster" class="w-full h-full object-cover transition duration-300 group-hover:scale-105" loading="lazy">
+            
+            <!-- OVERLAY PLAY BUTTON -->
+            <button onclick="playSceneVideo('for approval/Scene15_Moments_Of_Reflection_HumanMotion.mp4', 'Scene 15: Take It Into Your Next Interaction')" class="absolute inset-0 bg-black/40 group-hover:bg-black/20 flex items-center justify-center transition no-print">
+              <span class="w-14 h-14 rounded-full bg-sky-500/90 text-white flex items-center justify-center shadow-lg transform group-hover:scale-110 transition">
+                <svg class="w-6 h-6 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </span>
+            </button>
+
+            <!-- DURATION BADGE -->
+            <div class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded bg-black/80 backdrop-blur-md text-white text-[11px] font-mono font-semibold">
+              28.37s
+            </div>
+
+            <!-- CUT COUNT BADGE -->
+            <div class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded bg-sky-950/80 border border-sky-500/40 text-sky-300 text-[11px] font-semibold">
+              4 Cuts
+            </div>
+          </div>
+
+          <div class="mt-3 flex items-center justify-between no-print">
+            <button onclick="playSceneVideo('for approval/Scene15_Moments_Of_Reflection_HumanMotion.mp4', 'Scene 15: Take It Into Your Next Interaction')" class="text-xs text-sky-400 hover:text-sky-300 font-semibold flex items-center gap-1.5 transition">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"/></svg>
+              Watch Video Clip
+            </button>
+            <span class="text-[11px] text-gray-500 font-mono">1080p @ 30fps</span>
+          </div>
+        </div>
+
+        <!-- STORYBOARD & SCRIPT COLUMN (7 cols) -->
+        <div class="lg:col-span-7 p-6 flex flex-col justify-between">
+          <div>
+            <!-- HEADER -->
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-gray-800">
+              <div class="flex items-center gap-2">
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-bold font-mono bg-sky-500/20 text-sky-400 border border-sky-500/30">
+                  SCENE 15
+                </span>
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-300 border border-indigo-500/20">
+                  The Three Reflective Questions
+                </span>
+              </div>
+
+              <!-- CLIENT APPROVAL TOGGLE -->
+              <div class="no-print flex items-center gap-2">
+                <label class="cursor-pointer flex items-center gap-2 text-xs font-medium text-gray-300 hover:text-white select-none">
+                  <input type="checkbox" id="chk-15" onchange="toggleApproval(15)" class="w-4 h-4 rounded text-emerald-500 bg-gray-800 border-gray-700 focus:ring-emerald-400">
+                  <span id="label-chk-15" class="text-gray-400">Approve Scene</span>
+                </label>
+              </div>
+            </div>
+
+            <h2 class="text-lg font-bold text-white mt-3">Take It Into Your Next Interaction</h2>
+
+            <!-- VOICEOVER TRANSCRIPT -->
+            <div class="mt-4 p-3.5 rounded-xl bg-gray-900/90 border border-gray-800">
+              <div class="flex items-center gap-1.5 text-xs text-sky-400 font-semibold uppercase tracking-wider mb-1.5">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"></path></svg>
+                Spoken Voiceover & Dialogue:
+              </div>
+              <p class="text-sm text-gray-200 leading-relaxed italic">
+                "Before your next interaction, take a moment to consider three questions. Am I being respectful? Am I considering the time, needs and perspectives of others? Am I using good judgment with my words, actions and information? Workplace etiquette is not about perfection or appearances. It is about making thoughtful choices, consistently, even when nobody is watching."
+              </p>
+            </div>
+
+            <!-- VISUAL CHOREOGRAPHY & CAMERA ACTION -->
+            <div class="mt-4 space-y-1.5">
+              <p class="text-xs text-gray-400 font-semibold uppercase tracking-wider">Visual Action & Camera Coverage:</p>
+              <p class="text-xs text-gray-300 leading-relaxed">
+                Cut 1: Clean animated card: 'Am I being respectful?'. Cut 2: Second prompt: 'Am I considering others?'. Cut 3: Third prompt: 'Am I using good judgment?'. Cut 4: Maya stepping into an interaction with calm, deliberate empathy.
+              </p>
+            </div>
+
+            <!-- ON-SCREEN GRAPHICS -->
+            <div class="mt-3.5 flex items-start gap-2 text-xs text-gray-400">
+              <span class="font-semibold text-gray-300 whitespace-nowrap">On-Screen Overlay:</span>
+              <span class="mono text-gray-300 bg-black/40 px-2 py-0.5 rounded border border-gray-800">THREE KEY QUESTIONS | Respectful • Considerate • Discerning</span>
+            </div>
+          </div>
+
+          <!-- CLIENT COMMENT BOX -->
+          <div class="mt-5 pt-4 border-t border-gray-800/80 no-print">
+            <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wide mb-1">
+              Client Feedback / Notes for Scene 15:
+            </label>
+            <input type="text" id="note-15" oninput="saveNote(15)" placeholder="e.g., Approved as is, or specify any revision..." class="w-full text-xs px-3 py-2 rounded-lg bg-gray-900/80 border border-gray-700/80 text-gray-200 placeholder-gray-500 focus:outline-none focus:border-sky-500 transition">
+          </div>
+
+        </div>
+      </div>
+    </article>
+
+    <!-- SCENE 16 -->
+    <article id="scene-16" class="glass-card rounded-2xl overflow-hidden border border-gray-800 transition shadow-xl" data-scene="16">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
+        
+        <!-- VISUAL POSTER COLUMN (5 cols) -->
+        <div class="lg:col-span-5 relative bg-black/60 flex flex-col justify-between p-4 border-b lg:border-b-0 lg:border-r border-gray-800">
+          <div class="relative group rounded-xl overflow-hidden shadow-lg border border-gray-800 bg-gray-900 aspect-video">
+            <img src="storyboard_thumbs/sc16_poster.jpg" alt="Scene 16 Poster" class="w-full h-full object-cover transition duration-300 group-hover:scale-105" loading="lazy">
+            
+            <!-- OVERLAY PLAY BUTTON -->
+            <button onclick="playSceneVideo('for approval/Scene16_Work_Better_Together_HumanMotion.mp4', 'Scene 16: Closing: How We Work Together Matters')" class="absolute inset-0 bg-black/40 group-hover:bg-black/20 flex items-center justify-center transition no-print">
+              <span class="w-14 h-14 rounded-full bg-sky-500/90 text-white flex items-center justify-center shadow-lg transform group-hover:scale-110 transition">
+                <svg class="w-6 h-6 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </span>
+            </button>
+
+            <!-- DURATION BADGE -->
+            <div class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded bg-black/80 backdrop-blur-md text-white text-[11px] font-mono font-semibold">
+              07.75s
+            </div>
+
+            <!-- CUT COUNT BADGE -->
+            <div class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded bg-sky-950/80 border border-sky-500/40 text-sky-300 text-[11px] font-semibold">
+              2 Cuts
+            </div>
+          </div>
+
+          <div class="mt-3 flex items-center justify-between no-print">
+            <button onclick="playSceneVideo('for approval/Scene16_Work_Better_Together_HumanMotion.mp4', 'Scene 16: Closing: How We Work Together Matters')" class="text-xs text-sky-400 hover:text-sky-300 font-semibold flex items-center gap-1.5 transition">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"/></svg>
+              Watch Video Clip
+            </button>
+            <span class="text-[11px] text-gray-500 font-mono">1080p @ 30fps</span>
+          </div>
+        </div>
+
+        <!-- STORYBOARD & SCRIPT COLUMN (7 cols) -->
+        <div class="lg:col-span-7 p-6 flex flex-col justify-between">
+          <div>
+            <!-- HEADER -->
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-gray-800">
+              <div class="flex items-center gap-2">
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-bold font-mono bg-sky-500/20 text-sky-400 border border-sky-500/30">
+                  SCENE 16
+                </span>
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-300 border border-indigo-500/20">
+                  Course Signature & Outro
+                </span>
+              </div>
+
+              <!-- CLIENT APPROVAL TOGGLE -->
+              <div class="no-print flex items-center gap-2">
+                <label class="cursor-pointer flex items-center gap-2 text-xs font-medium text-gray-300 hover:text-white select-none">
+                  <input type="checkbox" id="chk-16" onchange="toggleApproval(16)" class="w-4 h-4 rounded text-emerald-500 bg-gray-800 border-gray-700 focus:ring-emerald-400">
+                  <span id="label-chk-16" class="text-gray-400">Approve Scene</span>
+                </label>
+              </div>
+            </div>
+
+            <h2 class="text-lg font-bold text-white mt-3">Closing: How We Work Together Matters</h2>
+
+            <!-- VOICEOVER TRANSCRIPT -->
+            <div class="mt-4 p-3.5 rounded-xl bg-gray-900/90 border border-gray-800">
+              <div class="flex items-center gap-1.5 text-xs text-sky-400 font-semibold uppercase tracking-wider mb-1.5">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"></path></svg>
+                Spoken Voiceover & Dialogue:
+              </div>
+              <p class="text-sm text-gray-200 leading-relaxed italic">
+                "The way we work with people matters as much as the work we deliver. Make every interaction count."
+              </p>
+            </div>
+
+            <!-- VISUAL CHOREOGRAPHY & CAMERA ACTION -->
+            <div class="mt-4 space-y-1.5">
+              <p class="text-xs text-gray-400 font-semibold uppercase tracking-wider">Visual Action & Camera Coverage:</p>
+              <p class="text-xs text-gray-300 leading-relaxed">
+                Cut 1: Maya and team in modern office smiling and working collaboratively. Cut 2: Branded Ideabytes corporate closing card.
+              </p>
+            </div>
+
+            <!-- ON-SCREEN GRAPHICS -->
+            <div class="mt-3.5 flex items-start gap-2 text-xs text-gray-400">
+              <span class="font-semibold text-gray-300 whitespace-nowrap">On-Screen Overlay:</span>
+              <span class="mono text-gray-300 bg-black/40 px-2 py-0.5 rounded border border-gray-800">IDEABYTES INC. | How We Work with People Matters • Make Every Interaction Count</span>
+            </div>
+          </div>
+
+          <!-- CLIENT COMMENT BOX -->
+          <div class="mt-5 pt-4 border-t border-gray-800/80 no-print">
+            <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wide mb-1">
+              Client Feedback / Notes for Scene 16:
+            </label>
+            <input type="text" id="note-16" oninput="saveNote(16)" placeholder="e.g., Approved as is, or specify any revision..." class="w-full text-xs px-3 py-2 rounded-lg bg-gray-900/80 border border-gray-700/80 text-gray-200 placeholder-gray-500 focus:outline-none focus:border-sky-500 transition">
+          </div>
+
+        </div>
+      </div>
+    </article>
+
+  </main>
+
+  <!-- VIDEO PLAYER MODAL -->
+  <div id="video-modal" class="fixed inset-0 z-50 bg-black/90 backdrop-blur-md flex items-center justify-center p-4 hidden no-print">
+    <div class="relative w-full max-w-4xl bg-gray-900 rounded-2xl overflow-hidden border border-gray-700 shadow-2xl">
+      <!-- MODAL HEADER -->
+      <div class="px-5 py-3.5 bg-gray-800/90 border-b border-gray-700 flex items-center justify-between">
+        <h3 id="modal-video-title" class="text-sm font-bold text-white truncate">Scene Preview</h3>
+        <button onclick="closeVideoModal()" class="w-8 h-8 rounded-full bg-gray-700 hover:bg-gray-600 text-gray-200 flex items-center justify-center transition">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+      </div>
+
+      <!-- VIDEO EMBED -->
+      <div class="relative bg-black aspect-video flex items-center justify-center">
+        <video id="modal-player" controls class="w-full h-full object-contain">
+          <source id="modal-source" src="" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <!-- MODAL FOOTER -->
+      <div class="px-5 py-3 bg-gray-900 flex items-center justify-between text-xs text-gray-400">
+        <span>Press ESC to close</span>
+        <button onclick="closeVideoModal()" class="px-3 py-1.5 rounded bg-gray-800 hover:bg-gray-700 text-gray-200 font-semibold transition">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FLOATING FEEDBACK TOAST -->
+  <div id="toast" class="fixed bottom-6 right-6 px-4 py-2.5 rounded-xl bg-emerald-600 text-white text-xs font-semibold shadow-2xl transition transform translate-y-24 opacity-0 pointer-events-none z-50 flex items-center gap-2">
+    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+    <span id="toast-msg">Copied to clipboard!</span>
+  </div>
+
+  <!-- INTERACTION SCRIPT -->
+  <script>
+    const TOTAL_SCENES = 16;
+
+    function loadSavedState() {
+      let approvedCount = 0;
+      for (let i = 1; i <= TOTAL_SCENES; i++) {
+        const approved = localStorage.getItem('sc_approved_' + i) === 'true';
+        const note = localStorage.getItem('sc_note_' + i) || '';
+        
+        const chk = document.getElementById('chk-' + i);
+        const label = document.getElementById('label-chk-' + i);
+        const inputNote = document.getElementById('note-' + i);
+        const card = document.getElementById('scene-' + String(i).padStart(2, '0'));
+
+        if (chk && label) {
+          chk.checked = approved;
+          if (approved) {
+            approvedCount++;
+            label.textContent = '✓ Approved';
+            label.classList.add('text-emerald-400', 'font-bold');
+            label.classList.remove('text-gray-400');
+            card.classList.add('border-emerald-500/40');
+          } else {
+            label.textContent = 'Approve Scene';
+            label.classList.remove('text-emerald-400', 'font-bold');
+            label.classList.add('text-gray-400');
+            card.classList.remove('border-emerald-500/40');
+          }
+        }
+        if (inputNote) {
+          inputNote.value = note;
+        }
+      }
+      updateStats(approvedCount);
+    }
+
+    function toggleApproval(num) {
+      const chk = document.getElementById('chk-' + num);
+      const isApproved = chk.checked;
+      localStorage.setItem('sc_approved_' + num, isApproved);
+      loadSavedState();
+      showToast(isApproved ? `Scene ${num} marked as Approved!` : `Scene ${num} pending review.`);
+    }
+
+    function saveNote(num) {
+      const inputNote = document.getElementById('note-' + num);
+      localStorage.setItem('sc_note_' + num, inputNote.value);
+    }
+
+    function updateStats(approvedCount) {
+      const statElem = document.getElementById('stat-approved-count');
+      const labelElem = document.getElementById('stat-pending-label');
+      if (statElem) statElem.textContent = `${approvedCount} / ${TOTAL_SCENES}`;
+      if (labelElem) {
+        if (approvedCount === TOTAL_SCENES) {
+          labelElem.textContent = '🎉 All 16 scenes approved!';
+          labelElem.classList.add('text-emerald-400', 'font-semibold');
+        } else {
+          labelElem.textContent = `${TOTAL_SCENES - approvedCount} pending your approval`;
+          labelElem.classList.remove('text-emerald-400', 'font-semibold');
+        }
+      }
+    }
+
+    function playSceneVideo(videoPath, title) {
+      const modal = document.getElementById('video-modal');
+      const player = document.getElementById('modal-player');
+      const source = document.getElementById('modal-source');
+      const titleElem = document.getElementById('modal-video-title');
+
+      titleElem.textContent = title;
+      source.src = videoPath;
+      player.load();
+      player.play().catch(e => console.log('Autoplay blocked'));
+      modal.classList.remove('hidden');
+    }
+
+    function closeVideoModal() {
+      const modal = document.getElementById('video-modal');
+      const player = document.getElementById('modal-player');
+      player.pause();
+      modal.classList.add('hidden');
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeVideoModal();
+    });
+
+    function copyFeedbackSummary() {
+      let text = '=== IDEABYTES BUSINESS ETIQUETTE: CLIENT REVIEW FEEDBACK ===\n\n';
+      let approvedCount = 0;
+
+      for (let i = 1; i <= TOTAL_SCENES; i++) {
+        const approved = localStorage.getItem('sc_approved_' + i) === 'true';
+        const note = localStorage.getItem('sc_note_' + i) || '';
+        if (approved) approvedCount++;
+        text += `Scene ${String(i).padStart(2, '0')}: ${approved ? '[APPROVED]' : '[PENDING/NOTES]'}\n`;
+        if (note.trim()) {
+          text += `  Client Notes: ${note.trim()}\n`;
+        }
+        text += '\n';
+      }
+
+      text += `Summary: ${approvedCount} of ${TOTAL_SCENES} Scenes Approved.\n`;
+      text += 'Sent from Ideabytes Interactive Client Storyboard Portal.';
+
+      navigator.clipboard.writeText(text).then(() => {
+        showToast('Feedback summary copied to clipboard! Ready to paste into email.');
+      }).catch(err => {
+        alert(text);
+      });
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      const msgElem = document.getElementById('toast-msg');
+      msgElem.textContent = msg;
+      toast.classList.remove('translate-y-24', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+      setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('translate-y-24', 'opacity-0');
+      }, 3500);
+    }
+
+    window.addEventListener('DOMContentLoaded', loadSavedState);
+  </script>
+</body>
+</html>
