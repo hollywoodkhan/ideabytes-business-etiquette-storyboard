@@ -1,0 +1,1989 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Etiquette: Client Review Storyboard (17 Scenes) | Pause Before You Send</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #0b0f19;
+      color: #f3f4f6;
+    }
+    .mono { font-family: 'JetBrains Mono', monospace; }
+    .glass-nav {
+      background: rgba(11, 15, 25, 0.92);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .glass-card {
+      background: rgba(17, 24, 39, 0.78);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      transition: all 0.25s ease;
+    }
+    .glass-card:hover {
+      border-color: rgba(56, 189, 248, 0.35);
+      box-shadow: 0 12px 35px -10px rgba(14, 165, 233, 0.15);
+    }
+    .btn-glow {
+      background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+      box-shadow: 0 4px 15px rgba(2, 132, 199, 0.3);
+    }
+    .btn-glow:hover {
+      box-shadow: 0 6px 22px rgba(2, 132, 199, 0.45);
+    }
+    @media print {
+      body { background-color: #fff !important; color: #111 !important; }
+      .no-print { display: none !important; }
+      .glass-card { break-inside: avoid; border: 1px solid #ccc !important; background: #fff !important; color: #111 !important; box-shadow: none !important; margin-bottom: 2rem !important; }
+      .glass-nav { position: static; background: #fff !important; border-bottom: 2px solid #0284c7 !important; }
+      h1, h2, h3, p, span { color: #111 !important; }
+      .bg-gray-900 { background: #f9f9f9 !important; border: 1px solid #ddd !important; }
+    }
+  </style>
+</head>
+<body class="min-h-screen antialiased selection:bg-sky-500 selection:text-white">
+
+  <!-- TOP HEADER & COURSE TABS -->
+  <header class="glass-nav sticky top-0 z-40 px-6 py-4">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+      <div>
+        <div class="flex items-center gap-3">
+          <!-- COURSE TABS -->
+          <a href="index.html" class="px-3 py-1 rounded-md text-xs font-semibold bg-gray-800 text-gray-400 hover:text-white border border-gray-700 transition">
+            &larr; Course 1: Business Etiquette
+          </a>
+          <span class="px-3 py-1 rounded-md text-xs font-bold uppercase tracking-wider bg-sky-500/20 text-sky-400 border border-sky-500/30">
+            Course 2: Email Etiquette (Active)
+          </span>
+          <span class="text-xs px-2.5 py-0.5 rounded bg-amber-500/10 text-amber-400 border border-amber-500/20 font-medium">
+            Veo Draft Tier
+          </span>
+        </div>
+        <h1 class="text-xl md:text-2xl font-extrabold tracking-tight text-white mt-2">
+          Email Etiquette: <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-cyan-300 to-indigo-400">Pause Before You Send</span>
+        </h1>
+      </div>
+
+      <div class="flex flex-wrap items-center gap-3 no-print">
+        <button onclick="window.print()" class="px-4 py-2 rounded-lg bg-gray-800 hover:bg-gray-700 text-gray-200 text-xs font-semibold border border-gray-700 transition flex items-center gap-2">
+          <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
+          Export / Print PDF
+        </button>
+
+        <button onclick="copyFeedbackSummary()" class="btn-glow px-4 py-2 rounded-lg text-white text-xs font-bold transition flex items-center gap-2">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
+          Copy Feedback Summary
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- STATS OVERVIEW -->
+  <section class="max-w-7xl mx-auto px-6 pt-6 pb-2">
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+      <div class="glass-card rounded-xl p-4 border border-gray-800">
+        <p class="text-xs text-gray-400 font-medium uppercase tracking-wide">Total Scenes</p>
+        <p class="text-2xl font-black text-white mt-1">17 Scenes</p>
+        <p class="text-[11px] text-sky-400 mt-0.5">54 Continuous Cuts (&le;8s)</p>
+      </div>
+      <div class="glass-card rounded-xl p-4 border border-gray-800">
+        <p class="text-xs text-gray-400 font-medium uppercase tracking-wide">Total Runtime</p>
+        <p class="text-2xl font-black text-white mt-1">~04m 45s</p>
+        <p class="text-[11px] text-gray-400 mt-0.5">Zero Looping Architecture</p>
+      </div>
+      <div class="glass-card rounded-xl p-4 border border-gray-800">
+        <p class="text-xs text-gray-400 font-medium uppercase tracking-wide">Render Tier</p>
+        <p class="text-2xl font-black text-amber-400 mt-1">Veo Draft Mode</p>
+        <p class="text-[11px] text-gray-400 mt-0.5">Fast Validation Tier (HD Final on Lock)</p>
+      </div>
+      <div class="glass-card rounded-xl p-4 border border-gray-800">
+        <p class="text-xs text-gray-400 font-medium uppercase tracking-wide">Client Approval</p>
+        <p class="text-2xl font-black text-emerald-400 mt-1" id="stat-approved-count">0 / 17</p>
+        <p class="text-[11px] text-gray-400 mt-0.5" id="stat-pending-label">Click approve on each card</p>
+      </div>
+    </div>
+
+    <!-- QUICK JUMP PILLS -->
+    <div class="flex items-center gap-1.5 overflow-x-auto py-4 no-print">
+      <span class="text-xs text-gray-400 font-semibold uppercase mr-2 whitespace-nowrap">Jump To:</span>
+<a href="#scene-01" class="px-2.5 py-1 rounded bg-gray-800/80 hover:bg-sky-600 hover:text-white text-gray-300 text-xs font-mono font-medium transition whitespace-nowrap border border-gray-700/60">Sc 01</a>
+<a href="#scene-02" class="px-2.5 py-1 rounded bg-gray-800/80 hover:bg-sky-600 hover:text-white text-gray-300 text-xs font-mono font-medium transition whitespace-nowrap border border-gray-700/60">Sc 02</a>
+<a href="#scene-03" class="px-2.5 py-1 rounded bg-gray-800/80 hover:bg-sky-600 hover:text-white text-gray-300 text-xs font-mono font-medium transition whitespace-nowrap border border-gray-700/60">Sc 03</a>
+<a href="#scene-04" class="px-2.5 py-1 rounded bg-gray-800/80 hover:bg-sky-600 hover:text-white text-gray-300 text-xs font-mono font-medium transition whitespace-nowrap border border-gray-700/60">Sc 04</a>
+<a href="#scene-05" class="px-2.5 py-1 rounded bg-gray-800/80 hover:bg-sky-600 hover:text-white text-gray-300 text-xs font-mono font-medium transition whitespace-nowrap border border-gray-700/60">Sc 05</a>
+<a href="#scene-06" class="px-2.5 py-1 rounded bg-gray-800/80 hover:bg-sky-600 hover:text-white text-gray-300 text-xs font-mono font-medium transition whitespace-nowrap border border-gray-700/60">Sc 06</a>
+<a href="#scene-07" class="px-2.5 py-1 rounded bg-gray-800/80 hover:bg-sky-600 hover:text-white text-gray-300 text-xs font-mono font-medium transition whitespace-nowrap border border-gray-700/60">Sc 07</a>
+<a href="#scene-08" class="px-2.5 py-1 rounded bg-gray-800/80 hover:bg-sky-600 hover:text-white text-gray-300 text-xs font-mono font-medium transition whitespace-nowrap border border-gray-700/60">Sc 08</a>
+<a href="#scene-09" class="px-2.5 py-1 rounded bg-gray-800/80 hover:bg-sky-600 hover:text-white text-gray-300 text-xs font-mono font-medium transition whitespace-nowrap border border-gray-700/60">Sc 09</a>
+<a href="#scene-10" class="px-2.5 py-1 rounded bg-gray-800/80 hover:bg-sky-600 hover:text-white text-gray-300 text-xs font-mono font-medium transition whitespace-nowrap border border-gray-700/60">Sc 10</a>
+<a href="#scene-11" class="px-2.5 py-1 rounded bg-gray-800/80 hover:bg-sky-600 hover:text-white text-gray-300 text-xs font-mono font-medium transition whitespace-nowrap border border-gray-700/60">Sc 11</a>
+<a href="#scene-12" class="px-2.5 py-1 rounded bg-gray-800/80 hover:bg-sky-600 hover:text-white text-gray-300 text-xs font-mono font-medium transition whitespace-nowrap border border-gray-700/60">Sc 12</a>
+<a href="#scene-13" class="px-2.5 py-1 rounded bg-gray-800/80 hover:bg-sky-600 hover:text-white text-gray-300 text-xs font-mono font-medium transition whitespace-nowrap border border-gray-700/60">Sc 13</a>
+<a href="#scene-14" class="px-2.5 py-1 rounded bg-gray-800/80 hover:bg-sky-600 hover:text-white text-gray-300 text-xs font-mono font-medium transition whitespace-nowrap border border-gray-700/60">Sc 14</a>
+<a href="#scene-15" class="px-2.5 py-1 rounded bg-gray-800/80 hover:bg-sky-600 hover:text-white text-gray-300 text-xs font-mono font-medium transition whitespace-nowrap border border-gray-700/60">Sc 15</a>
+<a href="#scene-16" class="px-2.5 py-1 rounded bg-gray-800/80 hover:bg-sky-600 hover:text-white text-gray-300 text-xs font-mono font-medium transition whitespace-nowrap border border-gray-700/60">Sc 16</a>
+<a href="#scene-17" class="px-2.5 py-1 rounded bg-gray-800/80 hover:bg-sky-600 hover:text-white text-gray-300 text-xs font-mono font-medium transition whitespace-nowrap border border-gray-700/60">Sc 17</a>
+</div>
+</section>
+<main class="max-w-7xl mx-auto px-6 py-4 space-y-8">
+
+    <!-- SCENE 01 -->
+    <article id="scene-01" class="glass-card rounded-2xl overflow-hidden border border-gray-800 transition shadow-xl" data-scene="1">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
+        
+        <!-- VISUAL POSTER COLUMN (5 cols) -->
+        <div class="lg:col-span-5 relative bg-black/60 flex flex-col justify-between p-4 border-b lg:border-b-0 lg:border-r border-gray-800">
+          <div class="relative group rounded-xl overflow-hidden shadow-lg border border-gray-800 bg-gray-900 aspect-video">
+            <img src="storyboard_thumbs/sc01_email_etiquette_poster.jpg" alt="Course Title: Pause Before You Send" class="w-full h-full object-cover transition duration-300 group-hover:scale-105" loading="lazy" onerror="this.src='https://placehold.co/600x338/1e293b/94a3b8?text=Scene+1'">
+            
+            
+        <button onclick="playSceneVideo('videos/Scene01_Email_Etiquette_Draft.mp4', 'Course Title: Pause Before You Send')" class="absolute inset-0 bg-black/40 group-hover:bg-black/20 flex items-center justify-center transition no-print">
+          <span class="w-14 h-14 rounded-full bg-sky-500/90 text-white flex items-center justify-center shadow-lg transform group-hover:scale-110 transition">
+            <svg class="w-6 h-6 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          </span>
+        </button>
+        
+
+            <!-- DURATION BADGE -->
+            <div class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded bg-black/80 backdrop-blur-md text-white text-[11px] font-mono font-semibold">
+              12.0s
+            </div>
+
+            <!-- CUT COUNT BADGE -->
+            <div class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded bg-sky-950/80 border border-sky-500/40 text-sky-300 text-[11px] font-semibold">
+              2 Cuts
+            </div>
+          </div>
+
+          
+        <div class="mt-3 flex items-center justify-between no-print">
+          <button onclick="playSceneVideo('videos/Scene01_Email_Etiquette_Draft.mp4', 'Course Title: Pause Before You Send')" class="text-xs text-sky-400 hover:text-sky-300 font-semibold flex items-center gap-1.5 transition">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"/></svg>
+            Watch Video Clip (Veo Draft)
+          </button>
+          <span class="text-[11px] text-emerald-400 font-mono font-semibold">&bull; Rendered</span>
+        </div>
+        
+        </div>
+
+        <!-- STORYBOARD & SCRIPT COLUMN (7 cols) -->
+        <div class="lg:col-span-7 p-6 flex flex-col justify-between">
+          <div>
+            <!-- HEADER -->
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-gray-800">
+              <div class="flex items-center gap-2">
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-bold font-mono bg-sky-500/20 text-sky-400 border border-sky-500/30">
+                  SCENE 01
+                </span>
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-300 border border-indigo-500/20">
+                  Slide 2
+                </span>
+              </div>
+
+              <!-- CLIENT APPROVAL TOGGLE -->
+              <div class="no-print flex items-center gap-2">
+                <label class="cursor-pointer flex items-center gap-2 text-xs font-medium text-gray-300 hover:text-white select-none">
+                  <input type="checkbox" id="chk-1" onchange="toggleApproval(1)" class="w-4 h-4 rounded text-emerald-500 bg-gray-800 border-gray-700 focus:ring-emerald-400">
+                  <span id="label-chk-1" class="text-gray-400">Approve Scene</span>
+                </label>
+              </div>
+            </div>
+
+            <h2 class="text-lg font-bold text-white mt-3">Course Title: Pause Before You Send</h2>
+
+            <!-- VOICEOVER TRANSCRIPT -->
+            <div class="mt-4 p-3.5 rounded-xl bg-gray-900/90 border border-gray-800">
+              <div class="flex items-center gap-1.5 text-xs text-sky-400 font-semibold uppercase tracking-wider mb-1.5">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"></path></svg>
+                Spoken Voiceover (No Brand Mention):
+              </div>
+              <p class="text-sm text-gray-200 leading-relaxed italic">
+                &ldquo;Email Etiquette: Pause Before You Send. In today's fast-paced workplace, how we communicate defines our professional trust. Pause before you send.&rdquo;
+              </p>
+            </div>
+
+            <!-- VISUAL CHOREOGRAPHY & CAMERA ACTION -->
+            <div class="mt-4 space-y-1.5">
+              <p class="text-xs text-gray-400 font-semibold uppercase tracking-wider">Visual Action & Camera Coverage:</p>
+              <p class="text-xs text-gray-300 leading-relaxed">
+                Cut 1 (6.0s): Cinematic wide establishing shot of modern sunlit corporate office in Bengaluru. Cut 2 (6.0s): Medium push-in on Riya Kapoor at workstation with canonical hero anchor.
+              </p>
+            </div>
+
+            <!-- ON-SCREEN GRAPHICS -->
+            <div class="mt-3.5 flex items-start gap-2 text-xs text-gray-400">
+              <span class="font-semibold text-gray-300 whitespace-nowrap">On-Screen Overlay:</span>
+              <span class="mono text-gray-300 bg-black/40 px-2 py-0.5 rounded border border-gray-800">Email Etiquette &bull; Pause Before You Send</span>
+            </div>
+          </div>
+
+          <!-- CLIENT COMMENT BOX -->
+          <div class="mt-5 pt-4 border-t border-gray-800/80 no-print">
+            <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wide mb-1">
+              Client Feedback / Notes for Scene 01:
+            </label>
+            <input type="text" id="note-1" oninput="saveNote(1)" placeholder="e.g., Approved as is, or specify any revision..." class="w-full text-xs px-3 py-2 rounded-lg bg-gray-900/80 border border-gray-700/80 text-gray-200 placeholder-gray-500 focus:outline-none focus:border-sky-500 transition">
+          </div>
+
+        </div>
+      </div>
+    </article>
+    
+
+    <!-- SCENE 02 -->
+    <article id="scene-02" class="glass-card rounded-2xl overflow-hidden border border-gray-800 transition shadow-xl" data-scene="2">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
+        
+        <!-- VISUAL POSTER COLUMN (5 cols) -->
+        <div class="lg:col-span-5 relative bg-black/60 flex flex-col justify-between p-4 border-b lg:border-b-0 lg:border-r border-gray-800">
+          <div class="relative group rounded-xl overflow-hidden shadow-lg border border-gray-800 bg-gray-900 aspect-video">
+            <img src="storyboard_thumbs/email_etiquette/image2.png" alt="What is Email Etiquette? (The 4 Pillars)" class="w-full h-full object-cover transition duration-300 group-hover:scale-105" loading="lazy" onerror="this.src='https://placehold.co/600x338/1e293b/94a3b8?text=Scene+2'">
+            
+            
+        <div class="absolute inset-0 bg-black/50 flex items-center justify-center no-print">
+          <span class="px-3 py-1.5 rounded-lg bg-gray-900/90 text-gray-300 text-xs font-mono border border-gray-700">
+            Visual Board Reference
+          </span>
+        </div>
+        
+
+            <!-- DURATION BADGE -->
+            <div class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded bg-black/80 backdrop-blur-md text-white text-[11px] font-mono font-semibold">
+              30.0s
+            </div>
+
+            <!-- CUT COUNT BADGE -->
+            <div class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded bg-sky-950/80 border border-sky-500/40 text-sky-300 text-[11px] font-semibold">
+              5 Cuts
+            </div>
+          </div>
+
+          
+        <div class="mt-3 flex items-center justify-between no-print">
+          <span class="text-xs text-amber-400 font-medium">Ready for Batch Veo Render</span>
+          <span class="text-[11px] text-gray-500 font-mono">Draft Mode Ready</span>
+        </div>
+        
+        </div>
+
+        <!-- STORYBOARD & SCRIPT COLUMN (7 cols) -->
+        <div class="lg:col-span-7 p-6 flex flex-col justify-between">
+          <div>
+            <!-- HEADER -->
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-gray-800">
+              <div class="flex items-center gap-2">
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-bold font-mono bg-sky-500/20 text-sky-400 border border-sky-500/30">
+                  SCENE 02
+                </span>
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-300 border border-indigo-500/20">
+                  Slide 3
+                </span>
+              </div>
+
+              <!-- CLIENT APPROVAL TOGGLE -->
+              <div class="no-print flex items-center gap-2">
+                <label class="cursor-pointer flex items-center gap-2 text-xs font-medium text-gray-300 hover:text-white select-none">
+                  <input type="checkbox" id="chk-2" onchange="toggleApproval(2)" class="w-4 h-4 rounded text-emerald-500 bg-gray-800 border-gray-700 focus:ring-emerald-400">
+                  <span id="label-chk-2" class="text-gray-400">Approve Scene</span>
+                </label>
+              </div>
+            </div>
+
+            <h2 class="text-lg font-bold text-white mt-3">What is Email Etiquette? (The 4 Pillars)</h2>
+
+            <!-- VOICEOVER TRANSCRIPT -->
+            <div class="mt-4 p-3.5 rounded-xl bg-gray-900/90 border border-gray-800">
+              <div class="flex items-center gap-1.5 text-xs text-sky-400 font-semibold uppercase tracking-wider mb-1.5">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"></path></svg>
+                Spoken Voiceover (No Brand Mention):
+              </div>
+              <p class="text-sm text-gray-200 leading-relaxed italic">
+                &ldquo;Email is more than a way to share information. Every email we send represents us and the way we work with others. A clear, well-written email helps people understand our message, respond appropriately, and take the right action. On the other hand, a small mistake can lead to confusion, delays, or misunderstandings. Before you send, check four things: recipients — are you sending to the right people? Subject — does it make the purpose clear? Tone — is your message clear, polite and professional? And attachments — have you checked that the correct file is attached? These simple checks can make a real difference. Let's see how they apply in a workplace situation.&rdquo;
+              </p>
+            </div>
+
+            <!-- VISUAL CHOREOGRAPHY & CAMERA ACTION -->
+            <div class="mt-4 space-y-1.5">
+              <p class="text-xs text-gray-400 font-semibold uppercase tracking-wider">Visual Action & Camera Coverage:</p>
+              <p class="text-xs text-gray-300 leading-relaxed">
+                Cut 1 (6.0s): Modern sunlit corporate technology office in Bengaluru. Active professionals collaborating, glass partitions, oak workstations, indoor plants. Soft camera dolly forward. Cut 2 (7.0s): Card 1 (Recipients) and Card 2 (Subject) animate onto screen with sleek micro-interactions and icons synchronized to VO mentions. Cut 3 (6.0s): Card 3 (Tone) and Card 4 (Attachments) slide in, completing the 2x2 grid layout of the 4 Pillars. Cut 4 (6.0s): Colleagues reviewing project notes at a standing meeting desk, exchanging natural smiles and professional nods. Cut 5 (5.0s): Camera smoothly moves across an open aisle towards Riya Kapoor seated at her desk, deeply focused on her laptop.
+              </p>
+            </div>
+
+            <!-- ON-SCREEN GRAPHICS -->
+            <div class="mt-3.5 flex items-start gap-2 text-xs text-gray-400">
+              <span class="font-semibold text-gray-300 whitespace-nowrap">On-Screen Overlay:</span>
+              <span class="mono text-gray-300 bg-black/40 px-2 py-0.5 rounded border border-gray-800">Recipients — Send to the right people. &bull; Subject — Make the purpose clear. &bull; Tone — Be clear, polite and professional. &bull; Attachments — Check that the correct file is attached.</span>
+            </div>
+          </div>
+
+          <!-- CLIENT COMMENT BOX -->
+          <div class="mt-5 pt-4 border-t border-gray-800/80 no-print">
+            <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wide mb-1">
+              Client Feedback / Notes for Scene 02:
+            </label>
+            <input type="text" id="note-2" oninput="saveNote(2)" placeholder="e.g., Approved as is, or specify any revision..." class="w-full text-xs px-3 py-2 rounded-lg bg-gray-900/80 border border-gray-700/80 text-gray-200 placeholder-gray-500 focus:outline-none focus:border-sky-500 transition">
+          </div>
+
+        </div>
+      </div>
+    </article>
+    
+
+    <!-- SCENE 03 -->
+    <article id="scene-03" class="glass-card rounded-2xl overflow-hidden border border-gray-800 transition shadow-xl" data-scene="3">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
+        
+        <!-- VISUAL POSTER COLUMN (5 cols) -->
+        <div class="lg:col-span-5 relative bg-black/60 flex flex-col justify-between p-4 border-b lg:border-b-0 lg:border-r border-gray-800">
+          <div class="relative group rounded-xl overflow-hidden shadow-lg border border-gray-800 bg-gray-900 aspect-video">
+            <img src="storyboard_thumbs/email_etiquette/image3.png" alt="A Deadline to Meet (09:58 AM Crunch)" class="w-full h-full object-cover transition duration-300 group-hover:scale-105" loading="lazy" onerror="this.src='https://placehold.co/600x338/1e293b/94a3b8?text=Scene+3'">
+            
+            
+        <div class="absolute inset-0 bg-black/50 flex items-center justify-center no-print">
+          <span class="px-3 py-1.5 rounded-lg bg-gray-900/90 text-gray-300 text-xs font-mono border border-gray-700">
+            Visual Board Reference
+          </span>
+        </div>
+        
+
+            <!-- DURATION BADGE -->
+            <div class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded bg-black/80 backdrop-blur-md text-white text-[11px] font-mono font-semibold">
+              22.0s
+            </div>
+
+            <!-- CUT COUNT BADGE -->
+            <div class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded bg-sky-950/80 border border-sky-500/40 text-sky-300 text-[11px] font-semibold">
+              4 Cuts
+            </div>
+          </div>
+
+          
+        <div class="mt-3 flex items-center justify-between no-print">
+          <span class="text-xs text-amber-400 font-medium">Ready for Batch Veo Render</span>
+          <span class="text-[11px] text-gray-500 font-mono">Draft Mode Ready</span>
+        </div>
+        
+        </div>
+
+        <!-- STORYBOARD & SCRIPT COLUMN (7 cols) -->
+        <div class="lg:col-span-7 p-6 flex flex-col justify-between">
+          <div>
+            <!-- HEADER -->
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-gray-800">
+              <div class="flex items-center gap-2">
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-bold font-mono bg-sky-500/20 text-sky-400 border border-sky-500/30">
+                  SCENE 03
+                </span>
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-300 border border-indigo-500/20">
+                  Slide 4
+                </span>
+              </div>
+
+              <!-- CLIENT APPROVAL TOGGLE -->
+              <div class="no-print flex items-center gap-2">
+                <label class="cursor-pointer flex items-center gap-2 text-xs font-medium text-gray-300 hover:text-white select-none">
+                  <input type="checkbox" id="chk-3" onchange="toggleApproval(3)" class="w-4 h-4 rounded text-emerald-500 bg-gray-800 border-gray-700 focus:ring-emerald-400">
+                  <span id="label-chk-3" class="text-gray-400">Approve Scene</span>
+                </label>
+              </div>
+            </div>
+
+            <h2 class="text-lg font-bold text-white mt-3">A Deadline to Meet (09:58 AM Crunch)</h2>
+
+            <!-- VOICEOVER TRANSCRIPT -->
+            <div class="mt-4 p-3.5 rounded-xl bg-gray-900/90 border border-gray-800">
+              <div class="flex items-center gap-1.5 text-xs text-sky-400 font-semibold uppercase tracking-wider mb-1.5">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"></path></svg>
+                Spoken Voiceover (No Brand Mention):
+              </div>
+              <p class="text-sm text-gray-200 leading-relaxed italic">
+                &ldquo;Daniel (Teams message): 'Riya, please send me the revised Project Atlas schedule for my approval. I need it before the 10:30 client meeting.'
+Narrator: Meet Riya Kapoor, a project manager who works closely with her manager, Daniel. Today, Daniel needs to approve the revised Project Atlas schedule before the 10:30 AM client meeting. With just 30 minutes left, Riya receives a Teams message asking her to send the schedule. She quickly opens Outlook to compose the email. It seems routine, but in a hurry, even small mistakes can have big consequences. Let's see what happens next.&rdquo;
+              </p>
+            </div>
+
+            <!-- VISUAL CHOREOGRAPHY & CAMERA ACTION -->
+            <div class="mt-4 space-y-1.5">
+              <p class="text-xs text-gray-400 font-semibold uppercase tracking-wider">Visual Action & Camera Coverage:</p>
+              <p class="text-xs text-gray-300 leading-relaxed">
+                Cut 1 (5.5s): Riya Kapoor at her clean wooden desk with laptop and notebook. A subtle wall clock reads 9:58 AM. Restrained ticking sound suggests mounting urgency. Cut 2 (5.5s): Windows desktop. In bottom right corner, a purple Microsoft Teams toast notification pops up from Daniel Carter with avatar and chime. Cut 3 (5.5s): Riya clicks the Teams notification, reads the message, then smoothly clicks the Outlook icon on her Windows taskbar. Cut 4 (5.5s): Outlook opens with inbox. Riya positions her hands over the keyboard, preparing to draft the response.
+              </p>
+            </div>
+
+            <!-- ON-SCREEN GRAPHICS -->
+            <div class="mt-3.5 flex items-start gap-2 text-xs text-gray-400">
+              <span class="font-semibold text-gray-300 whitespace-nowrap">On-Screen Overlay:</span>
+              <span class="mono text-gray-300 bg-black/40 px-2 py-0.5 rounded border border-gray-800">9:58 AM &bull; Client Meeting: 10:30 AM &bull; Revised Schedule Needed for Approval</span>
+            </div>
+          </div>
+
+          <!-- CLIENT COMMENT BOX -->
+          <div class="mt-5 pt-4 border-t border-gray-800/80 no-print">
+            <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wide mb-1">
+              Client Feedback / Notes for Scene 03:
+            </label>
+            <input type="text" id="note-3" oninput="saveNote(3)" placeholder="e.g., Approved as is, or specify any revision..." class="w-full text-xs px-3 py-2 rounded-lg bg-gray-900/80 border border-gray-700/80 text-gray-200 placeholder-gray-500 focus:outline-none focus:border-sky-500 transition">
+          </div>
+
+        </div>
+      </div>
+    </article>
+    
+
+    <!-- SCENE 04 -->
+    <article id="scene-04" class="glass-card rounded-2xl overflow-hidden border border-gray-800 transition shadow-xl" data-scene="4">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
+        
+        <!-- VISUAL POSTER COLUMN (5 cols) -->
+        <div class="lg:col-span-5 relative bg-black/60 flex flex-col justify-between p-4 border-b lg:border-b-0 lg:border-r border-gray-800">
+          <div class="relative group rounded-xl overflow-hidden shadow-lg border border-gray-800 bg-gray-900 aspect-video">
+            <img src="storyboard_thumbs/email_etiquette/image4.png" alt="One Click Away (The Shortcut Trap)" class="w-full h-full object-cover transition duration-300 group-hover:scale-105" loading="lazy" onerror="this.src='https://placehold.co/600x338/1e293b/94a3b8?text=Scene+4'">
+            
+            
+        <div class="absolute inset-0 bg-black/50 flex items-center justify-center no-print">
+          <span class="px-3 py-1.5 rounded-lg bg-gray-900/90 text-gray-300 text-xs font-mono border border-gray-700">
+            Visual Board Reference
+          </span>
+        </div>
+        
+
+            <!-- DURATION BADGE -->
+            <div class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded bg-black/80 backdrop-blur-md text-white text-[11px] font-mono font-semibold">
+              18.0s
+            </div>
+
+            <!-- CUT COUNT BADGE -->
+            <div class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded bg-sky-950/80 border border-sky-500/40 text-sky-300 text-[11px] font-semibold">
+              3 Cuts
+            </div>
+          </div>
+
+          
+        <div class="mt-3 flex items-center justify-between no-print">
+          <span class="text-xs text-amber-400 font-medium">Ready for Batch Veo Render</span>
+          <span class="text-[11px] text-gray-500 font-mono">Draft Mode Ready</span>
+        </div>
+        
+        </div>
+
+        <!-- STORYBOARD & SCRIPT COLUMN (7 cols) -->
+        <div class="lg:col-span-7 p-6 flex flex-col justify-between">
+          <div>
+            <!-- HEADER -->
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-gray-800">
+              <div class="flex items-center gap-2">
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-bold font-mono bg-sky-500/20 text-sky-400 border border-sky-500/30">
+                  SCENE 04
+                </span>
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-300 border border-indigo-500/20">
+                  Slide 5
+                </span>
+              </div>
+
+              <!-- CLIENT APPROVAL TOGGLE -->
+              <div class="no-print flex items-center gap-2">
+                <label class="cursor-pointer flex items-center gap-2 text-xs font-medium text-gray-300 hover:text-white select-none">
+                  <input type="checkbox" id="chk-4" onchange="toggleApproval(4)" class="w-4 h-4 rounded text-emerald-500 bg-gray-800 border-gray-700 focus:ring-emerald-400">
+                  <span id="label-chk-4" class="text-gray-400">Approve Scene</span>
+                </label>
+              </div>
+            </div>
+
+            <h2 class="text-lg font-bold text-white mt-3">One Click Away (The Shortcut Trap)</h2>
+
+            <!-- VOICEOVER TRANSCRIPT -->
+            <div class="mt-4 p-3.5 rounded-xl bg-gray-900/90 border border-gray-800">
+              <div class="flex items-center gap-1.5 text-xs text-sky-400 font-semibold uppercase tracking-wider mb-1.5">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"></path></svg>
+                Spoken Voiceover (No Brand Mention):
+              </div>
+              <p class="text-sm text-gray-200 leading-relaxed italic">
+                &ldquo;Riya wants to finish the email quickly, so instead of starting from scratch, she opens an earlier email thread and reuses its recipient list. It seems like a convenient shortcut because the people involved in the previous conversation may also need this update. She quickly drafts her message and moves towards the Send button. But just before sending, she notices an unfamiliar name among the recipients. She pauses. Could someone have been included who shouldn't receive this information? Before sending an email, it is worth checking every name on the list.&rdquo;
+              </p>
+            </div>
+
+            <!-- VISUAL CHOREOGRAPHY & CAMERA ACTION -->
+            <div class="mt-4 space-y-1.5">
+              <p class="text-xs text-gray-400 font-semibold uppercase tracking-wider">Visual Action & Camera Coverage:</p>
+              <p class="text-xs text-gray-300 leading-relaxed">
+                Cut 1 (6.0s): In Outlook, Riya quickly opens an existing thread titled 'Project Update' with multiple recipients in the headers. She hits Reply All to grab the recipient pool. Cut 2 (6.0s): Riya types rapid body: 'Please find the attached project update. Let me know if you have any questions. Thanks, Riya'. Cursor glides swiftly towards the blue 'Send' button. Cut 3 (6.0s): Riya freezes. Her eyes dart up to the recipient bar. Subtle eyebrow furrow. Diegetic camera pans from her focused eyes back to the Cc line where 'Sarah Thomas' sits.
+              </p>
+            </div>
+
+            <!-- ON-SCREEN GRAPHICS -->
+            <div class="mt-3.5 flex items-start gap-2 text-xs text-gray-400">
+              <span class="font-semibold text-gray-300 whitespace-nowrap">On-Screen Overlay:</span>
+              <span class="mono text-gray-300 bg-black/40 px-2 py-0.5 rounded border border-gray-800">One Click Away &bull; What could go wrong with one email?</span>
+            </div>
+          </div>
+
+          <!-- CLIENT COMMENT BOX -->
+          <div class="mt-5 pt-4 border-t border-gray-800/80 no-print">
+            <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wide mb-1">
+              Client Feedback / Notes for Scene 04:
+            </label>
+            <input type="text" id="note-4" oninput="saveNote(4)" placeholder="e.g., Approved as is, or specify any revision..." class="w-full text-xs px-3 py-2 rounded-lg bg-gray-900/80 border border-gray-700/80 text-gray-200 placeholder-gray-500 focus:outline-none focus:border-sky-500 transition">
+          </div>
+
+        </div>
+      </div>
+    </article>
+    
+
+    <!-- SCENE 05 -->
+    <article id="scene-05" class="glass-card rounded-2xl overflow-hidden border border-gray-800 transition shadow-xl" data-scene="5">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
+        
+        <!-- VISUAL POSTER COLUMN (5 cols) -->
+        <div class="lg:col-span-5 relative bg-black/60 flex flex-col justify-between p-4 border-b lg:border-b-0 lg:border-r border-gray-800">
+          <div class="relative group rounded-xl overflow-hidden shadow-lg border border-gray-800 bg-gray-900 aspect-video">
+            <img src="storyboard_thumbs/email_etiquette/image5.png" alt="Who Really Needs This Email? (Recipient Audit)" class="w-full h-full object-cover transition duration-300 group-hover:scale-105" loading="lazy" onerror="this.src='https://placehold.co/600x338/1e293b/94a3b8?text=Scene+5'">
+            
+            
+        <div class="absolute inset-0 bg-black/50 flex items-center justify-center no-print">
+          <span class="px-3 py-1.5 rounded-lg bg-gray-900/90 text-gray-300 text-xs font-mono border border-gray-700">
+            Visual Board Reference
+          </span>
+        </div>
+        
+
+            <!-- DURATION BADGE -->
+            <div class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded bg-black/80 backdrop-blur-md text-white text-[11px] font-mono font-semibold">
+              18.0s
+            </div>
+
+            <!-- CUT COUNT BADGE -->
+            <div class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded bg-sky-950/80 border border-sky-500/40 text-sky-300 text-[11px] font-semibold">
+              3 Cuts
+            </div>
+          </div>
+
+          
+        <div class="mt-3 flex items-center justify-between no-print">
+          <span class="text-xs text-amber-400 font-medium">Ready for Batch Veo Render</span>
+          <span class="text-[11px] text-gray-500 font-mono">Draft Mode Ready</span>
+        </div>
+        
+        </div>
+
+        <!-- STORYBOARD & SCRIPT COLUMN (7 cols) -->
+        <div class="lg:col-span-7 p-6 flex flex-col justify-between">
+          <div>
+            <!-- HEADER -->
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-gray-800">
+              <div class="flex items-center gap-2">
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-bold font-mono bg-sky-500/20 text-sky-400 border border-sky-500/30">
+                  SCENE 05
+                </span>
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-300 border border-indigo-500/20">
+                  Slide 6
+                </span>
+              </div>
+
+              <!-- CLIENT APPROVAL TOGGLE -->
+              <div class="no-print flex items-center gap-2">
+                <label class="cursor-pointer flex items-center gap-2 text-xs font-medium text-gray-300 hover:text-white select-none">
+                  <input type="checkbox" id="chk-5" onchange="toggleApproval(5)" class="w-4 h-4 rounded text-emerald-500 bg-gray-800 border-gray-700 focus:ring-emerald-400">
+                  <span id="label-chk-5" class="text-gray-400">Approve Scene</span>
+                </label>
+              </div>
+            </div>
+
+            <h2 class="text-lg font-bold text-white mt-3">Who Really Needs This Email? (Recipient Audit)</h2>
+
+            <!-- VOICEOVER TRANSCRIPT -->
+            <div class="mt-4 p-3.5 rounded-xl bg-gray-900/90 border border-gray-800">
+              <div class="flex items-center gap-1.5 text-xs text-sky-400 font-semibold uppercase tracking-wider mb-1.5">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"></path></svg>
+                Spoken Voiceover (No Brand Mention):
+              </div>
+              <p class="text-sm text-gray-200 leading-relaxed italic">
+                &ldquo;She notices that Sarah Thomas is an external client. This update contains internal project information, so Sarah should not receive it. She removes Sarah and checks the remaining names. Daniel belongs in To because he needs to act, while Meera belongs in Cc because she needs visibility. Every recipient should have a clear reason to receive the email.&rdquo;
+              </p>
+            </div>
+
+            <!-- VISUAL CHOREOGRAPHY & CAMERA ACTION -->
+            <div class="mt-4 space-y-1.5">
+              <p class="text-xs text-gray-400 font-semibold uppercase tracking-wider">Visual Action & Camera Coverage:</p>
+              <p class="text-xs text-gray-300 leading-relaxed">
+                Cut 1 (6.0s): Amber glowing bracket highlights 'Sarah Thomas <sarah.thomas@apexclient.com>'. Riya hovers her mouse and clicks the 'X' to remove Sarah's contact pill. Cut 2 (6.0s): Blue bracket illuminates Daniel Carter in 'To:' with pill label: [ACTION REQUIRED]. Teal bracket illuminates Meera Kulkarni in 'Cc:' with pill label: [FOR VISIBILITY]. Cut 3 (6.0s): Riya nods slightly, satisfied with the cleaned recipient list. The cursor drops into the Subject field.
+              </p>
+            </div>
+
+            <!-- ON-SCREEN GRAPHICS -->
+            <div class="mt-3.5 flex items-start gap-2 text-xs text-gray-400">
+              <span class="font-semibold text-gray-300 whitespace-nowrap">On-Screen Overlay:</span>
+              <span class="mono text-gray-300 bg-black/40 px-2 py-0.5 rounded border border-gray-800">TO — Who needs to act? &bull; CC — Who needs visibility? &bull; BCC — Recipient privacy</span>
+            </div>
+          </div>
+
+          <!-- CLIENT COMMENT BOX -->
+          <div class="mt-5 pt-4 border-t border-gray-800/80 no-print">
+            <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wide mb-1">
+              Client Feedback / Notes for Scene 05:
+            </label>
+            <input type="text" id="note-5" oninput="saveNote(5)" placeholder="e.g., Approved as is, or specify any revision..." class="w-full text-xs px-3 py-2 rounded-lg bg-gray-900/80 border border-gray-700/80 text-gray-200 placeholder-gray-500 focus:outline-none focus:border-sky-500 transition">
+          </div>
+
+        </div>
+      </div>
+    </article>
+    
+
+    <!-- SCENE 06 -->
+    <article id="scene-06" class="glass-card rounded-2xl overflow-hidden border border-gray-800 transition shadow-xl" data-scene="6">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
+        
+        <!-- VISUAL POSTER COLUMN (5 cols) -->
+        <div class="lg:col-span-5 relative bg-black/60 flex flex-col justify-between p-4 border-b lg:border-b-0 lg:border-r border-gray-800">
+          <div class="relative group rounded-xl overflow-hidden shadow-lg border border-gray-800 bg-gray-900 aspect-video">
+            <img src="storyboard_thumbs/email_etiquette/image6.png" alt="Make Your Subject Line Meaningful" class="w-full h-full object-cover transition duration-300 group-hover:scale-105" loading="lazy" onerror="this.src='https://placehold.co/600x338/1e293b/94a3b8?text=Scene+6'">
+            
+            
+        <div class="absolute inset-0 bg-black/50 flex items-center justify-center no-print">
+          <span class="px-3 py-1.5 rounded-lg bg-gray-900/90 text-gray-300 text-xs font-mono border border-gray-700">
+            Visual Board Reference
+          </span>
+        </div>
+        
+
+            <!-- DURATION BADGE -->
+            <div class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded bg-black/80 backdrop-blur-md text-white text-[11px] font-mono font-semibold">
+              16.0s
+            </div>
+
+            <!-- CUT COUNT BADGE -->
+            <div class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded bg-sky-950/80 border border-sky-500/40 text-sky-300 text-[11px] font-semibold">
+              3 Cuts
+            </div>
+          </div>
+
+          
+        <div class="mt-3 flex items-center justify-between no-print">
+          <span class="text-xs text-amber-400 font-medium">Ready for Batch Veo Render</span>
+          <span class="text-[11px] text-gray-500 font-mono">Draft Mode Ready</span>
+        </div>
+        
+        </div>
+
+        <!-- STORYBOARD & SCRIPT COLUMN (7 cols) -->
+        <div class="lg:col-span-7 p-6 flex flex-col justify-between">
+          <div>
+            <!-- HEADER -->
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-gray-800">
+              <div class="flex items-center gap-2">
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-bold font-mono bg-sky-500/20 text-sky-400 border border-sky-500/30">
+                  SCENE 06
+                </span>
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-300 border border-indigo-500/20">
+                  Slide 7
+                </span>
+              </div>
+
+              <!-- CLIENT APPROVAL TOGGLE -->
+              <div class="no-print flex items-center gap-2">
+                <label class="cursor-pointer flex items-center gap-2 text-xs font-medium text-gray-300 hover:text-white select-none">
+                  <input type="checkbox" id="chk-6" onchange="toggleApproval(6)" class="w-4 h-4 rounded text-emerald-500 bg-gray-800 border-gray-700 focus:ring-emerald-400">
+                  <span id="label-chk-6" class="text-gray-400">Approve Scene</span>
+                </label>
+              </div>
+            </div>
+
+            <h2 class="text-lg font-bold text-white mt-3">Make Your Subject Line Meaningful</h2>
+
+            <!-- VOICEOVER TRANSCRIPT -->
+            <div class="mt-4 p-3.5 rounded-xl bg-gray-900/90 border border-gray-800">
+              <div class="flex items-center gap-1.5 text-xs text-sky-400 font-semibold uppercase tracking-wider mb-1.5">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"></path></svg>
+                Spoken Voiceover (No Brand Mention):
+              </div>
+              <p class="text-sm text-gray-200 leading-relaxed italic">
+                &ldquo;Riya rereads the subject. Daniel is managing several projects, so 'Project Update' tells him very little. She changes it to 'Project Atlas — Revised Project Schedule for Approval.' Now Daniel can identify the project and understand what the email requires before even opening it.&rdquo;
+              </p>
+            </div>
+
+            <!-- VISUAL CHOREOGRAPHY & CAMERA ACTION -->
+            <div class="mt-4 space-y-1.5">
+              <p class="text-xs text-gray-400 font-semibold uppercase tracking-wider">Visual Action & Camera Coverage:</p>
+              <p class="text-xs text-gray-300 leading-relaxed">
+                Cut 1 (5.0s): The words 'Project Update' sit in the subject field. A subtle red indicator line underlines it as vague. Cut 2 (6.0s): Riya double-clicks 'Project Update' (blue selection highlight) and backspaces. The new text types out live: 'Project Atlas — Revised Project Schedule for Approval'. Cut 3 (5.0s): A sleek lower-third comparison badge appears: [Before: Project Update] -> [After: Project Atlas — Revised Project Schedule for Approval].
+              </p>
+            </div>
+
+            <!-- ON-SCREEN GRAPHICS -->
+            <div class="mt-3.5 flex items-start gap-2 text-xs text-gray-400">
+              <span class="font-semibold text-gray-300 whitespace-nowrap">On-Screen Overlay:</span>
+              <span class="mono text-gray-300 bg-black/40 px-2 py-0.5 rounded border border-gray-800">Make Your Subject Line Meaningful &bull; Be specific. Make the purpose clear. &bull;  &bull; Before: Project Update &bull; After: Project Atlas — Revised Project Schedule for Approval</span>
+            </div>
+          </div>
+
+          <!-- CLIENT COMMENT BOX -->
+          <div class="mt-5 pt-4 border-t border-gray-800/80 no-print">
+            <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wide mb-1">
+              Client Feedback / Notes for Scene 06:
+            </label>
+            <input type="text" id="note-6" oninput="saveNote(6)" placeholder="e.g., Approved as is, or specify any revision..." class="w-full text-xs px-3 py-2 rounded-lg bg-gray-900/80 border border-gray-700/80 text-gray-200 placeholder-gray-500 focus:outline-none focus:border-sky-500 transition">
+          </div>
+
+        </div>
+      </div>
+    </article>
+    
+
+    <!-- SCENE 07 -->
+    <article id="scene-07" class="glass-card rounded-2xl overflow-hidden border border-gray-800 transition shadow-xl" data-scene="7">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
+        
+        <!-- VISUAL POSTER COLUMN (5 cols) -->
+        <div class="lg:col-span-5 relative bg-black/60 flex flex-col justify-between p-4 border-b lg:border-b-0 lg:border-r border-gray-800">
+          <div class="relative group rounded-xl overflow-hidden shadow-lg border border-gray-800 bg-gray-900 aspect-video">
+            <img src="storyboard_thumbs/email_etiquette/image7.png" alt="One Clear Next Step (Body Architecture)" class="w-full h-full object-cover transition duration-300 group-hover:scale-105" loading="lazy" onerror="this.src='https://placehold.co/600x338/1e293b/94a3b8?text=Scene+7'">
+            
+            
+        <div class="absolute inset-0 bg-black/50 flex items-center justify-center no-print">
+          <span class="px-3 py-1.5 rounded-lg bg-gray-900/90 text-gray-300 text-xs font-mono border border-gray-700">
+            Visual Board Reference
+          </span>
+        </div>
+        
+
+            <!-- DURATION BADGE -->
+            <div class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded bg-black/80 backdrop-blur-md text-white text-[11px] font-mono font-semibold">
+              18.0s
+            </div>
+
+            <!-- CUT COUNT BADGE -->
+            <div class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded bg-sky-950/80 border border-sky-500/40 text-sky-300 text-[11px] font-semibold">
+              3 Cuts
+            </div>
+          </div>
+
+          
+        <div class="mt-3 flex items-center justify-between no-print">
+          <span class="text-xs text-amber-400 font-medium">Ready for Batch Veo Render</span>
+          <span class="text-[11px] text-gray-500 font-mono">Draft Mode Ready</span>
+        </div>
+        
+        </div>
+
+        <!-- STORYBOARD & SCRIPT COLUMN (7 cols) -->
+        <div class="lg:col-span-7 p-6 flex flex-col justify-between">
+          <div>
+            <!-- HEADER -->
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-gray-800">
+              <div class="flex items-center gap-2">
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-bold font-mono bg-sky-500/20 text-sky-400 border border-sky-500/30">
+                  SCENE 07
+                </span>
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-300 border border-indigo-500/20">
+                  Slide 8
+                </span>
+              </div>
+
+              <!-- CLIENT APPROVAL TOGGLE -->
+              <div class="no-print flex items-center gap-2">
+                <label class="cursor-pointer flex items-center gap-2 text-xs font-medium text-gray-300 hover:text-white select-none">
+                  <input type="checkbox" id="chk-7" onchange="toggleApproval(7)" class="w-4 h-4 rounded text-emerald-500 bg-gray-800 border-gray-700 focus:ring-emerald-400">
+                  <span id="label-chk-7" class="text-gray-400">Approve Scene</span>
+                </label>
+              </div>
+            </div>
+
+            <h2 class="text-lg font-bold text-white mt-3">One Clear Next Step (Body Architecture)</h2>
+
+            <!-- VOICEOVER TRANSCRIPT -->
+            <div class="mt-4 p-3.5 rounded-xl bg-gray-900/90 border border-gray-800">
+              <div class="flex items-center gap-1.5 text-xs text-sky-400 font-semibold uppercase tracking-wider mb-1.5">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"></path></svg>
+                Spoken Voiceover (No Brand Mention):
+              </div>
+              <p class="text-sm text-gray-200 leading-relaxed italic">
+                &ldquo;With a clearer subject line in place, Riya turns to the message itself. Daniel needs to know what has changed and what she needs from him. She keeps the email focused, highlights the milestone dates and includes a clear deadline for approval.&rdquo;
+              </p>
+            </div>
+
+            <!-- VISUAL CHOREOGRAPHY & CAMERA ACTION -->
+            <div class="mt-4 space-y-1.5">
+              <p class="text-xs text-gray-400 font-semibold uppercase tracking-wider">Visual Action & Camera Coverage:</p>
+              <p class="text-xs text-gray-300 leading-relaxed">
+                Cut 1 (5.5s): Riya looks at her email body. It contains a rambling block of text with mixed thoughts. She pauses, selecting the paragraph to re-architect. Cut 2 (6.5s): The unstructured text transforms into 3 structured bullet points: 1) Schedule update summary, 2) Milestone dates highlighted in bold, 3) Clear request for review. Cut 3 (6.0s): Riya reads through her bulleted draft. Her posture is poised and focused as she prepares to refine the tone.
+              </p>
+            </div>
+
+            <!-- ON-SCREEN GRAPHICS -->
+            <div class="mt-3.5 flex items-start gap-2 text-xs text-gray-400">
+              <span class="font-semibold text-gray-300 whitespace-nowrap">On-Screen Overlay:</span>
+              <span class="mono text-gray-300 bg-black/40 px-2 py-0.5 rounded border border-gray-800">ONE MAIN POINT. ONE CLEAR NEXT STEP. &bull; • What Changed &bull; • Milestone Dates &bull; • Approval Deadline</span>
+            </div>
+          </div>
+
+          <!-- CLIENT COMMENT BOX -->
+          <div class="mt-5 pt-4 border-t border-gray-800/80 no-print">
+            <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wide mb-1">
+              Client Feedback / Notes for Scene 07:
+            </label>
+            <input type="text" id="note-7" oninput="saveNote(7)" placeholder="e.g., Approved as is, or specify any revision..." class="w-full text-xs px-3 py-2 rounded-lg bg-gray-900/80 border border-gray-700/80 text-gray-200 placeholder-gray-500 focus:outline-none focus:border-sky-500 transition">
+          </div>
+
+        </div>
+      </div>
+    </article>
+    
+
+    <!-- SCENE 08 -->
+    <article id="scene-08" class="glass-card rounded-2xl overflow-hidden border border-gray-800 transition shadow-xl" data-scene="8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
+        
+        <!-- VISUAL POSTER COLUMN (5 cols) -->
+        <div class="lg:col-span-5 relative bg-black/60 flex flex-col justify-between p-4 border-b lg:border-b-0 lg:border-r border-gray-800">
+          <div class="relative group rounded-xl overflow-hidden shadow-lg border border-gray-800 bg-gray-900 aspect-video">
+            <img src="storyboard_thumbs/email_etiquette/image8.png" alt="Urgent Doesn't Mean Demanding (Tone Calibration)" class="w-full h-full object-cover transition duration-300 group-hover:scale-105" loading="lazy" onerror="this.src='https://placehold.co/600x338/1e293b/94a3b8?text=Scene+8'">
+            
+            
+        <div class="absolute inset-0 bg-black/50 flex items-center justify-center no-print">
+          <span class="px-3 py-1.5 rounded-lg bg-gray-900/90 text-gray-300 text-xs font-mono border border-gray-700">
+            Visual Board Reference
+          </span>
+        </div>
+        
+
+            <!-- DURATION BADGE -->
+            <div class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded bg-black/80 backdrop-blur-md text-white text-[11px] font-mono font-semibold">
+              18.0s
+            </div>
+
+            <!-- CUT COUNT BADGE -->
+            <div class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded bg-sky-950/80 border border-sky-500/40 text-sky-300 text-[11px] font-semibold">
+              3 Cuts
+            </div>
+          </div>
+
+          
+        <div class="mt-3 flex items-center justify-between no-print">
+          <span class="text-xs text-amber-400 font-medium">Ready for Batch Veo Render</span>
+          <span class="text-[11px] text-gray-500 font-mono">Draft Mode Ready</span>
+        </div>
+        
+        </div>
+
+        <!-- STORYBOARD & SCRIPT COLUMN (7 cols) -->
+        <div class="lg:col-span-7 p-6 flex flex-col justify-between">
+          <div>
+            <!-- HEADER -->
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-gray-800">
+              <div class="flex items-center gap-2">
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-bold font-mono bg-sky-500/20 text-sky-400 border border-sky-500/30">
+                  SCENE 08
+                </span>
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-300 border border-indigo-500/20">
+                  Slide 9
+                </span>
+              </div>
+
+              <!-- CLIENT APPROVAL TOGGLE -->
+              <div class="no-print flex items-center gap-2">
+                <label class="cursor-pointer flex items-center gap-2 text-xs font-medium text-gray-300 hover:text-white select-none">
+                  <input type="checkbox" id="chk-8" onchange="toggleApproval(8)" class="w-4 h-4 rounded text-emerald-500 bg-gray-800 border-gray-700 focus:ring-emerald-400">
+                  <span id="label-chk-8" class="text-gray-400">Approve Scene</span>
+                </label>
+              </div>
+            </div>
+
+            <h2 class="text-lg font-bold text-white mt-3">Urgent Doesn't Mean Demanding (Tone Calibration)</h2>
+
+            <!-- VOICEOVER TRANSCRIPT -->
+            <div class="mt-4 p-3.5 rounded-xl bg-gray-900/90 border border-gray-800">
+              <div class="flex items-center gap-1.5 text-xs text-sky-400 font-semibold uppercase tracking-wider mb-1.5">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"></path></svg>
+                Spoken Voiceover (No Brand Mention):
+              </div>
+              <p class="text-sm text-gray-200 leading-relaxed italic">
+                &ldquo;Riya needs Daniel's approval by 10:15 AM, but urgency does not justify demanding language. She explains the deadline, makes the requested action clear, and asks courteously.
+
+Before: 'I need to get this done before the 10:30 AM meeting!!!'
+After: 'Could you please confirm your approval by 10:15 AM? This will give us time to finalise it before the 10:30 AM client meeting.'&rdquo;
+              </p>
+            </div>
+
+            <!-- VISUAL CHOREOGRAPHY & CAMERA ACTION -->
+            <div class="mt-4 space-y-1.5">
+              <p class="text-xs text-gray-400 font-semibold uppercase tracking-wider">Visual Action & Camera Coverage:</p>
+              <p class="text-xs text-gray-300 leading-relaxed">
+                Cut 1 (5.5s): The cursor stops on: 'I need to get this done before the 10:30 AM meeting!!!'. Red alert bracket pulses over the three exclamation marks. Cut 2 (6.5s): Riya selects the demanding line. She backspaces and types live: 'Could you please confirm your approval by 10:15 AM? This will give us time to finalise it before the 10:30 AM client meeting.' Green approval highlight glows. Cut 3 (6.0s): Side-by-side callout card highlights the transformation from demanding to respectful. Riya nods in agreement.
+              </p>
+            </div>
+
+            <!-- ON-SCREEN GRAPHICS -->
+            <div class="mt-3.5 flex items-start gap-2 text-xs text-gray-400">
+              <span class="font-semibold text-gray-300 whitespace-nowrap">On-Screen Overlay:</span>
+              <span class="mono text-gray-300 bg-black/40 px-2 py-0.5 rounded border border-gray-800">CLEAR. DIRECT. RESPECTFUL. &bull; Urgent doesn't mean demanding. &bull;  &bull; Before: 'I need to get this done before the 10:30 AM meeting!!!' &bull; After: 'Could you please confirm your approval by 10:15 AM? This will give us time to finalise it before the 10:30 AM client meeting.'</span>
+            </div>
+          </div>
+
+          <!-- CLIENT COMMENT BOX -->
+          <div class="mt-5 pt-4 border-t border-gray-800/80 no-print">
+            <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wide mb-1">
+              Client Feedback / Notes for Scene 08:
+            </label>
+            <input type="text" id="note-8" oninput="saveNote(8)" placeholder="e.g., Approved as is, or specify any revision..." class="w-full text-xs px-3 py-2 rounded-lg bg-gray-900/80 border border-gray-700/80 text-gray-200 placeholder-gray-500 focus:outline-none focus:border-sky-500 transition">
+          </div>
+
+        </div>
+      </div>
+    </article>
+    
+
+    <!-- SCENE 09 -->
+    <article id="scene-09" class="glass-card rounded-2xl overflow-hidden border border-gray-800 transition shadow-xl" data-scene="9">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
+        
+        <!-- VISUAL POSTER COLUMN (5 cols) -->
+        <div class="lg:col-span-5 relative bg-black/60 flex flex-col justify-between p-4 border-b lg:border-b-0 lg:border-r border-gray-800">
+          <div class="relative group rounded-xl overflow-hidden shadow-lg border border-gray-800 bg-gray-900 aspect-video">
+            <img src="storyboard_thumbs/email_etiquette/image9.png" alt="The Finishing Touches & Salutation" class="w-full h-full object-cover transition duration-300 group-hover:scale-105" loading="lazy" onerror="this.src='https://placehold.co/600x338/1e293b/94a3b8?text=Scene+9'">
+            
+            
+        <div class="absolute inset-0 bg-black/50 flex items-center justify-center no-print">
+          <span class="px-3 py-1.5 rounded-lg bg-gray-900/90 text-gray-300 text-xs font-mono border border-gray-700">
+            Visual Board Reference
+          </span>
+        </div>
+        
+
+            <!-- DURATION BADGE -->
+            <div class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded bg-black/80 backdrop-blur-md text-white text-[11px] font-mono font-semibold">
+              16.0s
+            </div>
+
+            <!-- CUT COUNT BADGE -->
+            <div class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded bg-sky-950/80 border border-sky-500/40 text-sky-300 text-[11px] font-semibold">
+              3 Cuts
+            </div>
+          </div>
+
+          
+        <div class="mt-3 flex items-center justify-between no-print">
+          <span class="text-xs text-amber-400 font-medium">Ready for Batch Veo Render</span>
+          <span class="text-[11px] text-gray-500 font-mono">Draft Mode Ready</span>
+        </div>
+        
+        </div>
+
+        <!-- STORYBOARD & SCRIPT COLUMN (7 cols) -->
+        <div class="lg:col-span-7 p-6 flex flex-col justify-between">
+          <div>
+            <!-- HEADER -->
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-gray-800">
+              <div class="flex items-center gap-2">
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-bold font-mono bg-sky-500/20 text-sky-400 border border-sky-500/30">
+                  SCENE 09
+                </span>
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-300 border border-indigo-500/20">
+                  Slide 10
+                </span>
+              </div>
+
+              <!-- CLIENT APPROVAL TOGGLE -->
+              <div class="no-print flex items-center gap-2">
+                <label class="cursor-pointer flex items-center gap-2 text-xs font-medium text-gray-300 hover:text-white select-none">
+                  <input type="checkbox" id="chk-9" onchange="toggleApproval(9)" class="w-4 h-4 rounded text-emerald-500 bg-gray-800 border-gray-700 focus:ring-emerald-400">
+                  <span id="label-chk-9" class="text-gray-400">Approve Scene</span>
+                </label>
+              </div>
+            </div>
+
+            <h2 class="text-lg font-bold text-white mt-3">The Finishing Touches & Salutation</h2>
+
+            <!-- VOICEOVER TRANSCRIPT -->
+            <div class="mt-4 p-3.5 rounded-xl bg-gray-900/90 border border-gray-800">
+              <div class="flex items-center gap-1.5 text-xs text-sky-400 font-semibold uppercase tracking-wider mb-1.5">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"></path></svg>
+                Spoken Voiceover (No Brand Mention):
+              </div>
+              <p class="text-sm text-gray-200 leading-relaxed italic">
+                &ldquo;The message is now clear and respectful. Riya checks Daniel's name, and signs off professionally. With the subject, message and tone in place, her email is almost ready. Next, she considers whether AI could help her refine the wording.&rdquo;
+              </p>
+            </div>
+
+            <!-- VISUAL CHOREOGRAPHY & CAMERA ACTION -->
+            <div class="mt-4 space-y-1.5">
+              <p class="text-xs text-gray-400 font-semibold uppercase tracking-wider">Visual Action & Camera Coverage:</p>
+              <p class="text-xs text-gray-300 leading-relaxed">
+                Cut 1 (5.0s): Cursor checks the top greeting: 'Hi Daniel,'. Then scrolls to the bottom to verify the sign-off: 'Thanks, Riya Kapoor'. Both receive gentle green checkmark badges. Cut 2 (5.5s): The complete email draft fills the screen for a brief visual scan. Every section is balanced, clean, and legible. Cut 3 (5.5s): Riya tilts her head thoughtfully, tapping her finger lightly on her desk. She opens a browser tab with an approved enterprise AI assistant.
+              </p>
+            </div>
+
+            <!-- ON-SCREEN GRAPHICS -->
+            <div class="mt-3.5 flex items-start gap-2 text-xs text-gray-400">
+              <span class="font-semibold text-gray-300 whitespace-nowrap">On-Screen Overlay:</span>
+              <span class="mono text-gray-300 bg-black/40 px-2 py-0.5 rounded border border-gray-800">CHECK THE NAME. GREET. SIGN OFF. &bull;  &bull; Hi Daniel, &bull; ... &bull; Thanks, &bull; Riya Kapoor</span>
+            </div>
+          </div>
+
+          <!-- CLIENT COMMENT BOX -->
+          <div class="mt-5 pt-4 border-t border-gray-800/80 no-print">
+            <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wide mb-1">
+              Client Feedback / Notes for Scene 09:
+            </label>
+            <input type="text" id="note-9" oninput="saveNote(9)" placeholder="e.g., Approved as is, or specify any revision..." class="w-full text-xs px-3 py-2 rounded-lg bg-gray-900/80 border border-gray-700/80 text-gray-200 placeholder-gray-500 focus:outline-none focus:border-sky-500 transition">
+          </div>
+
+        </div>
+      </div>
+    </article>
+    
+
+    <!-- SCENE 10 -->
+    <article id="scene-10" class="glass-card rounded-2xl overflow-hidden border border-gray-800 transition shadow-xl" data-scene="10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
+        
+        <!-- VISUAL POSTER COLUMN (5 cols) -->
+        <div class="lg:col-span-5 relative bg-black/60 flex flex-col justify-between p-4 border-b lg:border-b-0 lg:border-r border-gray-800">
+          <div class="relative group rounded-xl overflow-hidden shadow-lg border border-gray-800 bg-gray-900 aspect-video">
+            <img src="storyboard_thumbs/email_etiquette/image10.png" alt="AI Assistance & The Hallucination Trap" class="w-full h-full object-cover transition duration-300 group-hover:scale-105" loading="lazy" onerror="this.src='https://placehold.co/600x338/1e293b/94a3b8?text=Scene+10'">
+            
+            
+        <div class="absolute inset-0 bg-black/50 flex items-center justify-center no-print">
+          <span class="px-3 py-1.5 rounded-lg bg-gray-900/90 text-gray-300 text-xs font-mono border border-gray-700">
+            Visual Board Reference
+          </span>
+        </div>
+        
+
+            <!-- DURATION BADGE -->
+            <div class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded bg-black/80 backdrop-blur-md text-white text-[11px] font-mono font-semibold">
+              19.0s
+            </div>
+
+            <!-- CUT COUNT BADGE -->
+            <div class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded bg-sky-950/80 border border-sky-500/40 text-sky-300 text-[11px] font-semibold">
+              3 Cuts
+            </div>
+          </div>
+
+          
+        <div class="mt-3 flex items-center justify-between no-print">
+          <span class="text-xs text-amber-400 font-medium">Ready for Batch Veo Render</span>
+          <span class="text-[11px] text-gray-500 font-mono">Draft Mode Ready</span>
+        </div>
+        
+        </div>
+
+        <!-- STORYBOARD & SCRIPT COLUMN (7 cols) -->
+        <div class="lg:col-span-7 p-6 flex flex-col justify-between">
+          <div>
+            <!-- HEADER -->
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-gray-800">
+              <div class="flex items-center gap-2">
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-bold font-mono bg-sky-500/20 text-sky-400 border border-sky-500/30">
+                  SCENE 10
+                </span>
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-300 border border-indigo-500/20">
+                  Slide 11
+                </span>
+              </div>
+
+              <!-- CLIENT APPROVAL TOGGLE -->
+              <div class="no-print flex items-center gap-2">
+                <label class="cursor-pointer flex items-center gap-2 text-xs font-medium text-gray-300 hover:text-white select-none">
+                  <input type="checkbox" id="chk-10" onchange="toggleApproval(10)" class="w-4 h-4 rounded text-emerald-500 bg-gray-800 border-gray-700 focus:ring-emerald-400">
+                  <span id="label-chk-10" class="text-gray-400">Approve Scene</span>
+                </label>
+              </div>
+            </div>
+
+            <h2 class="text-lg font-bold text-white mt-3">AI Assistance & The Hallucination Trap</h2>
+
+            <!-- VOICEOVER TRANSCRIPT -->
+            <div class="mt-4 p-3.5 rounded-xl bg-gray-900/90 border border-gray-800">
+              <div class="flex items-center gap-1.5 text-xs text-sky-400 font-semibold uppercase tracking-wider mb-1.5">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"></path></svg>
+                Spoken Voiceover (No Brand Mention):
+              </div>
+              <p class="text-sm text-gray-200 leading-relaxed italic">
+                &ldquo;To save time, Riya asks an approved AI tool to improve her wording. The result sounds polished, but it introduces a claim she has not verified: that all milestones are complete and the launch is on schedule. Riya checks the facts against the actual project information, removes the unsupported claim and keeps the accurate approval request. AI can help with wording, but she remains responsible for the accuracy, tone and purpose of the final email.&rdquo;
+              </p>
+            </div>
+
+            <!-- VISUAL CHOREOGRAPHY & CAMERA ACTION -->
+            <div class="mt-4 space-y-1.5">
+              <p class="text-xs text-gray-400 font-semibold uppercase tracking-wider">Visual Action & Camera Coverage:</p>
+              <p class="text-xs text-gray-300 leading-relaxed">
+                Cut 1 (6.0s): Fictional enterprise AI chat window. Riya pastes her draft with prompt: 'Refine for professional executive tone'. AI streams back polished, eloquent text. Cut 2 (7.0s): An alert amber highlight wraps around the hallucinated sentence: 'All milestones are complete and the product launch is on schedule.'. Warning icon appears. Cut 3 (6.0s): Riya squints and shakes her head slightly. She reaches for her printed project milestone tracking sheet on the desk to verify.
+              </p>
+            </div>
+
+            <!-- ON-SCREEN GRAPHICS -->
+            <div class="mt-3.5 flex items-start gap-2 text-xs text-gray-400">
+              <span class="font-semibold text-gray-300 whitespace-nowrap">On-Screen Overlay:</span>
+              <span class="mono text-gray-300 bg-black/40 px-2 py-0.5 rounded border border-gray-800">AI CAN HELP WITH WORDING. YOU OWN THE MESSAGE. &bull;  &bull; Unverified Claim Introduced by AI: &bull; 'All milestones are complete and the product launch is on schedule.'</span>
+            </div>
+          </div>
+
+          <!-- CLIENT COMMENT BOX -->
+          <div class="mt-5 pt-4 border-t border-gray-800/80 no-print">
+            <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wide mb-1">
+              Client Feedback / Notes for Scene 10:
+            </label>
+            <input type="text" id="note-10" oninput="saveNote(10)" placeholder="e.g., Approved as is, or specify any revision..." class="w-full text-xs px-3 py-2 rounded-lg bg-gray-900/80 border border-gray-700/80 text-gray-200 placeholder-gray-500 focus:outline-none focus:border-sky-500 transition">
+          </div>
+
+        </div>
+      </div>
+    </article>
+    
+
+    <!-- SCENE 11 -->
+    <article id="scene-11" class="glass-card rounded-2xl overflow-hidden border border-gray-800 transition shadow-xl" data-scene="11">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
+        
+        <!-- VISUAL POSTER COLUMN (5 cols) -->
+        <div class="lg:col-span-5 relative bg-black/60 flex flex-col justify-between p-4 border-b lg:border-b-0 lg:border-r border-gray-800">
+          <div class="relative group rounded-xl overflow-hidden shadow-lg border border-gray-800 bg-gray-900 aspect-video">
+            <img src="storyboard_thumbs/email_etiquette/image11.png" alt="Review, Verify, Rewrite, Personalize" class="w-full h-full object-cover transition duration-300 group-hover:scale-105" loading="lazy" onerror="this.src='https://placehold.co/600x338/1e293b/94a3b8?text=Scene+11'">
+            
+            
+        <div class="absolute inset-0 bg-black/50 flex items-center justify-center no-print">
+          <span class="px-3 py-1.5 rounded-lg bg-gray-900/90 text-gray-300 text-xs font-mono border border-gray-700">
+            Visual Board Reference
+          </span>
+        </div>
+        
+
+            <!-- DURATION BADGE -->
+            <div class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded bg-black/80 backdrop-blur-md text-white text-[11px] font-mono font-semibold">
+              18.0s
+            </div>
+
+            <!-- CUT COUNT BADGE -->
+            <div class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded bg-sky-950/80 border border-sky-500/40 text-sky-300 text-[11px] font-semibold">
+              3 Cuts
+            </div>
+          </div>
+
+          
+        <div class="mt-3 flex items-center justify-between no-print">
+          <span class="text-xs text-amber-400 font-medium">Ready for Batch Veo Render</span>
+          <span class="text-[11px] text-gray-500 font-mono">Draft Mode Ready</span>
+        </div>
+        
+        </div>
+
+        <!-- STORYBOARD & SCRIPT COLUMN (7 cols) -->
+        <div class="lg:col-span-7 p-6 flex flex-col justify-between">
+          <div>
+            <!-- HEADER -->
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-gray-800">
+              <div class="flex items-center gap-2">
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-bold font-mono bg-sky-500/20 text-sky-400 border border-sky-500/30">
+                  SCENE 11
+                </span>
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-300 border border-indigo-500/20">
+                  Slide 12
+                </span>
+              </div>
+
+              <!-- CLIENT APPROVAL TOGGLE -->
+              <div class="no-print flex items-center gap-2">
+                <label class="cursor-pointer flex items-center gap-2 text-xs font-medium text-gray-300 hover:text-white select-none">
+                  <input type="checkbox" id="chk-11" onchange="toggleApproval(11)" class="w-4 h-4 rounded text-emerald-500 bg-gray-800 border-gray-700 focus:ring-emerald-400">
+                  <span id="label-chk-11" class="text-gray-400">Approve Scene</span>
+                </label>
+              </div>
+            </div>
+
+            <h2 class="text-lg font-bold text-white mt-3">Review, Verify, Rewrite, Personalize</h2>
+
+            <!-- VOICEOVER TRANSCRIPT -->
+            <div class="mt-4 p-3.5 rounded-xl bg-gray-900/90 border border-gray-800">
+              <div class="flex items-center gap-1.5 text-xs text-sky-400 font-semibold uppercase tracking-wider mb-1.5">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"></path></svg>
+                Spoken Voiceover (No Brand Mention):
+              </div>
+              <p class="text-sm text-gray-200 leading-relaxed italic">
+                &ldquo;Riya checks the facts against the actual project information, removes the unsupported claim and restores the clear approval request. She uses AI to help with wording, but she remains responsible for the accuracy, tone and purpose of the final email.&rdquo;
+              </p>
+            </div>
+
+            <!-- VISUAL CHOREOGRAPHY & CAMERA ACTION -->
+            <div class="mt-4 space-y-1.5">
+              <p class="text-xs text-gray-400 font-semibold uppercase tracking-wider">Visual Action & Camera Coverage:</p>
+              <p class="text-xs text-gray-300 leading-relaxed">
+                Cut 1 (6.0s): Left: AI Generated Draft (with red strikethrough across the hallucinated claim). Right: Riya's Fact-Checked Version (highlighting verified approval request). Cut 2 (6.0s): In Outlook, Riya highlights the inaccurate sentence and deletes it. She keeps the refined vocabulary while locking in genuine milestone facts. Cut 3 (6.0s): The final, perfected email draft fills the entire laptop monitor. Riya sits back, confident in the message's accuracy and tone.
+              </p>
+            </div>
+
+            <!-- ON-SCREEN GRAPHICS -->
+            <div class="mt-3.5 flex items-start gap-2 text-xs text-gray-400">
+              <span class="font-semibold text-gray-300 whitespace-nowrap">On-Screen Overlay:</span>
+              <span class="mono text-gray-300 bg-black/40 px-2 py-0.5 rounded border border-gray-800">REVIEW. VERIFY. REWRITE. PERSONALIZE. &bull;  &bull; AI can help with wording. &bull; You own the message.</span>
+            </div>
+          </div>
+
+          <!-- CLIENT COMMENT BOX -->
+          <div class="mt-5 pt-4 border-t border-gray-800/80 no-print">
+            <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wide mb-1">
+              Client Feedback / Notes for Scene 11:
+            </label>
+            <input type="text" id="note-11" oninput="saveNote(11)" placeholder="e.g., Approved as is, or specify any revision..." class="w-full text-xs px-3 py-2 rounded-lg bg-gray-900/80 border border-gray-700/80 text-gray-200 placeholder-gray-500 focus:outline-none focus:border-sky-500 transition">
+          </div>
+
+        </div>
+      </div>
+    </article>
+    
+
+    <!-- SCENE 12 -->
+    <article id="scene-12" class="glass-card rounded-2xl overflow-hidden border border-gray-800 transition shadow-xl" data-scene="12">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
+        
+        <!-- VISUAL POSTER COLUMN (5 cols) -->
+        <div class="lg:col-span-5 relative bg-black/60 flex flex-col justify-between p-4 border-b lg:border-b-0 lg:border-r border-gray-800">
+          <div class="relative group rounded-xl overflow-hidden shadow-lg border border-gray-800 bg-gray-900 aspect-video">
+            <img src="storyboard_thumbs/email_etiquette/image11.png" alt="Master Side-by-Side Comparison" class="w-full h-full object-cover transition duration-300 group-hover:scale-105" loading="lazy" onerror="this.src='https://placehold.co/600x338/1e293b/94a3b8?text=Scene+12'">
+            
+            
+        <div class="absolute inset-0 bg-black/50 flex items-center justify-center no-print">
+          <span class="px-3 py-1.5 rounded-lg bg-gray-900/90 text-gray-300 text-xs font-mono border border-gray-700">
+            Visual Board Reference
+          </span>
+        </div>
+        
+
+            <!-- DURATION BADGE -->
+            <div class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded bg-black/80 backdrop-blur-md text-white text-[11px] font-mono font-semibold">
+              24.0s
+            </div>
+
+            <!-- CUT COUNT BADGE -->
+            <div class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded bg-sky-950/80 border border-sky-500/40 text-sky-300 text-[11px] font-semibold">
+              4 Cuts
+            </div>
+          </div>
+
+          
+        <div class="mt-3 flex items-center justify-between no-print">
+          <span class="text-xs text-amber-400 font-medium">Ready for Batch Veo Render</span>
+          <span class="text-[11px] text-gray-500 font-mono">Draft Mode Ready</span>
+        </div>
+        
+        </div>
+
+        <!-- STORYBOARD & SCRIPT COLUMN (7 cols) -->
+        <div class="lg:col-span-7 p-6 flex flex-col justify-between">
+          <div>
+            <!-- HEADER -->
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-gray-800">
+              <div class="flex items-center gap-2">
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-bold font-mono bg-sky-500/20 text-sky-400 border border-sky-500/30">
+                  SCENE 12
+                </span>
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-300 border border-indigo-500/20">
+                  Slide 13
+                </span>
+              </div>
+
+              <!-- CLIENT APPROVAL TOGGLE -->
+              <div class="no-print flex items-center gap-2">
+                <label class="cursor-pointer flex items-center gap-2 text-xs font-medium text-gray-300 hover:text-white select-none">
+                  <input type="checkbox" id="chk-12" onchange="toggleApproval(12)" class="w-4 h-4 rounded text-emerald-500 bg-gray-800 border-gray-700 focus:ring-emerald-400">
+                  <span id="label-chk-12" class="text-gray-400">Approve Scene</span>
+                </label>
+              </div>
+            </div>
+
+            <h2 class="text-lg font-bold text-white mt-3">Master Side-by-Side Comparison</h2>
+
+            <!-- VOICEOVER TRANSCRIPT -->
+            <div class="mt-4 p-3.5 rounded-xl bg-gray-900/90 border border-gray-800">
+              <div class="flex items-center gap-1.5 text-xs text-sky-400 font-semibold uppercase tracking-wider mb-1.5">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"></path></svg>
+                Spoken Voiceover (No Brand Mention):
+              </div>
+              <p class="text-sm text-gray-200 leading-relaxed italic">
+                &ldquo;Compare the emails. The improved version identifies the project and purpose in the subject line, gives brief context, asks for a specific action, includes a clear deadline, and closes professionally. Small changes make the message easier to understand and act on.&rdquo;
+              </p>
+            </div>
+
+            <!-- VISUAL CHOREOGRAPHY & CAMERA ACTION -->
+            <div class="mt-4 space-y-1.5">
+              <p class="text-xs text-gray-400 font-semibold uppercase tracking-wider">Visual Action & Camera Coverage:</p>
+              <p class="text-xs text-gray-300 leading-relaxed">
+                Cut 1 (6.0s): Left: Original Rushed Email (Vague subject, external client in CC, demanding tone, wall of text). Right: Improved Professional Email. Large, readable typography. Cut 2 (6.0s): A luminous spotlight dims the background and illuminates: 1) Subject line difference, 2) Clean To/Cc recipients. Cut 3 (6.0s): Spotlight shifts down to the polite action request: 'Could you please confirm your approval by 10:15 AM? This will give us time to finalise it before the 10:30 AM client meeting.' Cut 4 (6.0s): Spotlight illuminates 'Thanks, Riya Kapoor'. Both full emails return to view with a summary graphic checkmark.
+              </p>
+            </div>
+
+            <!-- ON-SCREEN GRAPHICS -->
+            <div class="mt-3.5 flex items-start gap-2 text-xs text-gray-400">
+              <span class="font-semibold text-gray-300 whitespace-nowrap">On-Screen Overlay:</span>
+              <span class="mono text-gray-300 bg-black/40 px-2 py-0.5 rounded border border-gray-800">COMPARE THE EMAILS &bull;  &bull; 1. Meaningful Subject Line &bull; 2. Filtered Internal Recipients &bull; 3. Scannable Context & Milestones &bull; 4. Clear Action & 10:15 AM Deadline &bull; 5. Professional Sign-off</span>
+            </div>
+          </div>
+
+          <!-- CLIENT COMMENT BOX -->
+          <div class="mt-5 pt-4 border-t border-gray-800/80 no-print">
+            <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wide mb-1">
+              Client Feedback / Notes for Scene 12:
+            </label>
+            <input type="text" id="note-12" oninput="saveNote(12)" placeholder="e.g., Approved as is, or specify any revision..." class="w-full text-xs px-3 py-2 rounded-lg bg-gray-900/80 border border-gray-700/80 text-gray-200 placeholder-gray-500 focus:outline-none focus:border-sky-500 transition">
+          </div>
+
+        </div>
+      </div>
+    </article>
+    
+
+    <!-- SCENE 13 -->
+    <article id="scene-13" class="glass-card rounded-2xl overflow-hidden border border-gray-800 transition shadow-xl" data-scene="13">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
+        
+        <!-- VISUAL POSTER COLUMN (5 cols) -->
+        <div class="lg:col-span-5 relative bg-black/60 flex flex-col justify-between p-4 border-b lg:border-b-0 lg:border-r border-gray-800">
+          <div class="relative group rounded-xl overflow-hidden shadow-lg border border-gray-800 bg-gray-900 aspect-video">
+            <img src="storyboard_thumbs/email_etiquette/image12.png" alt="One Last Check (The Ringing Phone Interruption)" class="w-full h-full object-cover transition duration-300 group-hover:scale-105" loading="lazy" onerror="this.src='https://placehold.co/600x338/1e293b/94a3b8?text=Scene+13'">
+            
+            
+        <div class="absolute inset-0 bg-black/50 flex items-center justify-center no-print">
+          <span class="px-3 py-1.5 rounded-lg bg-gray-900/90 text-gray-300 text-xs font-mono border border-gray-700">
+            Visual Board Reference
+          </span>
+        </div>
+        
+
+            <!-- DURATION BADGE -->
+            <div class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded bg-black/80 backdrop-blur-md text-white text-[11px] font-mono font-semibold">
+              18.0s
+            </div>
+
+            <!-- CUT COUNT BADGE -->
+            <div class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded bg-sky-950/80 border border-sky-500/40 text-sky-300 text-[11px] font-semibold">
+              3 Cuts
+            </div>
+          </div>
+
+          
+        <div class="mt-3 flex items-center justify-between no-print">
+          <span class="text-xs text-amber-400 font-medium">Ready for Batch Veo Render</span>
+          <span class="text-[11px] text-gray-500 font-mono">Draft Mode Ready</span>
+        </div>
+        
+        </div>
+
+        <!-- STORYBOARD & SCRIPT COLUMN (7 cols) -->
+        <div class="lg:col-span-7 p-6 flex flex-col justify-between">
+          <div>
+            <!-- HEADER -->
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-gray-800">
+              <div class="flex items-center gap-2">
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-bold font-mono bg-sky-500/20 text-sky-400 border border-sky-500/30">
+                  SCENE 13
+                </span>
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-300 border border-indigo-500/20">
+                  Slide 14
+                </span>
+              </div>
+
+              <!-- CLIENT APPROVAL TOGGLE -->
+              <div class="no-print flex items-center gap-2">
+                <label class="cursor-pointer flex items-center gap-2 text-xs font-medium text-gray-300 hover:text-white select-none">
+                  <input type="checkbox" id="chk-13" onchange="toggleApproval(13)" class="w-4 h-4 rounded text-emerald-500 bg-gray-800 border-gray-700 focus:ring-emerald-400">
+                  <span id="label-chk-13" class="text-gray-400">Approve Scene</span>
+                </label>
+              </div>
+            </div>
+
+            <h2 class="text-lg font-bold text-white mt-3">One Last Check (The Ringing Phone Interruption)</h2>
+
+            <!-- VOICEOVER TRANSCRIPT -->
+            <div class="mt-4 p-3.5 rounded-xl bg-gray-900/90 border border-gray-800">
+              <div class="flex items-center gap-1.5 text-xs text-sky-400 font-semibold uppercase tracking-wider mb-1.5">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"></path></svg>
+                Spoken Voiceover (No Brand Mention):
+              </div>
+              <p class="text-sm text-gray-200 leading-relaxed italic">
+                &ldquo;Riya reviews the message and checks the recipients. But just as she is about to send it, her phone rings. She misses one crucial detail: the attachment is an older version of the project schedule. The email goes out with the wrong file.&rdquo;
+              </p>
+            </div>
+
+            <!-- VISUAL CHOREOGRAPHY & CAMERA ACTION -->
+            <div class="mt-4 space-y-1.5">
+              <p class="text-xs text-gray-400 font-semibold uppercase tracking-wider">Visual Action & Camera Coverage:</p>
+              <p class="text-xs text-gray-300 leading-relaxed">
+                Cut 1 (5.5s): Riya does a final visual sweep of the draft. In the attachment bar, an Excel file sits: 'Project_Atlas_Schedule_v2.xlsx'. The correct v3 is in her file explorer folder behind it. Cut 2 (6.0s): Suddenly, Riya's phone on the desk vibrates and rings loudly with an incoming caller display. Riya glances sideways, surprised. Cut 3 (6.5s): Wanting to clear the email before answering, Riya's cursor rapidly clicks the blue 'Send' button without checking the attachment box. The window closes with a 'Sending...' swoop.
+              </p>
+            </div>
+
+            <!-- ON-SCREEN GRAPHICS -->
+            <div class="mt-3.5 flex items-start gap-2 text-xs text-gray-400">
+              <span class="font-semibold text-gray-300 whitespace-nowrap">On-Screen Overlay:</span>
+              <span class="mono text-gray-300 bg-black/40 px-2 py-0.5 rounded border border-gray-800">One Last Check &bull; CHECK RECIPIENTS. CHECK MEANING. CHECK ATTACHMENT.</span>
+            </div>
+          </div>
+
+          <!-- CLIENT COMMENT BOX -->
+          <div class="mt-5 pt-4 border-t border-gray-800/80 no-print">
+            <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wide mb-1">
+              Client Feedback / Notes for Scene 13:
+            </label>
+            <input type="text" id="note-13" oninput="saveNote(13)" placeholder="e.g., Approved as is, or specify any revision..." class="w-full text-xs px-3 py-2 rounded-lg bg-gray-900/80 border border-gray-700/80 text-gray-200 placeholder-gray-500 focus:outline-none focus:border-sky-500 transition">
+          </div>
+
+        </div>
+      </div>
+    </article>
+    
+
+    <!-- SCENE 14 -->
+    <article id="scene-14" class="glass-card rounded-2xl overflow-hidden border border-gray-800 transition shadow-xl" data-scene="14">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
+        
+        <!-- VISUAL POSTER COLUMN (5 cols) -->
+        <div class="lg:col-span-5 relative bg-black/60 flex flex-col justify-between p-4 border-b lg:border-b-0 lg:border-r border-gray-800">
+          <div class="relative group rounded-xl overflow-hidden shadow-lg border border-gray-800 bg-gray-900 aspect-video">
+            <img src="storyboard_thumbs/email_etiquette/image13.png" alt="The Moment of Realization (Sent Items Shock)" class="w-full h-full object-cover transition duration-300 group-hover:scale-105" loading="lazy" onerror="this.src='https://placehold.co/600x338/1e293b/94a3b8?text=Scene+14'">
+            
+            
+        <div class="absolute inset-0 bg-black/50 flex items-center justify-center no-print">
+          <span class="px-3 py-1.5 rounded-lg bg-gray-900/90 text-gray-300 text-xs font-mono border border-gray-700">
+            Visual Board Reference
+          </span>
+        </div>
+        
+
+            <!-- DURATION BADGE -->
+            <div class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded bg-black/80 backdrop-blur-md text-white text-[11px] font-mono font-semibold">
+              22.0s
+            </div>
+
+            <!-- CUT COUNT BADGE -->
+            <div class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded bg-sky-950/80 border border-sky-500/40 text-sky-300 text-[11px] font-semibold">
+              4 Cuts
+            </div>
+          </div>
+
+          
+        <div class="mt-3 flex items-center justify-between no-print">
+          <span class="text-xs text-amber-400 font-medium">Ready for Batch Veo Render</span>
+          <span class="text-[11px] text-gray-500 font-mono">Draft Mode Ready</span>
+        </div>
+        
+        </div>
+
+        <!-- STORYBOARD & SCRIPT COLUMN (7 cols) -->
+        <div class="lg:col-span-7 p-6 flex flex-col justify-between">
+          <div>
+            <!-- HEADER -->
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-gray-800">
+              <div class="flex items-center gap-2">
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-bold font-mono bg-sky-500/20 text-sky-400 border border-sky-500/30">
+                  SCENE 14
+                </span>
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-300 border border-indigo-500/20">
+                  Slide 15
+                </span>
+              </div>
+
+              <!-- CLIENT APPROVAL TOGGLE -->
+              <div class="no-print flex items-center gap-2">
+                <label class="cursor-pointer flex items-center gap-2 text-xs font-medium text-gray-300 hover:text-white select-none">
+                  <input type="checkbox" id="chk-14" onchange="toggleApproval(14)" class="w-4 h-4 rounded text-emerald-500 bg-gray-800 border-gray-700 focus:ring-emerald-400">
+                  <span id="label-chk-14" class="text-gray-400">Approve Scene</span>
+                </label>
+              </div>
+            </div>
+
+            <h2 class="text-lg font-bold text-white mt-3">The Moment of Realization (Sent Items Shock)</h2>
+
+            <!-- VOICEOVER TRANSCRIPT -->
+            <div class="mt-4 p-3.5 rounded-xl bg-gray-900/90 border border-gray-800">
+              <div class="flex items-center gap-1.5 text-xs text-sky-400 font-semibold uppercase tracking-wider mb-1.5">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"></path></svg>
+                Spoken Voiceover (No Brand Mention):
+              </div>
+              <p class="text-sm text-gray-200 leading-relaxed italic">
+                &ldquo;Riya: 'Oh no. That's the old schedule.'
+
+Narrator: Riya realises the seriousness of the mistake. Daniel needs to review and approve the revised Project Atlas schedule before the 10:15 AM deadline. But she has sent version 2 instead of version 3. If Daniel approves the outdated schedule, he could take incorrect project information into the 10:30 AM client meeting. Riya needs to correct the mistake immediately and make sure Daniel receives the right version.&rdquo;
+              </p>
+            </div>
+
+            <!-- VISUAL CHOREOGRAPHY & CAMERA ACTION -->
+            <div class="mt-4 space-y-1.5">
+              <p class="text-xs text-gray-400 font-semibold uppercase tracking-wider">Visual Action & Camera Coverage:</p>
+              <p class="text-xs text-gray-300 leading-relaxed">
+                Cut 1 (5.5s): Riya opens 'Sent Items'. She double-clicks the sent message. Her eyes scan the attachment pill: [Project_Atlas_Schedule_v2.xlsx]. Cut 2 (5.5s): Riya puts her hand to her mouth briefly, eyes wide with acute realization. She glances up at the wall clock: 10:02 AM. Only 13 minutes left before Daniel's deadline. Cut 3 (5.5s): Brief insert of the glass conference room down the hall: external clients taking seats for the 10:30 AM meeting. Daniel preparing his presentation. Cut 4 (5.5s): Riya straightens up, resolute. She immediately hits 'Reply All' / 'New Message' to correct the error. Zero panic, 100% accountability.
+              </p>
+            </div>
+
+            <!-- ON-SCREEN GRAPHICS -->
+            <div class="mt-3.5 flex items-start gap-2 text-xs text-gray-400">
+              <span class="font-semibold text-gray-300 whitespace-nowrap">On-Screen Overlay:</span>
+              <span class="mono text-gray-300 bg-black/40 px-2 py-0.5 rounded border border-gray-800">The Moment of Realization &bull; SENT. THEN... WAIT. WRONG ATTACHMENT. &bull;  &bull; Project_Atlas_Schedule_v2.xlsx [OUTDATED]</span>
+            </div>
+          </div>
+
+          <!-- CLIENT COMMENT BOX -->
+          <div class="mt-5 pt-4 border-t border-gray-800/80 no-print">
+            <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wide mb-1">
+              Client Feedback / Notes for Scene 14:
+            </label>
+            <input type="text" id="note-14" oninput="saveNote(14)" placeholder="e.g., Approved as is, or specify any revision..." class="w-full text-xs px-3 py-2 rounded-lg bg-gray-900/80 border border-gray-700/80 text-gray-200 placeholder-gray-500 focus:outline-none focus:border-sky-500 transition">
+          </div>
+
+        </div>
+      </div>
+    </article>
+    
+
+    <!-- SCENE 15 -->
+    <article id="scene-15" class="glass-card rounded-2xl overflow-hidden border border-gray-800 transition shadow-xl" data-scene="15">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
+        
+        <!-- VISUAL POSTER COLUMN (5 cols) -->
+        <div class="lg:col-span-5 relative bg-black/60 flex flex-col justify-between p-4 border-b lg:border-b-0 lg:border-r border-gray-800">
+          <div class="relative group rounded-xl overflow-hidden shadow-lg border border-gray-800 bg-gray-900 aspect-video">
+            <img src="storyboard_thumbs/email_etiquette/image14.png" alt="Correct the Mistake (Act Quickly. Verify the Fix)" class="w-full h-full object-cover transition duration-300 group-hover:scale-105" loading="lazy" onerror="this.src='https://placehold.co/600x338/1e293b/94a3b8?text=Scene+15'">
+            
+            
+        <div class="absolute inset-0 bg-black/50 flex items-center justify-center no-print">
+          <span class="px-3 py-1.5 rounded-lg bg-gray-900/90 text-gray-300 text-xs font-mono border border-gray-700">
+            Visual Board Reference
+          </span>
+        </div>
+        
+
+            <!-- DURATION BADGE -->
+            <div class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded bg-black/80 backdrop-blur-md text-white text-[11px] font-mono font-semibold">
+              18.0s
+            </div>
+
+            <!-- CUT COUNT BADGE -->
+            <div class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded bg-sky-950/80 border border-sky-500/40 text-sky-300 text-[11px] font-semibold">
+              3 Cuts
+            </div>
+          </div>
+
+          
+        <div class="mt-3 flex items-center justify-between no-print">
+          <span class="text-xs text-amber-400 font-medium">Ready for Batch Veo Render</span>
+          <span class="text-[11px] text-gray-500 font-mono">Draft Mode Ready</span>
+        </div>
+        
+        </div>
+
+        <!-- STORYBOARD & SCRIPT COLUMN (7 cols) -->
+        <div class="lg:col-span-7 p-6 flex flex-col justify-between">
+          <div>
+            <!-- HEADER -->
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-gray-800">
+              <div class="flex items-center gap-2">
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-bold font-mono bg-sky-500/20 text-sky-400 border border-sky-500/30">
+                  SCENE 15
+                </span>
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-300 border border-indigo-500/20">
+                  Slide 16
+                </span>
+              </div>
+
+              <!-- CLIENT APPROVAL TOGGLE -->
+              <div class="no-print flex items-center gap-2">
+                <label class="cursor-pointer flex items-center gap-2 text-xs font-medium text-gray-300 hover:text-white select-none">
+                  <input type="checkbox" id="chk-15" onchange="toggleApproval(15)" class="w-4 h-4 rounded text-emerald-500 bg-gray-800 border-gray-700 focus:ring-emerald-400">
+                  <span id="label-chk-15" class="text-gray-400">Approve Scene</span>
+                </label>
+              </div>
+            </div>
+
+            <h2 class="text-lg font-bold text-white mt-3">Correct the Mistake (Act Quickly. Verify the Fix)</h2>
+
+            <!-- VOICEOVER TRANSCRIPT -->
+            <div class="mt-4 p-3.5 rounded-xl bg-gray-900/90 border border-gray-800">
+              <div class="flex items-center gap-1.5 text-xs text-sky-400 font-semibold uppercase tracking-wider mb-1.5">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"></path></svg>
+                Spoken Voiceover (No Brand Mention):
+              </div>
+              <p class="text-sm text-gray-200 leading-relaxed italic">
+                &ldquo;Riya sends a correction email straight away. She clearly explains that the earlier attachment was outdated, attaches version 3, and asks Daniel to review and approve the correct schedule. Before sending, she checks the recipient and filename.&rdquo;
+              </p>
+            </div>
+
+            <!-- VISUAL CHOREOGRAPHY & CAMERA ACTION -->
+            <div class="mt-4 space-y-1.5">
+              <p class="text-xs text-gray-400 font-semibold uppercase tracking-wider">Visual Action & Camera Coverage:</p>
+              <p class="text-xs text-gray-300 leading-relaxed">
+                Cut 1 (6.0s): Riya types subject: 'CORRECTION: Project Atlas — Revised Project Schedule for Approval'. Body: 'Hi Daniel, Please disregard the previous attachment. The revised Project Atlas schedule is attached as version 3. Could you please review and approve this version before 10:15 AM? Thanks, Riya'. Cut 2 (6.0s): Riya drags 'Project_Atlas_Schedule_v3.xlsx' from her project folder into the email attachment box. A bright green verification checkmark locks on 'v3'. Cut 3 (6.0s): Riya takes a deep breath, pauses for 1 full second, checks the recipient (Daniel, Cc Meera), verifies 'v3.xlsx', then deliberately clicks 'Send'.
+              </p>
+            </div>
+
+            <!-- ON-SCREEN GRAPHICS -->
+            <div class="mt-3.5 flex items-start gap-2 text-xs text-gray-400">
+              <span class="font-semibold text-gray-300 whitespace-nowrap">On-Screen Overlay:</span>
+              <span class="mono text-gray-300 bg-black/40 px-2 py-0.5 rounded border border-gray-800">ACT QUICKLY. VERIFY THE FIX. &bull;  &bull; Subject: CORRECTION: Project Atlas — Revised Schedule for Approval &bull; Attachment: Project_Atlas_Schedule_v3.xlsx [VERIFIED]</span>
+            </div>
+          </div>
+
+          <!-- CLIENT COMMENT BOX -->
+          <div class="mt-5 pt-4 border-t border-gray-800/80 no-print">
+            <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wide mb-1">
+              Client Feedback / Notes for Scene 15:
+            </label>
+            <input type="text" id="note-15" oninput="saveNote(15)" placeholder="e.g., Approved as is, or specify any revision..." class="w-full text-xs px-3 py-2 rounded-lg bg-gray-900/80 border border-gray-700/80 text-gray-200 placeholder-gray-500 focus:outline-none focus:border-sky-500 transition">
+          </div>
+
+        </div>
+      </div>
+    </article>
+    
+
+    <!-- SCENE 16 -->
+    <article id="scene-16" class="glass-card rounded-2xl overflow-hidden border border-gray-800 transition shadow-xl" data-scene="16">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
+        
+        <!-- VISUAL POSTER COLUMN (5 cols) -->
+        <div class="lg:col-span-5 relative bg-black/60 flex flex-col justify-between p-4 border-b lg:border-b-0 lg:border-r border-gray-800">
+          <div class="relative group rounded-xl overflow-hidden shadow-lg border border-gray-800 bg-gray-900 aspect-video">
+            <img src="storyboard_thumbs/email_etiquette/image15.png" alt="Resolution & Timely Approval" class="w-full h-full object-cover transition duration-300 group-hover:scale-105" loading="lazy" onerror="this.src='https://placehold.co/600x338/1e293b/94a3b8?text=Scene+16'">
+            
+            
+        <div class="absolute inset-0 bg-black/50 flex items-center justify-center no-print">
+          <span class="px-3 py-1.5 rounded-lg bg-gray-900/90 text-gray-300 text-xs font-mono border border-gray-700">
+            Visual Board Reference
+          </span>
+        </div>
+        
+
+            <!-- DURATION BADGE -->
+            <div class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded bg-black/80 backdrop-blur-md text-white text-[11px] font-mono font-semibold">
+              26.0s
+            </div>
+
+            <!-- CUT COUNT BADGE -->
+            <div class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded bg-sky-950/80 border border-sky-500/40 text-sky-300 text-[11px] font-semibold">
+              5 Cuts
+            </div>
+          </div>
+
+          
+        <div class="mt-3 flex items-center justify-between no-print">
+          <span class="text-xs text-amber-400 font-medium">Ready for Batch Veo Render</span>
+          <span class="text-[11px] text-gray-500 font-mono">Draft Mode Ready</span>
+        </div>
+        
+        </div>
+
+        <!-- STORYBOARD & SCRIPT COLUMN (7 cols) -->
+        <div class="lg:col-span-7 p-6 flex flex-col justify-between">
+          <div>
+            <!-- HEADER -->
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-gray-800">
+              <div class="flex items-center gap-2">
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-bold font-mono bg-sky-500/20 text-sky-400 border border-sky-500/30">
+                  SCENE 16
+                </span>
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-300 border border-indigo-500/20">
+                  Slide 17
+                </span>
+              </div>
+
+              <!-- CLIENT APPROVAL TOGGLE -->
+              <div class="no-print flex items-center gap-2">
+                <label class="cursor-pointer flex items-center gap-2 text-xs font-medium text-gray-300 hover:text-white select-none">
+                  <input type="checkbox" id="chk-16" onchange="toggleApproval(16)" class="w-4 h-4 rounded text-emerald-500 bg-gray-800 border-gray-700 focus:ring-emerald-400">
+                  <span id="label-chk-16" class="text-gray-400">Approve Scene</span>
+                </label>
+              </div>
+            </div>
+
+            <h2 class="text-lg font-bold text-white mt-3">Resolution & Timely Approval</h2>
+
+            <!-- VOICEOVER TRANSCRIPT -->
+            <div class="mt-4 p-3.5 rounded-xl bg-gray-900/90 border border-gray-800">
+              <div class="flex items-center gap-1.5 text-xs text-sky-400 font-semibold uppercase tracking-wider mb-1.5">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"></path></svg>
+                Spoken Voiceover (No Brand Mention):
+              </div>
+              <p class="text-sm text-gray-200 leading-relaxed italic">
+                &ldquo;Daniel receives Riya's correction and acknowledges the email, confirming that he will review the schedule and respond by 10:15 AM. He opens the correct version, v3, reviews the revised schedule, and sends his approval before the deadline. With the correct schedule approved in time for the 10:30 AM client meeting, Riya has resolved the issue. The experience is a reminder that a few moments of attention can prevent costly mistakes and protect professional trust. Before sending your next email, pause and check the recipients, subject, tone and attachment. And if you can't respond to an email in full right away, acknowledge it and say when you'll reply.&rdquo;
+              </p>
+            </div>
+
+            <!-- VISUAL CHOREOGRAPHY & CAMERA ACTION -->
+            <div class="mt-4 space-y-1.5">
+              <p class="text-xs text-gray-400 font-semibold uppercase tracking-wider">Visual Action & Camera Coverage:</p>
+              <p class="text-xs text-gray-300 leading-relaxed">
+                Cut 1 (5.5s): Daniel Carter in his office, looking at his laptop. Clock on screen shows 10:04 AM. Toast notification appears: 'CORRECTION: Project Atlas — Revised Project Schedule for Approval'. Cut 2 (5.0s): Daniel types a rapid acknowledgment: 'Thanks, Riya. Noted — I'll review it and confirm by 10:15.' and sends it immediately. Cut 3 (5.0s): Daniel double-clicks 'Project_Atlas_Schedule_v3.xlsx'. A clean Gantt chart schedule opens. He verifies milestone dates and nods in agreement. Cut 4 (5.0s): Daniel replies: 'Approved. Looks solid for the client meeting.' Timestamp visibly displays 10:12 AM (comfortably before 10:15 AM deadline). Cut 5 (5.5s): Cut back to Riya at her workstation. She receives Daniel's approval notification. A genuine smile of relief and professional pride. She closes her laptop confidently.
+              </p>
+            </div>
+
+            <!-- ON-SCREEN GRAPHICS -->
+            <div class="mt-3.5 flex items-start gap-2 text-xs text-gray-400">
+              <span class="font-semibold text-gray-300 whitespace-nowrap">On-Screen Overlay:</span>
+              <span class="mono text-gray-300 bg-black/40 px-2 py-0.5 rounded border border-gray-800">10:04 AM: Daniel acknowledges receipt. &bull; 10:12 AM: Daniel reviews v3 & confirms approval. &bull; 10:30 AM: Client meeting proceeds with 100% accurate data. &bull;  &bull; Rule: Received an email you can't answer yet? Acknowledge it and say when you'll respond.</span>
+            </div>
+          </div>
+
+          <!-- CLIENT COMMENT BOX -->
+          <div class="mt-5 pt-4 border-t border-gray-800/80 no-print">
+            <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wide mb-1">
+              Client Feedback / Notes for Scene 16:
+            </label>
+            <input type="text" id="note-16" oninput="saveNote(16)" placeholder="e.g., Approved as is, or specify any revision..." class="w-full text-xs px-3 py-2 rounded-lg bg-gray-900/80 border border-gray-700/80 text-gray-200 placeholder-gray-500 focus:outline-none focus:border-sky-500 transition">
+          </div>
+
+        </div>
+      </div>
+    </article>
+    
+
+    <!-- SCENE 17 -->
+    <article id="scene-17" class="glass-card rounded-2xl overflow-hidden border border-gray-800 transition shadow-xl" data-scene="17">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
+        
+        <!-- VISUAL POSTER COLUMN (5 cols) -->
+        <div class="lg:col-span-5 relative bg-black/60 flex flex-col justify-between p-4 border-b lg:border-b-0 lg:border-r border-gray-800">
+          <div class="relative group rounded-xl overflow-hidden shadow-lg border border-gray-800 bg-gray-900 aspect-video">
+            <img src="storyboard_thumbs/email_etiquette/image1.png" alt="Closing Impact & Outro" class="w-full h-full object-cover transition duration-300 group-hover:scale-105" loading="lazy" onerror="this.src='https://placehold.co/600x338/1e293b/94a3b8?text=Scene+17'">
+            
+            
+        <div class="absolute inset-0 bg-black/50 flex items-center justify-center no-print">
+          <span class="px-3 py-1.5 rounded-lg bg-gray-900/90 text-gray-300 text-xs font-mono border border-gray-700">
+            Visual Board Reference
+          </span>
+        </div>
+        
+
+            <!-- DURATION BADGE -->
+            <div class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded bg-black/80 backdrop-blur-md text-white text-[11px] font-mono font-semibold">
+              12.0s
+            </div>
+
+            <!-- CUT COUNT BADGE -->
+            <div class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded bg-sky-950/80 border border-sky-500/40 text-sky-300 text-[11px] font-semibold">
+              2 Cuts
+            </div>
+          </div>
+
+          
+        <div class="mt-3 flex items-center justify-between no-print">
+          <span class="text-xs text-amber-400 font-medium">Ready for Batch Veo Render</span>
+          <span class="text-[11px] text-gray-500 font-mono">Draft Mode Ready</span>
+        </div>
+        
+        </div>
+
+        <!-- STORYBOARD & SCRIPT COLUMN (7 cols) -->
+        <div class="lg:col-span-7 p-6 flex flex-col justify-between">
+          <div>
+            <!-- HEADER -->
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-gray-800">
+              <div class="flex items-center gap-2">
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-bold font-mono bg-sky-500/20 text-sky-400 border border-sky-500/30">
+                  SCENE 17
+                </span>
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-300 border border-indigo-500/20">
+                  Slide 18
+                </span>
+              </div>
+
+              <!-- CLIENT APPROVAL TOGGLE -->
+              <div class="no-print flex items-center gap-2">
+                <label class="cursor-pointer flex items-center gap-2 text-xs font-medium text-gray-300 hover:text-white select-none">
+                  <input type="checkbox" id="chk-17" onchange="toggleApproval(17)" class="w-4 h-4 rounded text-emerald-500 bg-gray-800 border-gray-700 focus:ring-emerald-400">
+                  <span id="label-chk-17" class="text-gray-400">Approve Scene</span>
+                </label>
+              </div>
+            </div>
+
+            <h2 class="text-lg font-bold text-white mt-3">Closing Impact & Outro</h2>
+
+            <!-- VOICEOVER TRANSCRIPT -->
+            <div class="mt-4 p-3.5 rounded-xl bg-gray-900/90 border border-gray-800">
+              <div class="flex items-center gap-1.5 text-xs text-sky-400 font-semibold uppercase tracking-wider mb-1.5">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"></path></svg>
+                Spoken Voiceover (No Brand Mention):
+              </div>
+              <p class="text-sm text-gray-200 leading-relaxed italic">
+                &ldquo;Professional email etiquette leaves a positive impression and builds trust. By communicating clearly, respectfully, and thoughtfully, you reflect your professionalism in every message you send.&rdquo;
+              </p>
+            </div>
+
+            <!-- VISUAL CHOREOGRAPHY & CAMERA ACTION -->
+            <div class="mt-4 space-y-1.5">
+              <p class="text-xs text-gray-400 font-semibold uppercase tracking-wider">Visual Action & Camera Coverage:</p>
+              <p class="text-xs text-gray-300 leading-relaxed">
+                Cut 1 (6.5s): Deep navy and royal blue gradient backdrop. Elegant typography reveals the central quote: 'Every email is an opportunity to communicate with clarity, build trust, and reflect professionalism.' The words clarity, trust, and professionalism glow softly in amber/cyan. Cut 2 (5.5s): Quote gracefully transitions into the bold final tagline: 'Pause. Review. Send with confidence.' followed by the Ideabytes corporate lockup and master brand statement: 'PAUSE BEFORE YOU SEND'. A sleek checkmark completes the animation.
+              </p>
+            </div>
+
+            <!-- ON-SCREEN GRAPHICS -->
+            <div class="mt-3.5 flex items-start gap-2 text-xs text-gray-400">
+              <span class="font-semibold text-gray-300 whitespace-nowrap">On-Screen Overlay:</span>
+              <span class="mono text-gray-300 bg-black/40 px-2 py-0.5 rounded border border-gray-800">“Every email is an opportunity to communicate with clarity, build trust, and reflect professionalism.” &bull;  &bull; Pause. Review. Send with confidence. &bull;  &bull; PAUSE BEFORE YOU SEND</span>
+            </div>
+          </div>
+
+          <!-- CLIENT COMMENT BOX -->
+          <div class="mt-5 pt-4 border-t border-gray-800/80 no-print">
+            <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wide mb-1">
+              Client Feedback / Notes for Scene 17:
+            </label>
+            <input type="text" id="note-17" oninput="saveNote(17)" placeholder="e.g., Approved as is, or specify any revision..." class="w-full text-xs px-3 py-2 rounded-lg bg-gray-900/80 border border-gray-700/80 text-gray-200 placeholder-gray-500 focus:outline-none focus:border-sky-500 transition">
+          </div>
+
+        </div>
+      </div>
+    </article>
+    
+  </main>
+
+  <!-- VIDEO MODAL (POPUP) -->
+  <div id="videoModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md hidden flex items-center justify-center p-4">
+    <div class="relative w-full max-w-4xl bg-gray-900 rounded-2xl overflow-hidden border border-gray-700 shadow-2xl">
+      <div class="flex items-center justify-between px-6 py-3 border-b border-gray-800 bg-gray-950">
+        <h3 id="modalVideoTitle" class="text-sm font-bold text-white tracking-wide">Video Player</h3>
+        <button onclick="closeVideoModal()" class="text-gray-400 hover:text-white p-1 rounded-lg hover:bg-gray-800 transition">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+      </div>
+      <div class="aspect-video bg-black flex items-center justify-center">
+        <video id="modalVideoPlayer" class="w-full h-full" controls autoplay playsinline></video>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCRIPT -->
+  <script>
+    const TOTAL_SCENES = 17;
+
+    function loadSavedState() {
+      let approvedCount = 0;
+      for (let i = 1; i <= TOTAL_SCENES; i++) {
+        const approved = localStorage.getItem('email_approved_' + i) === 'true';
+        const note = localStorage.getItem('email_note_' + i) || '';
+        
+        const chk = document.getElementById('chk-' + i);
+        const label = document.getElementById('label-chk-' + i);
+        const inputNote = document.getElementById('note-' + i);
+        const card = document.getElementById('scene-' + String(i).padStart(2, '0'));
+
+        if (chk && label) {
+          chk.checked = approved;
+          if (approved) {
+            approvedCount++;
+            label.textContent = 'Approved';
+            label.classList.add('text-emerald-400', 'font-bold');
+            label.classList.remove('text-gray-400');
+            card.classList.add('border-emerald-500/40');
+          } else {
+            label.textContent = 'Approve Scene';
+            label.classList.remove('text-emerald-400', 'font-bold');
+            label.classList.add('text-gray-400');
+            card.classList.remove('border-emerald-500/40');
+          }
+        }
+        if (inputNote) {
+          inputNote.value = note;
+        }
+      }
+      updateStats(approvedCount);
+    }
+
+    function toggleApproval(num) {
+      const chk = document.getElementById('chk-' + num);
+      const label = document.getElementById('label-chk-' + num);
+      const card = document.getElementById('scene-' + String(num).padStart(2, '0'));
+      
+      const isApproved = chk.checked;
+      localStorage.setItem('email_approved_' + num, isApproved ? 'true' : 'false');
+      
+      if (isApproved) {
+        label.textContent = 'Approved';
+        label.classList.add('text-emerald-400', 'font-bold');
+        label.classList.remove('text-gray-400');
+        card.classList.add('border-emerald-500/40');
+      } else {
+        label.textContent = 'Approve Scene';
+        label.classList.remove('text-emerald-400', 'font-bold');
+        label.classList.add('text-gray-400');
+        card.classList.remove('border-emerald-500/40');
+      }
+      
+      let count = 0;
+      for (let i = 1; i <= TOTAL_SCENES; i++) {
+        if (localStorage.getItem('email_approved_' + i) === 'true') count++;
+      }
+      updateStats(count);
+    }
+
+    function saveNote(num) {
+      const val = document.getElementById('note-' + num).value;
+      localStorage.setItem('email_note_' + num, val);
+    }
+
+    function updateStats(count) {
+      const countEl = document.getElementById('stat-approved-count');
+      const labelEl = document.getElementById('stat-pending-label');
+      if (countEl) countEl.textContent = count + ' / ' + TOTAL_SCENES;
+      if (labelEl) {
+        if (count === TOTAL_SCENES) {
+          labelEl.textContent = 'All Scenes Approved!';
+          labelEl.classList.add('text-emerald-400');
+        } else {
+          labelEl.textContent = (TOTAL_SCENES - count) + ' pending review';
+          labelEl.classList.remove('text-emerald-400');
+        }
+      }
+    }
+
+    function playSceneVideo(videoSrc, title) {
+      const modal = document.getElementById('videoModal');
+      const player = document.getElementById('modalVideoPlayer');
+      const titleEl = document.getElementById('modalVideoTitle');
+      titleEl.textContent = title;
+      player.src = videoSrc;
+      modal.classList.remove('hidden');
+      player.play();
+    }
+
+    function closeVideoModal() {
+      const modal = document.getElementById('videoModal');
+      const player = document.getElementById('modalVideoPlayer');
+      player.pause();
+      player.src = '';
+      modal.classList.add('hidden');
+    }
+
+    function copyFeedbackSummary() {
+      let summary = '=== EMAIL ETIQUETTE STORYBOARD FEEDBACK SUMMARY ===\n\n';
+      let approvedCount = 0;
+      for (let i = 1; i <= TOTAL_SCENES; i++) {
+        const approved = localStorage.getItem('email_approved_' + i) === 'true';
+        const note = localStorage.getItem('email_note_' + i) || 'No specific comments.';
+        if (approved) approvedCount++;
+        summary += `Scene ${String(i).padStart(2, '0')}: [${approved ? 'APPROVED' : 'PENDING'}]\n`;
+        if (note && note !== 'No specific comments.') {
+          summary += `Feedback: ${note}\n`;
+        }
+        summary += '\n';
+      }
+      summary += `Overall Status: ${approvedCount} of ${TOTAL_SCENES} scenes approved.\n`;
+      
+      navigator.clipboard.writeText(summary).then(() => {
+        alert('Feedback summary copied to clipboard! You can paste it into email or chat.');
+      }).catch(err => {
+        console.error('Clipboard copy failed:', err);
+      });
+    }
+
+    window.addEventListener('DOMContentLoaded', loadSavedState);
+  </script>
+
+</body>
+</html>
