@@ -158,6 +158,103 @@
   <!-- SCENE CARDS LIST -->
   <main class="max-w-7xl mx-auto px-6 py-4 space-y-8">
 
+        <!-- COURSE INTRODUCTION MONTAGE (15s) -->
+    <article id="scene-intro" class="glass-card rounded-2xl overflow-hidden border border-sky-500/30 transition shadow-2xl bg-gradient-to-r from-sky-950/20 via-gray-900 to-indigo-950/20" data-scene="intro">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
+
+        <!-- VISUAL POSTER COLUMN (5 cols) -->
+        <div class="lg:col-span-5 relative bg-black/60 flex flex-col justify-between p-4 border-b lg:border-b-0 lg:border-r border-gray-800">
+          <div class="relative group rounded-xl overflow-hidden shadow-lg border border-sky-500/30 bg-gray-900 aspect-video">
+            <img src="storyboard_thumbs/course_intro_montage_poster.jpg" alt="Course Intro Montage Poster" class="w-full h-full object-cover transition duration-300 group-hover:scale-105" loading="lazy">
+
+            <!-- OVERLAY PLAY BUTTON -->
+            <button onclick="playSceneVideo('videos/Course_Intro_15s_Montage_HumanMotion.mp4', 'Course Introduction Montage: Everyday Professionalism (15s Title Sequence)')" class="absolute inset-0 bg-black/40 group-hover:bg-black/20 flex items-center justify-center transition no-print">
+              <span class="w-14 h-14 rounded-full bg-gradient-to-r from-sky-500 to-blue-600 text-white flex items-center justify-center shadow-lg transform group-hover:scale-110 transition">
+                <svg class="w-6 h-6 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </span>
+            </button>
+
+            <!-- DURATION BADGE -->
+            <div class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded bg-black/80 backdrop-blur-md text-sky-400 text-[11px] font-mono font-semibold border border-sky-500/30">
+              15.00s
+            </div>
+
+            <!-- CUT COUNT BADGE -->
+            <div class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded bg-sky-950/90 border border-sky-400/50 text-sky-300 text-[11px] font-semibold">
+              4 Cuts • Title Sequence
+            </div>
+          </div>
+
+          <div class="mt-3 flex items-center justify-between no-print">
+            <button onclick="playSceneVideo('videos/Course_Intro_15s_Montage_HumanMotion.mp4', 'Course Introduction Montage: Everyday Professionalism (15s Title Sequence)')" class="text-xs text-sky-400 hover:text-sky-300 font-semibold flex items-center gap-1.5 transition">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"/></svg>
+              Watch Intro Montage (15s)
+            </button>
+            <span class="text-[11px] text-gray-500 font-mono">1080p @ 30fps • Stereo</span>
+          </div>
+        </div>
+
+        <!-- STORYBOARD & SCRIPT COLUMN (7 cols) -->
+        <div class="lg:col-span-7 p-6 flex flex-col justify-between">
+          <div>
+            <!-- HEADER -->
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-gray-800">
+              <div class="flex items-center gap-2">
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-bold font-mono bg-amber-500/20 text-amber-300 border border-amber-500/30">
+                  INTRO MONTAGE
+                </span>
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-sky-500/20 text-sky-300 border border-sky-500/30">
+                  Pre-Course Title Sequence
+                </span>
+              </div>
+
+              <!-- CLIENT APPROVAL TOGGLE -->
+              <div class="no-print flex items-center gap-2">
+                <label class="cursor-pointer flex items-center gap-2 text-xs font-medium text-gray-300 hover:text-white select-none">
+                  <input type="checkbox" id="chk-intro" onchange="toggleApproval('intro')" class="w-4 h-4 rounded text-emerald-500 bg-gray-800 border-gray-700 focus:ring-emerald-400">
+                  <span id="label-chk-intro" class="text-gray-400">Approve Intro Montage</span>
+                </label>
+              </div>
+            </div>
+
+            <h2 class="text-lg font-bold text-white mt-3">Everyday Professionalism: 15-Second Course Introduction Montage</h2>
+
+            <!-- VOICEOVER TRANSCRIPT -->
+            <div class="mt-4 p-3.5 rounded-xl bg-gray-900/90 border border-gray-800">
+              <div class="flex items-center gap-1.5 text-xs text-sky-400 font-semibold uppercase tracking-wider mb-1.5">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"></path></svg>
+                Spoken Voiceover & Narrative:
+              </div>
+              <p class="text-sm text-gray-200 leading-relaxed italic">
+                "Welcome to Everyday Professionalism at Ideabytes. Technical skill builds our products, but everyday courtesy builds our company. How we work with people matters."
+              </p>
+            </div>
+
+            <!-- VISUAL SHOT BREAKDOWN -->
+            <div class="mt-3 grid grid-cols-1 md:grid-cols-2 gap-2 text-xs">
+              <div class="p-2.5 rounded-lg bg-gray-900/50 border border-gray-800/80">
+                <span class="text-sky-400 font-bold block mb-0.5">Cut 1 (0:00 - 0:03.5): Modern Tech Workplace</span>
+                <span class="text-gray-400">Glass partitions, wooden desks, warm daylight. Title: <em>EVERYDAY PROFESSIONALISM</em>.</span>
+              </div>
+              <div class="p-2.5 rounded-lg bg-gray-900/50 border border-gray-800/80">
+                <span class="text-sky-400 font-bold block mb-0.5">Cut 2 (0:03.5 - 0:07.0): Mindful Presence</span>
+                <span class="text-gray-400">Maya entering with poise down hallway. Lower-third: <em>START WITH RESPECT & ATTENTION</em>.</span>
+              </div>
+              <div class="p-2.5 rounded-lg bg-gray-900/50 border border-gray-800/80">
+                <span class="text-sky-400 font-bold block mb-0.5">Cut 3 (0:07.0 - 0:11.0): Team Collaboration</span>
+                <span class="text-gray-400">Colleagues reviewing dashboards. Lower-third: <em>ACTIVE LISTENING & ACCOUNTABILITY</em>.</span>
+              </div>
+              <div class="p-2.5 rounded-lg bg-gray-900/50 border border-gray-800/80">
+                <span class="text-sky-400 font-bold block mb-0.5">Cut 4 (0:11.0 - 0:15.0): Hero Climax</span>
+                <span class="text-gray-400">Maya confident smile at desk. Hero card: <em>16 CINEMATIC MODULES • COMMENCING NOW</em>.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </article>
+
     <!-- SCENE 01 -->
     <article id="scene-01" class="glass-card rounded-2xl overflow-hidden border border-gray-800 transition shadow-xl" data-scene="1">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
